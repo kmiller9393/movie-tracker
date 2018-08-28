@@ -11,3 +11,10 @@ export const setFilter = (filter) => {
     filter
   }
 }
+
+export const populateMovies = (movies) => {
+  return {
+    type: 'POPULATE_MOVIES',
+    movies
+  }
+}
