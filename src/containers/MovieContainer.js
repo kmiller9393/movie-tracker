@@ -12,7 +12,7 @@ class MovieContainer extends Component {
     const displayMovies = this.props.movies.map(movie => <li>{movie}</li>)
     return(
       <ul>
-      {displayMovies}
+        {displayMovies}
       </ul>
     )
   }

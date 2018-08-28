@@ -5,7 +5,7 @@ export const movies = (state=[], action) => {
     case 'SHOW_FAVORITES':
       return [action.favorites]
     default:
-      return ['1', '2', '3', '4', '5', '6']
+      return state
   }
 }
 
