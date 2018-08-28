@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MovieContainer from '../../containers/MovieContainer';
+import { cleanMurrayData } from '../.././utils/helper'
 
 class App extends Component {
+
+  async componentDidMount() {
+    const murrayMovies = await cleanMurrayData()
+    console.log(murrayMovies)
+
+  }
+  
   render() {
     return (
       <div className="App">
-        <h1>Movie Tracker</h1>
+        <h1>Murray Tracker</h1>
+        <MovieContainer />
       </div>
     );
   }
