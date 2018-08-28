@@ -1,6 +1,7 @@
 import { murrayURL, urlToFetchImage} from './variables'
 import { fetchMurrayMovies } from './apiCalls'
 
+
 export const cleanMurrayData = async () => {
   const fetchedUncleanMurrayPages = await fetchMurrayMovies(murrayURL)
   const murrayPromises = fetchedUncleanMurrayPages.results.map(async result => {

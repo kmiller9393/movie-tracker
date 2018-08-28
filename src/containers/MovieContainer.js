@@ -2,20 +2,17 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 
-class MovieContainer extends Component {
-  constructor() {
-    super();
-  }
-
-
-  render() {
-    const displayMovies = this.props.movies.map(movie => <li>{movie}</li>)
+const MovieContainer = ({ movies }) => {
+    const displayMovies = movies.map(movie => (
+      <li>
+        <img src={movie.image} />
+      </li>)
+  )
     return(
       <ul>
         {displayMovies}
       </ul>
-    )
-  }
+  )
 }
 
 const mapStateToProps = (state) => ({
