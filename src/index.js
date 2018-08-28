@@ -11,8 +11,8 @@ import rootReducer from '../src/reducers'
 const store = createStore(rootReducer)
 
 ReactDOM.render(
-  <Provider>
+  <Provider store={store}>
     <App />
   </Provider>, 
-document.getElementById('root'));
+    document.getElementById('root'));
 registerServiceWorker();
