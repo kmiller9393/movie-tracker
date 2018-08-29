@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import './App.css';
 import MovieContainer from '../../containers/MovieContainer';
 import { cleanMurrayData } from '../.././utils/helper';
 import { populateMovies } from '../../actions';
 import { connect } from 'react-redux';
 import { Route, Link, NavLink } from 'react-router-dom';
 import LoginForm from '../../containers/LoginForm';
+import './App.css';
 
 class App extends Component {
   async componentDidMount() {
-    const murrayMovies = await cleanMurrayData()
-    this.props.getMovies(murrayMovies)
+    const murrayMovies = await cleanMurrayData();
+    this.props.getMovies(murrayMovies);
   }
-  
+
   render() {
     return (
       <div className="App">
@@ -24,11 +24,11 @@ class App extends Component {
   }
 }
 
+export const mapDispatchToProps = dispatch => ({
+  getMovies: movies => dispatch(populateMovies(movies))
+});
 
-
-export const mapDispatchToProps = (dispatch) => ({
-  getMovies: (movies) => dispatch(populateMovies(movies))
-})
-
-
-export default connect(null, mapDispatchToProps)(App)
+export default connect(
+  null,
+  mapDispatchToProps
+)(App);
