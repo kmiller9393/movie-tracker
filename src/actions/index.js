@@ -26,3 +26,9 @@ export const getUserInfo = (name, id) => {
     id
   }
 }
+
+export const logoutUser = () => {
+  return {
+    type: 'LOGOUT_USER'
+  }
+}
