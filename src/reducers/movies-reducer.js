@@ -1,5 +1,4 @@
-export const movies = (state = [], action) => {
-  console.log(action);
+export const movieReducer = (state = [], action) => {
   switch (action.type) {
     case 'POPULATE_MOVIES':
       return [...action.movies];
