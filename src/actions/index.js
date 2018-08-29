@@ -32,3 +32,17 @@ export const logoutUser = () => {
     type: 'LOGOUT_USER'
   }
 }
+
+export const populateFavorites = (favorites) => {
+  return {
+    type: 'POPULATE_FAVORITES',
+    favorites
+  }
+}
+
+export const addFavorite = (movie) => {
+  return {
+    type: 'ADD_FAVORITE',
+    movie
+  }
+}

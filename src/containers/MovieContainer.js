@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { logoutUser } from '../actions';
+import { addFavorite } from '../actions';
 
-const MovieContainer = ({ movies, user, logoutUser }) => {
+const MovieContainer = ({ movies, user, logoutUser, toggleFavorite }) => {
   console.log(user)
   const displayMovies = movies.map((movie, index) => (
     <li key={index}>
+      <button onClick={() => toggleFavorite(movie)}>Favorite</button>
       <img src={movie.image} />
     </li>
   ));
   return (
     <div>
-      {user.length ? <header>Welcome { user[0].name }<button onClick={logoutUser}> Sign Out </button> </header> : 
+      {user.name ? <header>Welcome { user.name }<button onClick={logoutUser}> Sign Out </button> </header> : 
     <header>Welcome
       <a href="http://localhost:3001/login">Login</a>
       <a href="http://localhost:3001/sign-up">Sign Up</a>
@@ -27,7 +29,8 @@ export const mapStateToProps = state => ({
 });
 
 export const mapDispatchToProps = (dispatch) => ({
-  logoutUser: () => dispatch(logoutUser())
+  logoutUser: () => dispatch(logoutUser()),
+  toggleFavorite: (movie) => dispatch(addFavorite(movie))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(MovieContainer);
