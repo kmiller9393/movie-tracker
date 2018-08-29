@@ -1,7 +1,7 @@
 export const loginReducer = (state = [], action) => {
   switch (action.type) {
     case 'GET_USER_INFO':
-      return [...state, {email: action.email, password: action.password, favorites: action.favorites}]
+      return [...state, {name: action.name, id: action.id}]
       default:
         return state;
   }

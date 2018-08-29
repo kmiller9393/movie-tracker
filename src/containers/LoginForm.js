@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { getUserInfo } from '../actions'
+
 
 class LoginForm extends Component {
   constructor() {
@@ -27,7 +29,8 @@ class LoginForm extends Component {
       }
     });
     const result = await response.json();
-    console.log(result);
+    const { name, id } = result.data;
+    this.props.userLogin(name, id)
   };
 
 
@@ -54,4 +57,8 @@ class LoginForm extends Component {
   }
 }
 
-export default LoginForm;
+export const mapDispatchToProps = dispatch => ({
+  userLogin: (name, id) => dispatch(getUserInfo(name, id))
+});
+
+export default connect(null, mapDispatchToProps)(LoginForm)
