@@ -3,28 +3,28 @@ import { connect } from 'react-redux';
 
 class LoginForm extends Component {
   constructor() {
-    super()
+    super();
     this.state = {
       email: '',
       password: ''
-    }
+    };
   }
 
-  handleChange = (e) => {
-    const { name, value } = e.target
+  handleChange = e => {
+    const { name, value } = e.target;
     this.setState({
-      [name]:value
-    })
-  }
+      [name]: value
+    });
+  };
 
-  handleSubmit = async (e) => {
-    e.preventDefault()
-    const response = await fetch('http://localhost:3000/api/users') 
-    const result = await response.json()
-    console.log(result)
-  }
+  handleSubmit = async e => {
+    e.preventDefault();
+    const response = await fetch('http://localhost:3000/api/users');
+    const result = await response.json();
+    console.log(result);
+  };
 
-  render () {
+  render() {
     return (
       <form onSubmit={this.handleSubmit}>
         <input
@@ -33,7 +33,7 @@ class LoginForm extends Component {
           onChange={this.handleChange}
           placeholder="Email"
           type="text"
-        />     
+        />
         <input
           name="password"
           value={this.state.password}
@@ -43,7 +43,7 @@ class LoginForm extends Component {
         />
         <button>Login</button>
       </form>
-    )
+    );
   }
 }
 
