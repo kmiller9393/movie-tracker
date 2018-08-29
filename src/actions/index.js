@@ -18,3 +18,12 @@ export const populateMovies = (movies) => {
     movies
   }
 }
+
+export const getUserInfo = (email, password, favorites) => {
+  return {
+    type: 'GET_USER_INFO',
+    email,
+    password,
+    favorites
+  }
+}

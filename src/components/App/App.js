@@ -28,7 +28,4 @@ export const mapDispatchToProps = dispatch => ({
   getMovies: movies => dispatch(populateMovies(movies))
 });
 
-export default connect(
-  null,
-  mapDispatchToProps
-)(App);
+export default connect(null, mapDispatchToProps)(App);

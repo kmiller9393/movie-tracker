@@ -19,10 +19,17 @@ class LoginForm extends Component {
 
   handleSubmit = async e => {
     e.preventDefault();
-    const response = await fetch('http://localhost:3000/api/users');
+    const response = await fetch('http://localhost:3000/api/users', {
+      method: 'POST',
+      body: JSON.stringify({ password: this.state.password, email: this.state.email }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
     const result = await response.json();
     console.log(result);
   };
+
 
   render() {
     return (
