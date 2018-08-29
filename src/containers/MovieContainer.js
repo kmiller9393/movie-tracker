@@ -10,7 +10,7 @@ const MovieContainer = ({ movies }) => {
   return <ul>{displayMovies}</ul>;
 };
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   movies: state.movies
 });
 
