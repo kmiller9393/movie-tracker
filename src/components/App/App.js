@@ -3,7 +3,7 @@ import MovieContainer from '../../containers/MovieContainer';
 import { cleanMurrayData } from '../.././utils/helper';
 import { populateMovies } from '../../actions';
 import { connect } from 'react-redux';
-import { Route, Link, NavLink } from 'react-router-dom';
+import { Route, Link, NavLink, withRouter } from 'react-router-dom';
 import LoginForm from '../../containers/LoginForm';
 import './App.css';
 
@@ -28,4 +28,4 @@ export const mapDispatchToProps = dispatch => ({
   getMovies: movies => dispatch(populateMovies(movies))
 });
 
-export default connect(null, mapDispatchToProps)(App);
+export default withRouter(connect(null, mapDispatchToProps)(App));

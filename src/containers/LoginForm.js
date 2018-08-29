@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { getUserInfo } from '../actions'
+import { Route, Link, NavLink, withRouter } from 'react-router-dom';
+import { fetchUserData } from '../utils/apiCalls';
+
+
 
 class LoginForm extends Component {
   constructor() {
@@ -19,15 +24,13 @@ class LoginForm extends Component {
 
   handleSubmit = async e => {
     e.preventDefault();
-    const response = await fetch('http://localhost:3000/api/users', {
-      method: 'POST',
-      body: JSON.stringify({ password: this.state.password, email: this.state.email }),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    });
-    const result = await response.json();
-    console.log(result);
+    const result = await fetchUserData(this.state.email, this.state.password)
+    if (result) {
+      const { name, id } = result.data;
+      this.props.userLogin(name, id)
+      this.props.history.push('/')
+    } 
+    return
   };
 
 
@@ -48,10 +51,15 @@ class LoginForm extends Component {
           placeholder="Password"
           type="text"
         />
-        <button>Login</button>
+        {/* <NavLink to='/'>LOGIN</NavLink> */}
+        <button>LOGIN</button>
       </form>
     );
   }
 }
 
-export default LoginForm;
+export const mapDispatchToProps = dispatch => ({
+  userLogin: (name, id) => dispatch(getUserInfo(name, id))
+});
+
+export default withRouter(connect(null, mapDispatchToProps)(LoginForm))
