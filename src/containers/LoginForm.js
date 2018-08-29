@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getUserInfo } from '../actions'
+import { Route, Link, NavLink, withRouter } from 'react-router-dom';
+
 
 
 class LoginForm extends Component {
@@ -31,6 +33,7 @@ class LoginForm extends Component {
     const result = await response.json();
     const { name, id } = result.data;
     this.props.userLogin(name, id)
+    this.props.history.push('/')
   };
 
 
@@ -51,7 +54,8 @@ class LoginForm extends Component {
           placeholder="Password"
           type="text"
         />
-        <button>Login</button>
+        {/* <NavLink to='/'>LOGIN</NavLink> */}
+        <button>LOGIN</button>
       </form>
     );
   }
@@ -61,4 +65,4 @@ export const mapDispatchToProps = dispatch => ({
   userLogin: (name, id) => dispatch(getUserInfo(name, id))
 });
 
-export default connect(null, mapDispatchToProps)(LoginForm)
+export default withRouter(connect(null, mapDispatchToProps)(LoginForm))

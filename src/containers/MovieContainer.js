@@ -7,7 +7,12 @@ const MovieContainer = ({ movies }) => {
       <img src={movie.image} />
     </li>
   ));
-  return <ul>{displayMovies}</ul>;
+  return (
+    <div>
+    <a href="http://localhost:3001/login">Login</a>
+    <ul>{displayMovies}</ul>
+    </div>
+  )
 };
 
 export const mapStateToProps = state => ({
