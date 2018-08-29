@@ -12,13 +12,17 @@ export const fetchMurrayMovies = async () => {
 }
 
 export const fetchUserData = async (email, password) => {
-  const response = await fetch('http://localhost:3000/api/users', {
-    method: 'POST',
-    body: JSON.stringify({ password, email}),
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  });
-  const result = await response.json();
-  return result
+  try {
+    const response = await fetch('http://localhost:3000/api/users', {
+      method: 'POST',
+      body: JSON.stringify({ password, email}),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    const result = await response.json();
+    return result
+  } catch(error) {
+    alert('Invalid Email or Password')
+  }
 }

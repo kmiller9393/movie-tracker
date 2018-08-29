@@ -25,9 +25,12 @@ class LoginForm extends Component {
   handleSubmit = async e => {
     e.preventDefault();
     const result = await fetchUserData(this.state.email, this.state.password)
-    const { name, id } = result.data;
-    this.props.userLogin(name, id)
-    this.props.history.push('/')
+    if (result) {
+      const { name, id } = result.data;
+      this.props.userLogin(name, id)
+      this.props.history.push('/')
+    } 
+    return
   };
 
 

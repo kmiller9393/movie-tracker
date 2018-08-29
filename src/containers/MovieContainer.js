@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-const MovieContainer = ({ movies }) => {
+const MovieContainer = ({ movies, user }) => {
+  console.log(user)
   const displayMovies = movies.map((movie, index) => (
     <li key={index}>
       <img src={movie.image} />
@@ -9,6 +10,7 @@ const MovieContainer = ({ movies }) => {
   ));
   return (
     <div>
+      {user.length ? <header>Welcome { user[0].name }</header>: <header>Welcome</header>}
     <a href="http://localhost:3001/login">Login</a>
     <ul>{displayMovies}</ul>
     </div>
@@ -16,7 +18,8 @@ const MovieContainer = ({ movies }) => {
 };
 
 export const mapStateToProps = state => ({
-  movies: state.movies
+  movies: state.movies,
+  user: state.userLogin
 });
 
 export default connect(mapStateToProps)(MovieContainer);
