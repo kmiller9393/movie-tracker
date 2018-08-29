@@ -1,10 +1,3 @@
-export const toggleFavorite = (id) => {
-  return {
-    type: 'TOGGLE_FAVORITE',
-    id
-  }
-}
-
 export const setFilter = (filter) => {
   return {
     type: 'SET_FILTER',
@@ -40,9 +33,9 @@ export const populateFavorites = (favorites) => {
   }
 }
 
-export const addFavorite = (movie) => {
+export const toggleFavorite = (movie) => {
   return {
-    type: 'ADD_FAVORITE',
+    type: 'TOGGLE_FAVORITE',
     movie
   }
 }
