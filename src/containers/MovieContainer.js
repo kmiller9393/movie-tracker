@@ -12,6 +12,7 @@ const MovieContainer = ({ movies, user }) => {
     <div>
       {user.length ? <header>Welcome { user[0].name }</header>: <header>Welcome</header>}
     <a href="http://localhost:3001/login">Login</a>
+    <a href="http://localhost:3001/sign-up">Sign Up</a>
     <ul>{displayMovies}</ul>
     </div>
   )

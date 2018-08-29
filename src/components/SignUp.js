@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { getUserInfo } from '../actions';
 import { Route, Link, NavLink, withRouter } from 'react-router-dom';
-import { fetchUserData } from '../utils/apiCalls';
+import { setUserData } from '../utils/apiCalls';
 
-class LoginForm extends Component {
+class SignUp extends Component {
   constructor() {
     super();
     this.state = {
+      name: '',
       email: '',
       password: ''
     };
@@ -22,23 +22,25 @@ class LoginForm extends Component {
 
   handleSubmit = async e => {
     e.preventDefault();
-    const result = await fetchUserData(this.state.email, this.state.password);
-    if (result) {
-      const { name, id } = result.data;
-      this.props.userLogin(name, id);
-      this.props.history.push('/');
-    }
-    return;
+    await setUserData(this.state.name, this.state.email, this.state.password);
+    this.props.history.push('/');
   };
 
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
         <input
+          name="name"
+          value={this.state.name}
+          onChange={this.handleChange}
+          placeholder="Enter Name"
+          type="text"
+        />
+        <input
           name="email"
           value={this.state.email}
           onChange={this.handleChange}
-          placeholder="Email"
+          placeholder="Enter Email"
           type="text"
         />
         <input
@@ -48,19 +50,10 @@ class LoginForm extends Component {
           placeholder="Password"
           type="text"
         />
-        <button>LOGIN</button>
+        <button>SIGN UP</button>
       </form>
     );
   }
 }
 
-export const mapDispatchToProps = dispatch => ({
-  userLogin: (name, id) => dispatch(getUserInfo(name, id))
-});
-
-export default withRouter(
-  connect(
-    null,
-    mapDispatchToProps
-  )(LoginForm)
-);
+export default withRouter(SignUp);
