@@ -5,6 +5,7 @@ import { cleanMurrayData } from '../.././utils/helper';
 import { populateMovies } from '../../actions';
 import { connect } from 'react-redux';
 import { Route, Link, NavLink } from 'react-router-dom';
+import LoginForm from '../../containers/LoginForm';
 
 class App extends Component {
   async componentDidMount() {
@@ -17,6 +18,7 @@ class App extends Component {
       <div className="App">
         <h1>Murray Tracker</h1>
         <Route exact path="/" component={MovieContainer} />
+        <Route exact path="/login" component={LoginForm} />
       </div>
     );
   }
