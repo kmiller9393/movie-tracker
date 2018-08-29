@@ -11,7 +11,7 @@ const MovieContainer = ({ movies, user, logoutUser }) => {
   ));
   return (
     <div>
-      {user.length ? <header>Welcome { user[0].name }<button onClick={logoutUser}> Sign Out </button> </header> : 
+      {user.name ? <header>Welcome { user.name }<button onClick={logoutUser}> Sign Out </button> </header> : 
     <header>Welcome
       <a href="http://localhost:3001/login">Login</a>
       <a href="http://localhost:3001/sign-up">Sign Up</a>
