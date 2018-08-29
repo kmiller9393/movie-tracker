@@ -1,12 +1,5 @@
 import { key } from './variables'
 
-// export const fetchMurrayMovies = async (url) => {
-//   const response = await fetch(url);
-//   const murrayMovieData = await response.json();
-//   return murrayMovieData;
-// }
-
-
 
 export const fetchMurrayMovies = async () => {
   const uncleanMurrayData = []
@@ -16,4 +9,16 @@ export const fetchMurrayMovies = async () => {
     uncleanMurrayData.push(fetchedMurrayData)
   }
   return uncleanMurrayData;
+}
+
+export const fetchUserData = async (email, password) => {
+  const response = await fetch('http://localhost:3000/api/users', {
+    method: 'POST',
+    body: JSON.stringify({ password, email}),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  });
+  const result = await response.json();
+  return result
 }

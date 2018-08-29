@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getUserInfo } from '../actions'
 import { Route, Link, NavLink, withRouter } from 'react-router-dom';
+import { fetchUserData } from '../utils/apiCalls';
 
 
 
@@ -23,14 +24,7 @@ class LoginForm extends Component {
 
   handleSubmit = async e => {
     e.preventDefault();
-    const response = await fetch('http://localhost:3000/api/users', {
-      method: 'POST',
-      body: JSON.stringify({ password: this.state.password, email: this.state.email }),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    });
-    const result = await response.json();
+    const result = await fetchUserData(this.state.email, this.state.password)
     const { name, id } = result.data;
     this.props.userLogin(name, id)
     this.props.history.push('/')
