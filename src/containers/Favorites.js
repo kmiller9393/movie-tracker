@@ -16,8 +16,8 @@ const Favorites = ({
     console.log(foundMovie)
     return <Card
     {...foundMovie}
-    key={foundMovie.id}
-    movie={foundMovie}
+    key={favorite.id}
+    movie={favorite}
     user={user}
     favorites={favorites}
   />
