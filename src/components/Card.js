@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { addMovieToDatabase, deleteMovieFromDatabase } from '../utils/apiCalls';
 import { toggleFavorite } from '../actions';
 
-const Card = ({ image, movie, user, favorites, handleToggle }) => {
+const Card = ({ poster_path, image, movie, user, favorites, handleToggle }) => {
   const setFavoriteData = async movie => {
     if (!favorites.includes(movie)) {
       handleToggle(movie);
@@ -16,7 +16,7 @@ const Card = ({ image, movie, user, favorites, handleToggle }) => {
 
   return (
     <div>
-      <img src={image} alt="Murray Movie" />
+      <img src={image || poster_path} alt="Murray Movie" />
       <button onClick={() => setFavoriteData(movie)}>Favorite</button>
     </div>
   );
