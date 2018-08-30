@@ -2,6 +2,7 @@ import React from 'react';
 import Card from '../components/Card';
 import { connect } from 'react-redux';
 import { logoutUser } from '../actions';
+import { Link } from 'react-router-dom';
 
 const MovieContainer = ({
   movies,
@@ -24,6 +25,7 @@ const MovieContainer = ({
     <div>
       {user.name ? (
         <header>
+          <Link to="/favorites">favorites</Link>
           Welcome {user.name}
           <button onClick={logoutUser}> Sign Out </button>{' '}
         </header>

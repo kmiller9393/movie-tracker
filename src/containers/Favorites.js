@@ -10,14 +10,19 @@ const Favorites = ({
   handleToggle,
   favorites
 }) => {
-  const displayFavorites = favorites.map(favorite => (
-    console.log(favorite) ||
-    <Card
-      favorite={favorite}
-      user={user}
-      favorites={favorites}
-    />
-  ));
+  const displayFavorites = favorites.map(favorite => {
+    console.log(favorite)
+    const foundMovie = movies.find(movie => movie.id === favorite.movie_id)
+    console.log(foundMovie)
+    return <Card
+    {...foundMovie}
+    key={foundMovie.id}
+    movie={foundMovie}
+    user={user}
+    favorites={favorites}
+  />
+  }
+  );
 
   return (
     <div>

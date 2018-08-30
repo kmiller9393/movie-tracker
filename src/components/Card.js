@@ -23,7 +23,7 @@ const Card = ({ image, movie, user, favorites, handleToggle }) => {
 };
 
 export const mapDispatchToProps = dispatch => ({
-  handleToggle: movie => dispatch(toggleFavorite(movie))
+  handleToggle: movie => dispatch(toggleFavorite(movie.id))
 });
 
 export default connect(
