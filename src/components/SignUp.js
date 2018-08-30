@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { Route, Link, NavLink, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { setUserData } from '../utils/apiCalls';
 
 class SignUp extends Component {

@@ -5,7 +5,7 @@ import LoginForm from '../../containers/LoginForm';
 import { cleanMurrayData } from '../.././utils/helper';
 import { populateMovies } from '../../actions';
 import { connect } from 'react-redux';
-import { Route, Link, NavLink, withRouter } from 'react-router-dom';
+import { Route, withRouter } from 'react-router-dom';
 import './App.css';
 
 class App extends Component {
