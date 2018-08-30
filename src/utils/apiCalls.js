@@ -5,10 +5,10 @@ export const fetchMurrayMovies = async () => {
   for (let i = 1; i < 5; i++) {
     const response = await fetch(
       'https://api.themoviedb.org/3/discover/movie?api_key=' +
-      key +
-      '&language=en-US&sort_by=release_date.desc&include_adult=false&include_video=false&page=' +
-      i +
-      '&with_people=1532'
+        key +
+        '&language=en-US&sort_by=release_date.desc&include_adult=false&include_video=false&page=' +
+        i +
+        '&with_people=1532'
     );
     const fetchedMurrayData = await response.json();
     uncleanMurrayData.push(fetchedMurrayData);
@@ -41,7 +41,7 @@ export const setUserData = async (name, email, password) => {
         'Content-Type': 'application/json'
       }
     });
-    const result = await response.json();
+    await response.json();
   } catch (error) {
     alert('Email already exists');
   }
@@ -62,8 +62,8 @@ export const addMovieToDatabase = async (user, movie) => {
     headers: {
       'Content-Type': 'application/json'
     }
-  })
-}
+  });
+};
 
 export const deleteMovieFromDatabase = async (user, movie) => {
   const url = `http://localhost:3000/api/users/${user.id}/favorites/${movie.id}`
@@ -75,4 +75,3 @@ export const deleteMovieFromDatabase = async (user, movie) => {
       }
     })
   }
-
