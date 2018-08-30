@@ -2,15 +2,24 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { logoutUser } from '../actions';
 import { toggleFavorite } from '../actions';
+import { addMovieToDatabase } from '../utils/apiCalls'
 
-const MovieContainer = ({ movies, user, logoutUser, handleToggle }) => {
+const MovieContainer = ({ movies, user, logoutUser, handleToggle, favorites }) => {
   console.log(user)
   const displayMovies = movies.map((movie, index) => (
     <li key={index}>
-      <button onClick={() => handleToggle(movie)}>Favorite</button>
+      <button onClick={() => setFavoriteData(movie)}>Favorite</button>
       <img src={movie.image} />
     </li>
   ));
+
+  const setFavoriteData = async (movie) => {
+    if (!favorites.includes(movie)) {
+      handleToggle(movie)
+      await addMovieToDatabase(user, movie)
+    }
+  }
+
   return (
     <div>
       {user.name ? <header>Welcome { user.name }<button onClick={logoutUser}> Sign Out </button> </header> : 
@@ -25,7 +34,8 @@ const MovieContainer = ({ movies, user, logoutUser, handleToggle }) => {
 
 export const mapStateToProps = state => ({
   movies: state.movies,
-  user: state.userLogin
+  user: state.userLogin,
+  favorites: state.favorites
 });
 
 export const mapDispatchToProps = (dispatch) => ({
