@@ -63,22 +63,16 @@ export const addMovieToDatabase = async (user, movie) => {
       'Content-Type': 'application/json'
     }
   })
-  // console.log(response)
-  const test = {
-    id: user.id,
-    movie_id: movie.id,
-    user_id: user.id,
-    title: movie.title,
-    poster_path: movie.image,
-    release_date: movie.release,
-    vote_average: movie.vote_average,
-    overview: movie.overview
-  }
-  console.log(test)
 }
 
-// export const removeMovieFromDatabase = async (userid, movie) => {
-//   try {
-//     const response = await fetch('http://localhost:3000/api/favorites')
-//   }
-// }
+export const deleteMovieFromDatabase = async (user, movie) => {
+  const url = `http://localhost:3000/api/users/${user.id}/favorites/${movie.id}`
+    const response = await fetch(url, {
+      method: 'DELETE',
+      body: JSON.stringify({user_id: user.id, movie_id: movie.id}),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+  }
+

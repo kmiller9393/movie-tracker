@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { logoutUser } from '../actions';
 import { toggleFavorite } from '../actions';
-import { addMovieToDatabase } from '../utils/apiCalls'
+import { addMovieToDatabase, deleteMovieFromDatabase } from '../utils/apiCalls'
 
 const MovieContainer = ({ movies, user, logoutUser, handleToggle, favorites }) => {
   console.log(user)
@@ -17,6 +17,10 @@ const MovieContainer = ({ movies, user, logoutUser, handleToggle, favorites }) =
     if (!favorites.includes(movie)) {
       handleToggle(movie)
       await addMovieToDatabase(user, movie)
+    } else {
+      console.log('donkey punch')
+      handleToggle(movie)
+      await deleteMovieFromDatabase(user, movie)
     }
   }
 
