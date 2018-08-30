@@ -7,6 +7,7 @@ import { populateMovies } from '../../actions';
 import { connect } from 'react-redux';
 import { Route, withRouter } from 'react-router-dom';
 import './App.css';
+import Favorites from '../../containers/Favorites';
 
 class App extends Component {
   async componentDidMount() {
@@ -21,6 +22,7 @@ class App extends Component {
         <Route exact path="/" component={MovieContainer} />
         <Route exact path="/login" component={LoginForm} />
         <Route exact path="/sign-up" component={SignUp} />
+        <Route exact path="/favorites" render={() => <Favorites />} />
       </div>
     );
   }
