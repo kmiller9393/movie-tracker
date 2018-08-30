@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getUserInfo } from '../actions';
-import { Route, Link, NavLink, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { fetchUserData } from '../utils/apiCalls';
 
 class LoginForm extends Component {
@@ -30,7 +30,7 @@ class LoginForm extends Component {
     }
     return;
   };
- 
+
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
