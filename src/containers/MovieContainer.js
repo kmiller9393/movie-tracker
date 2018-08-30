@@ -18,7 +18,6 @@ const MovieContainer = ({ movies, user, logoutUser, handleToggle, favorites }) =
       handleToggle(movie)
       await addMovieToDatabase(user, movie)
     } else {
-      console.log('donkey punch')
       handleToggle(movie)
       await deleteMovieFromDatabase(user, movie)
     }
