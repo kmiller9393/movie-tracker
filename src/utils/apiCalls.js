@@ -66,14 +66,12 @@ export const addMovieToDatabase = async (user, movie) => {
 };
 
 export const deleteMovieFromDatabase = async (user, movie) => {
-  const url = `http://localhost:3000/api/users/${user.id}/favorites/${
-    movie.id
-  }`;
-  await fetch(url, {
-    method: 'DELETE',
-    body: JSON.stringify({ user_id: user.id, movie_id: movie.id }),
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  });
-};
+  const url = `http://localhost:3000/api/users/${user.id}/favorites/${movie.id}`
+    await fetch(url, {
+      method: 'DELETE',
+      body: JSON.stringify({user_id: user.id, movie_id: movie.id}),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+  }
