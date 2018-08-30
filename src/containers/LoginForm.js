@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { getUserInfo } from '../actions';
+import { getUserInfo, populateFavorites } from '../actions';
 import { withRouter } from 'react-router-dom';
-import { fetchUserData } from '../utils/apiCalls';
+import { fetchUserData, getUserFavorites } from '../utils/apiCalls';
 
 class LoginForm extends Component {
   constructor() {
@@ -26,6 +26,8 @@ class LoginForm extends Component {
     if (result) {
       const { name, id } = result.data;
       this.props.userLogin(name, id);
+      const userFavorites = await getUserFavorites(id)
+      this.props.getFavorites(userFavorites.data)
       this.props.history.push('/');
     }
     return;
@@ -55,7 +57,8 @@ class LoginForm extends Component {
 }
 
 export const mapDispatchToProps = dispatch => ({
-  userLogin: (name, id) => dispatch(getUserInfo(name, id))
+  userLogin: (name, id) => dispatch(getUserInfo(name, id)),
+  getFavorites: (favorites) => dispatch(populateFavorites(favorites))
 });
 
 export default withRouter(
