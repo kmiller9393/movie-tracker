@@ -46,3 +46,33 @@ export const setUserData = async (name, email, password) => {
     alert('Email already exists');
   }
 };
+
+export const addMovieToDatabase = async (user, movie) => {
+  await fetch('http://localhost:3000/api/users/favorites/new', {
+    method: 'POST',
+    body: JSON.stringify({
+      movie_id: movie.id,
+      user_id: user.id,
+      title: movie.title,
+      poster_path: movie.image,
+      release_date: movie.release,
+      vote_average: movie.vote_average,
+      overview: movie.overview
+    }),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+}
+
+export const deleteMovieFromDatabase = async (user, movie) => {
+  const url = `http://localhost:3000/api/users/${user.id}/favorites/${movie.id}`
+    const response = await fetch(url, {
+      method: 'DELETE',
+      body: JSON.stringify({user_id: user.id, movie_id: movie.id}),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+  }
+
