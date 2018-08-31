@@ -18,6 +18,7 @@ const Favorites = ({
     {...foundMovie}
     key={favorite.id}
     movie={favorite}
+    favorite={favorite}
     user={user}
     favorites={favorites}
   />

@@ -2,10 +2,12 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { addMovieToDatabase, deleteMovieFromDatabase } from '../utils/apiCalls';
 import { toggleFavorite } from '../actions';
+import Favorites from '../containers/Favorites';
 
-const Card = ({ poster_path, image, movie, user, favorites, handleToggle }) => {
+const Card = ({ poster_path, image, movie, user, favorites, handleToggle, favorite }) => {
   const setFavoriteData = async movie => {
-    if (!favorites.includes(movie)) {
+    console.log(movie)
+    if (!favorites.includes(movie) && !favorites.includes(movie.id)) {
       handleToggle(movie);
       await addMovieToDatabase(user, movie);
     } else {
@@ -16,7 +18,7 @@ const Card = ({ poster_path, image, movie, user, favorites, handleToggle }) => {
 
   return (
     <div>
-      <img src={image || poster_path} alt="Murray Movie" />
+      <img src={image || favorite.image} alt="Murray Movie" />
       <button onClick={() => setFavoriteData(movie)}>Favorite</button>
     </div>
   );
