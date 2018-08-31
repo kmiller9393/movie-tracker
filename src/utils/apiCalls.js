@@ -75,3 +75,11 @@ export const deleteMovieFromDatabase = async (user, movie) => {
       }
     })
   }
+
+
+export const getUserFavorites = async (id) => {
+  const url = `http://localhost:3000/api/users/${id}/favorites`;
+  const response = await fetch(url)
+  const result = await response.json()
+  return result.data;
+}

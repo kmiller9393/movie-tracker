@@ -2,30 +2,33 @@ import React from 'react';
 import Card from '../components/Card';
 import { connect } from 'react-redux';
 import { logoutUser } from '../actions';
-import { Link } from 'react-router-dom';
 
-const MovieContainer = ({
+const Favorites = ({
   movies,
   user,
   logoutUser,
   handleToggle,
   favorites
 }) => {
-  const displayMovies = movies.map(movie => (
-    <Card
-      {...movie}
-      key={movie.id}
-      movie={movie}
-      user={user}
-      favorites={favorites}
-    />
-  ));
+  const displayFavorites = favorites.map(favorite => {
+    console.log(favorite)
+    const foundMovie = movies.find(movie => movie.id === favorite.movie_id)
+    console.log(foundMovie)
+    return <Card
+    {...foundMovie}
+    key={favorite.id}
+    movie={favorite}
+    favorite={favorite}
+    user={user}
+    favorites={favorites}
+  />
+  }
+  );
 
   return (
     <div>
       {user.name ? (
         <header>
-          <Link to="/favorites">favorites</Link>
           Welcome {user.name}
           <button onClick={logoutUser}> Sign Out </button>{' '}
         </header>
@@ -36,7 +39,7 @@ const MovieContainer = ({
           <a href="http://localhost:3001/sign-up">Sign Up</a>
         </header>
       )}
-      <ul>{displayMovies}</ul>
+      <ul>{displayFavorites}</ul>
     </div>
   );
 };
@@ -54,4 +57,4 @@ export const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(MovieContainer);
+)(Favorites);
