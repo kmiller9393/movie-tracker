@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { logoutUser } from '../actions';
 import { Link } from 'react-router-dom';
 import './MovieContainer.css'
+import PropTypes from 'prop-types'
 
 const MovieContainer = ({
   movies,
@@ -13,7 +14,6 @@ const MovieContainer = ({
   favorites
 }) => {
   const displayMovies = movies.map(movie => {
-    console.log(movie)
     if  (movie.image.includes('null')) {
       return
     }
@@ -64,3 +64,11 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(MovieContainer);
+
+MovieContainer.propTypes = {
+  logoutUser: PropTypes.func,
+  movies: PropTypes.array,
+  logoutUser: PropTypes.func,
+  handleToggle: PropTypes.func,
+  favorites: PropTypes.array
+}

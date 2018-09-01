@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addMovieToDatabase, deleteMovieFromDatabase } from '../utils/apiCalls';
 import { toggleFavorite } from '../actions';
+import PropTypes from 'prop-types'
 import './Card.css';
 
 class Card extends Component {
@@ -54,3 +55,11 @@ export default connect(
   null,
   mapDispatchToProps
 )(Card);
+
+Card.propTypes = {
+  image: PropTypes.string,
+  favorite: PropTypes.object,
+  movie: PropTypes.object,
+  favorites: PropTypes.array,
+  handleToggle: PropTypes.func
+}

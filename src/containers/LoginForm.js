@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { getUserInfo, populateFavorites } from '../actions';
 import { withRouter } from 'react-router-dom';
 import { fetchUserData, getUserFavorites } from '../utils/apiCalls';
+import PropTypes from 'prop-types'
 
 class LoginForm extends Component {
   constructor() {
@@ -67,3 +68,8 @@ export default withRouter(
     mapDispatchToProps
   )(LoginForm)
 );
+
+LoginForm.propTypes = {
+  userLogin: PropTypes.func,
+  getFavorites: PropTypes.func
+}

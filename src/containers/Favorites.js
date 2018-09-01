@@ -2,6 +2,7 @@ import React from 'react';
 import Card from '../components/Card';
 import { connect } from 'react-redux';
 import { logoutUser } from '../actions';
+import PropTypes from 'prop-types'
 
 const Favorites = ({
   movies,
@@ -58,3 +59,11 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(Favorites);
+
+Favorites.propTypes = {
+  movies: PropTypes.array,
+  user: PropTypes.object,
+  logoutUser: PropTypes.func,
+  handleToggle: PropTypes.func,
+  favorites: PropTypes.array
+}
