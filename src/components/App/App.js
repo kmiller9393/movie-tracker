@@ -6,6 +6,7 @@ import { cleanMurrayData } from '../.././utils/helper';
 import { populateMovies } from '../../actions';
 import { connect } from 'react-redux';
 import { Route, withRouter } from 'react-router-dom';
+import PropTypes from 'prop-types'
 import './App.css';
 import Favorites from '../../containers/Favorites';
 
@@ -38,3 +39,7 @@ export default withRouter(
     mapDispatchToProps
   )(App)
 );
+
+App.propTypes = {
+  getMovies: PropTypes.func
+}
