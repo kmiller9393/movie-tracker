@@ -12,15 +12,19 @@ const MovieContainer = ({
   handleToggle,
   favorites
 }) => {
-  const displayMovies = movies.map(movie => (
-    <Card
-      {...movie}
-      key={movie.id}
-      movie={movie}
-      user={user}
-      favorites={favorites}
-    />
-  ));
+  const displayMovies = movies.map(movie => {
+    console.log(movie)
+    if  (movie.image.includes('null')) {
+      return
+    }
+    return <Card
+       {...movie}
+       key={movie.id}
+       movie={movie}
+       user={user}
+       favorites={favorites}
+     />
+  });
 
   return (
     <div className="movie-container">
@@ -32,9 +36,13 @@ const MovieContainer = ({
         </header>
       ) : (
         <header>
+          <h2>
           Welcome
-          <a href="http://localhost:3001/login">Login</a>
-          <a href="http://localhost:3001/sign-up">Sign Up</a>
+          </h2>
+          <section>
+            <a href="http://localhost:3001/login">Login</a>
+            <a href="http://localhost:3001/sign-up">Sign Up</a>
+          </section>
         </header>
       )}
       <ul>{displayMovies}</ul>
