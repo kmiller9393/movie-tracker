@@ -3,6 +3,7 @@ import Card from '../components/Card';
 import { connect } from 'react-redux';
 import { logoutUser } from '../actions';
 import { Link } from 'react-router-dom';
+import './MovieContainer.css'
 
 const MovieContainer = ({
   movies,
@@ -22,7 +23,7 @@ const MovieContainer = ({
   ));
 
   return (
-    <div>
+    <div className="movie-container">
       {user.name ? (
         <header>
           <Link to="/favorites">favorites</Link>
