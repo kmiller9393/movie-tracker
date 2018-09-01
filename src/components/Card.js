@@ -5,7 +5,7 @@ import { toggleFavorite } from '../actions';
 import PropTypes from 'prop-types'
 import './Card.css';
 
-class Card extends Component {
+export class Card extends Component {
   constructor() {
     super();
     this.state = {

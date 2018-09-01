@@ -492,3 +492,32 @@ export const mockUser = {
     password: "password",
     email: "tman2272@aol.com"
 }
+
+export const mockFavorites = {
+    "status": "success",
+    "data": [
+    {
+    "id": 13,
+    "movie_id": 152760,
+    "user_id": 1,
+    "title": "The Monuments Men",
+    "poster_path": "https://image.tmdb.org/t/p/w500/lhCUqVEPA3MMxnV8QTeVBTmRrP4.jpg",
+    "release_date": "2014-01-24",
+    "vote_average": "5.9",
+    "overview": "Based on the true story of the greatest treasure hunt in history, The Monuments Men is an action drama focusing on seven over-the-hill, out-of-shape museum directors, artists, architects, curators, and art historians who went to the front lines of WWII to rescue the world’s artistic masterpieces from Nazi thieves and return them to their rightful owners.  With the art hidden behind enemy lines, how could these guys hope to succeed?"
+    },
+    {
+    "id": 25,
+    "movie_id": 152760,
+    "user_id": 1,
+    "title": "The Monuments Men",
+    "poster_path": "https://image.tmdb.org/t/p/w500/lhCUqVEPA3MMxnV8QTeVBTmRrP4.jpg",
+    "release_date": "2014-01-24",
+    "vote_average": "5.9",
+    "overview": "Based on the true story of the greatest treasure hunt in history, The Monuments Men is an action drama focusing on seven over-the-hill, out-of-shape museum directors, artists, architects, curators, and art historians who went to the front lines of WWII to rescue the world’s artistic masterpieces from Nazi thieves and return them to their rightful owners.  With the art hidden behind enemy lines, how could these guys hope to succeed?"
+    }
+    ],
+    "message": "Retrieved All favorites"
+    }
+
+    export const mockFavoriteResult =  [{"id": 13, "movie_id": 152760, "overview": "Based on the true story of the greatest treasure hunt in history, The Monuments Men is an action drama focusing on seven over-the-hill, out-of-shape museum directors, artists, architects, curators, and art historians who went to the front lines of WWII to rescue the world’s artistic masterpieces from Nazi thieves and return them to their rightful owners.  With the art hidden behind enemy lines, how could these guys hope to succeed?", "poster_path": "https://image.tmdb.org/t/p/w500/lhCUqVEPA3MMxnV8QTeVBTmRrP4.jpg", "release_date": "2014-01-24", "title": "The Monuments Men", "user_id": 1, "vote_average": "5.9"}, {"id": 25, "movie_id": 152760, "overview": "Based on the true story of the greatest treasure hunt in history, The Monuments Men is an action drama focusing on seven over-the-hill, out-of-shape museum directors, artists, architects, curators, and art historians who went to the front lines of WWII to rescue the world’s artistic masterpieces from Nazi thieves and return them to their rightful owners.  With the art hidden behind enemy lines, how could these guys hope to succeed?", "poster_path": "https://image.tmdb.org/t/p/w500/lhCUqVEPA3MMxnV8QTeVBTmRrP4.jpg", "release_date": "2014-01-24", "title": "The Monuments Men", "user_id": 1, "vote_average": "5.9"}]

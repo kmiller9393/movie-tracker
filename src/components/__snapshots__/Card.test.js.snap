@@ -1,3 +1,318 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card should match the snapshot 1`] = `undefined`;
+exports[`Card should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    image="https://image.tmdb.org/t/p/w500/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg"
+    movie={
+        Object {
+            "id": 164808,
+            "image": "https://image.tmdb.org/t/p/w500/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg",
+            "overview": "Fear and Loathing on the Road to Hollywood, also known as Fear and Loathing in Gonzovision, is a documentary film producedby BBC in 1978 on the subject of Hunter S. Thompson, directed by Nigel Finch.  The road trip/film pairs Thompson with Finch's fellow Briton the illustrator Ralph Steadman. The party travel to Hollywood via Death Valley and Barstow from Las Vegas, scene of the pair's 1971 collaboration. It contains interviews with Thompson and Steadman, as well as some short excerpts from some of his work.",
+            "release": "1978-11-02",
+            "title": "Fear and Loathing on the Road to Hollywood",
+            "vote_average": 8,
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <article
+          onClick={[Function]}
+>
+          <h2>
+                    Fear and Loathing on the Road to Hollywood
+          </h2>
+          <p>
+                    Fear and Loathing on the Road to Hollywood, also known as Fear and Loathing in Gonzovision, is a documentary film producedby BBC in 1978 on the subject of Hunter S. Thompson, directed by Nigel Finch.  The road trip/film pairs Thompson with Finch's fellow Briton the illustrator Ralph Steadman. The party travel to Hollywood via Death Valley and Barstow from Las Vegas, scene of the pair's 1971 collaboration. It contains interviews with Thompson and Steadman, as well as some short excerpts from some of his work.
+          </p>
+          <p>
+                    1978-11-02
+          </p>
+          <p>
+                    8
+          </p>
+</article>,
+        <img
+          alt="Murray Movie"
+          onClick={[Function]}
+          src="https://image.tmdb.org/t/p/w500/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg"
+/>,
+        <button
+          onClick={[Function]}
+>
+          ADD TO FAVORITES
+</button>,
+      ],
+      "className": "Card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2>
+              Fear and Loathing on the Road to Hollywood
+</h2>,
+            <p>
+              Fear and Loathing on the Road to Hollywood, also known as Fear and Loathing in Gonzovision, is a documentary film producedby BBC in 1978 on the subject of Hunter S. Thompson, directed by Nigel Finch.  The road trip/film pairs Thompson with Finch's fellow Briton the illustrator Ralph Steadman. The party travel to Hollywood via Death Valley and Barstow from Las Vegas, scene of the pair's 1971 collaboration. It contains interviews with Thompson and Steadman, as well as some short excerpts from some of his work.
+</p>,
+            <p>
+              1978-11-02
+</p>,
+            <p>
+              8
+</p>,
+          ],
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Fear and Loathing on the Road to Hollywood",
+            },
+            "ref": null,
+            "rendered": "Fear and Loathing on the Road to Hollywood",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Fear and Loathing on the Road to Hollywood, also known as Fear and Loathing in Gonzovision, is a documentary film producedby BBC in 1978 on the subject of Hunter S. Thompson, directed by Nigel Finch.  The road trip/film pairs Thompson with Finch's fellow Briton the illustrator Ralph Steadman. The party travel to Hollywood via Death Valley and Barstow from Las Vegas, scene of the pair's 1971 collaboration. It contains interviews with Thompson and Steadman, as well as some short excerpts from some of his work.",
+            },
+            "ref": null,
+            "rendered": "Fear and Loathing on the Road to Hollywood, also known as Fear and Loathing in Gonzovision, is a documentary film producedby BBC in 1978 on the subject of Hunter S. Thompson, directed by Nigel Finch.  The road trip/film pairs Thompson with Finch's fellow Briton the illustrator Ralph Steadman. The party travel to Hollywood via Death Valley and Barstow from Las Vegas, scene of the pair's 1971 collaboration. It contains interviews with Thompson and Steadman, as well as some short excerpts from some of his work.",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "1978-11-02",
+            },
+            "ref": null,
+            "rendered": "1978-11-02",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 8,
+            },
+            "ref": null,
+            "rendered": 8,
+            "type": "p",
+          },
+        ],
+        "type": "article",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "Murray Movie",
+          "onClick": [Function],
+          "src": "https://image.tmdb.org/t/p/w500/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "ADD TO FAVORITES",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "ADD TO FAVORITES",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <article
+            onClick={[Function]}
+>
+            <h2>
+                        Fear and Loathing on the Road to Hollywood
+            </h2>
+            <p>
+                        Fear and Loathing on the Road to Hollywood, also known as Fear and Loathing in Gonzovision, is a documentary film producedby BBC in 1978 on the subject of Hunter S. Thompson, directed by Nigel Finch.  The road trip/film pairs Thompson with Finch's fellow Briton the illustrator Ralph Steadman. The party travel to Hollywood via Death Valley and Barstow from Las Vegas, scene of the pair's 1971 collaboration. It contains interviews with Thompson and Steadman, as well as some short excerpts from some of his work.
+            </p>
+            <p>
+                        1978-11-02
+            </p>
+            <p>
+                        8
+            </p>
+</article>,
+          <img
+            alt="Murray Movie"
+            onClick={[Function]}
+            src="https://image.tmdb.org/t/p/w500/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg"
+/>,
+          <button
+            onClick={[Function]}
+>
+            ADD TO FAVORITES
+</button>,
+        ],
+        "className": "Card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2>
+                Fear and Loathing on the Road to Hollywood
+</h2>,
+              <p>
+                Fear and Loathing on the Road to Hollywood, also known as Fear and Loathing in Gonzovision, is a documentary film producedby BBC in 1978 on the subject of Hunter S. Thompson, directed by Nigel Finch.  The road trip/film pairs Thompson with Finch's fellow Briton the illustrator Ralph Steadman. The party travel to Hollywood via Death Valley and Barstow from Las Vegas, scene of the pair's 1971 collaboration. It contains interviews with Thompson and Steadman, as well as some short excerpts from some of his work.
+</p>,
+              <p>
+                1978-11-02
+</p>,
+              <p>
+                8
+</p>,
+            ],
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Fear and Loathing on the Road to Hollywood",
+              },
+              "ref": null,
+              "rendered": "Fear and Loathing on the Road to Hollywood",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Fear and Loathing on the Road to Hollywood, also known as Fear and Loathing in Gonzovision, is a documentary film producedby BBC in 1978 on the subject of Hunter S. Thompson, directed by Nigel Finch.  The road trip/film pairs Thompson with Finch's fellow Briton the illustrator Ralph Steadman. The party travel to Hollywood via Death Valley and Barstow from Las Vegas, scene of the pair's 1971 collaboration. It contains interviews with Thompson and Steadman, as well as some short excerpts from some of his work.",
+              },
+              "ref": null,
+              "rendered": "Fear and Loathing on the Road to Hollywood, also known as Fear and Loathing in Gonzovision, is a documentary film producedby BBC in 1978 on the subject of Hunter S. Thompson, directed by Nigel Finch.  The road trip/film pairs Thompson with Finch's fellow Briton the illustrator Ralph Steadman. The party travel to Hollywood via Death Valley and Barstow from Las Vegas, scene of the pair's 1971 collaboration. It contains interviews with Thompson and Steadman, as well as some short excerpts from some of his work.",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "1978-11-02",
+              },
+              "ref": null,
+              "rendered": "1978-11-02",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 8,
+              },
+              "ref": null,
+              "rendered": 8,
+              "type": "p",
+            },
+          ],
+          "type": "article",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "Murray Movie",
+            "onClick": [Function],
+            "src": "https://image.tmdb.org/t/p/w500/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "ADD TO FAVORITES",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "ADD TO FAVORITES",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
