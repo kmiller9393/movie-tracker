@@ -3,8 +3,13 @@
   display: flex;
   flex-direction: column;
   margin: 2rem .2rem 0 1rem;
+  cursor: pointer;
+  filter: brightness(70%);
 }
 
+.Card:hover {
+  filter: brightness(100%);
+}
 
 
 img {
@@ -15,4 +20,5 @@ button {
   background: red;
   border: none;
   height: 1.5rem;
+  cursor: pointer;
 }

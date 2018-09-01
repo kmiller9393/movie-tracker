@@ -2,26 +2,14 @@ import * as actions from '../actions';
 
 describe('actions', () => {
   it('should return a type of TOGGLE_FAVORITE, with an id', () => {
-    const id = 2;
+    const movie = 2;
 
     const expected = {
       type: 'TOGGLE_FAVORITE',
-      id
+      movie
     };
 
-    const result = actions.toggleFavorite(id);
-    expect(result).toEqual(expected);
-  });
-
-  it('should return a type of SET_FILTER, with a filter', () => {
-    const filter = 'SHOW_ALL';
-
-    const expected = {
-      type: 'SET_FILTER',
-      filter
-    };
-
-    const result = actions.setFilter(filter);
+    const result = actions.toggleFavorite(movie);
     expect(result).toEqual(expected);
   });
 
