@@ -4,6 +4,14 @@ exports[`Card should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Card
+    favorites={
+        Array [
+            "Kurt",
+            "Brandon",
+            "Jesse",
+          ]
+    }
+    handleToggle={[Function]}
     image="https://image.tmdb.org/t/p/w500/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg"
     movie={
         Object {
@@ -13,6 +21,12 @@ ShallowWrapper {
             "release": "1978-11-02",
             "title": "Fear and Loathing on the Road to Hollywood",
             "vote_average": 8,
+          }
+    }
+    user={
+        Object {
+            "name": "Kurt",
+            "password": "Kurt",
           }
     }
 />,
@@ -53,7 +67,7 @@ ShallowWrapper {
         <button
           onClick={[Function]}
 >
-          ADD TO FAVORITES
+          FAVORITE
 </button>,
       ],
       "className": "Card",
@@ -148,11 +162,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "ADD TO FAVORITES",
+          "children": "FAVORITE",
           "onClick": [Function],
         },
         "ref": null,
-        "rendered": "ADD TO FAVORITES",
+        "rendered": "FAVORITE",
         "type": "button",
       },
     ],
@@ -189,7 +203,7 @@ ShallowWrapper {
           <button
             onClick={[Function]}
 >
-            ADD TO FAVORITES
+            FAVORITE
 </button>,
         ],
         "className": "Card",
@@ -284,11 +298,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "ADD TO FAVORITES",
+            "children": "FAVORITE",
             "onClick": [Function],
           },
           "ref": null,
-          "rendered": "ADD TO FAVORITES",
+          "rendered": "FAVORITE",
           "type": "button",
         },
       ],

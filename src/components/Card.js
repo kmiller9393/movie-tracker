@@ -16,7 +16,6 @@ export class Card extends Component {
 
   setFavoriteData = async movie => {
     const { user, favorites, handleToggle, movies } = this.props;
-    console.log(user)
     if (!user.name) {
       this.props.history.push('/login');
       alert('You must log-in to favorite a movie!!!!');
