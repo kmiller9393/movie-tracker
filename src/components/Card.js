@@ -14,13 +14,17 @@ export class Card extends Component {
   }
 
   setFavoriteData = async movie => {
-    const { user, favorites, handleToggle } = this.props;
-    if (!favorites.includes(movie) && !favorites.includes(movie.id)) {
+    console.log(movie)
+    const { user, favorites, handleToggle, movies } = this.props;
+    if (!favorites.includes(movie.title) && !favorites.includes(movie)) {
       handleToggle(movie);
       await addMovieToDatabase(user, movie);
     } else {
+      console.log(movie)
+      const foundMovie = movies.find(theMovie => theMovie.title === movie || theMovie === movie)
+      console.log(foundMovie)
       handleToggle(movie);
-      await deleteMovieFromDatabase(user, movie);
+      await deleteMovieFromDatabase(user, foundMovie);
     }
   };
 
@@ -36,7 +40,7 @@ export class Card extends Component {
         </article>
         <img
           onClick={() => this.setState({ toggle: !this.state.toggle })}
-          src={image || favorite.image}
+          src={image}
           alt="Murray Movie"
         />
         <button onClick={() => this.setFavoriteData(movie)}>
@@ -51,8 +55,14 @@ export const mapDispatchToProps = dispatch => ({
   handleToggle: movie => dispatch(toggleFavorite(movie))
 });
 
+export const mapStateToProps = state => ({
+  movies: state.movies,
+  user: state.userLogin,
+  favorites: state.favorites
+});
+
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(Card);
 
