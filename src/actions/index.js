@@ -39,3 +39,10 @@ export const addFavorite = movie => {
     movie
   };
 };
+
+export const deleteFavorite = movie => {
+  return {
+    type: 'DELETE_FAVORITE',
+    movie
+  };
+};
