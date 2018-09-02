@@ -28,7 +28,8 @@ class LoginForm extends Component {
       const { name, id } = result.data;
       this.props.userLogin(name, id);
       const userFavorites = await getUserFavorites(id)
-      this.props.getFavorites(userFavorites)
+      const userFavoritesIds = userFavorites.map(favorite => favorite.title)
+      this.props.getFavorites(userFavoritesIds)
       this.props.history.push('/');
     }
     return;

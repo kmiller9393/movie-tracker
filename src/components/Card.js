@@ -3,9 +3,10 @@ import { connect } from 'react-redux';
 import { addMovieToDatabase, deleteMovieFromDatabase } from '../utils/apiCalls';
 import { toggleFavorite } from '../actions';
 import PropTypes from 'prop-types'
+import { withRouter } from 'react-router-dom';
 import './Card.css';
 
-class Card extends Component {
+export class Card extends Component {
   constructor() {
     super();
     this.state = {
@@ -14,13 +15,18 @@ class Card extends Component {
   }
 
   setFavoriteData = async movie => {
-    const { user, favorites, handleToggle } = this.props;
-    if (!favorites.includes(movie) && !favorites.includes(movie.id)) {
+    const { user, favorites, handleToggle, movies } = this.props;
+    if (!user.name) {
+      this.props.history.push('/login');
+      alert('You must log-in to favorite a movie!!!!');
+    }
+    if (!favorites.includes(movie.title) && !favorites.includes(movie)) {
       handleToggle(movie);
       await addMovieToDatabase(user, movie);
     } else {
+      const foundMovie = movies.find(theMovie => theMovie.title === movie || theMovie === movie)
       handleToggle(movie);
-      await deleteMovieFromDatabase(user, movie);
+      await deleteMovieFromDatabase(user, foundMovie);
     }
   };
 
@@ -36,11 +42,11 @@ class Card extends Component {
         </article>
         <img
           onClick={() => this.setState({ toggle: !this.state.toggle })}
-          src={image || favorite.image}
+          src={image}
           alt="Murray Movie"
         />
         <button onClick={() => this.setFavoriteData(movie)}>
-          ADD TO FAVORITES
+          FAVORITE
         </button>
       </div>
     );
@@ -51,10 +57,16 @@ export const mapDispatchToProps = dispatch => ({
   handleToggle: movie => dispatch(toggleFavorite(movie))
 });
 
-export default connect(
-  null,
+export const mapStateToProps = state => ({
+  movies: state.movies,
+  user: state.userLogin,
+  favorites: state.favorites
+});
+
+export default withRouter(connect(
+  mapStateToProps,
   mapDispatchToProps
-)(Card);
+)(Card));
 
 Card.propTypes = {
   image: PropTypes.string,

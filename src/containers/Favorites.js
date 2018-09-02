@@ -13,9 +13,9 @@ const Favorites = ({
 }) => {
   const displayFavorites = favorites.map(favorite => {
     console.log(favorite)
-    const foundMovie = movies.find(movie => movie.id === favorite.movie_id)
-    console.log(foundMovie)
+    const foundMovie = movies.find(movie => movie.title === favorite)
     return <Card
+    {...favorite}
     {...foundMovie}
     key={favorite.id}
     movie={favorite}

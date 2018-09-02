@@ -6,11 +6,13 @@
   cursor: pointer;
   filter: brightness(70%);
   opacity: 0.95;
-  min-height: 22rem; }
-
-.Card:hover {
-  filter: brightness(100%);
-  opacity: 1; }
+  min-height: 22rem;
+  border: solid 1rem goldenrod;
+  box-shadow: 0 0 80px #000000;
+  border-radius: 24px; }
+  .Card:hover {
+    filter: brightness(100%);
+    opacity: 1; }
 
 .Card article {
   display: none; }
@@ -21,10 +23,12 @@
   flex-direction: column;
   margin: 2rem 1rem 0 1rem;
   cursor: pointer;
-  filter: brightness(70%);
+  filter: brightness(100%);
   opacity: 0.95;
-  overflow: hidden;
-  min-height: 22rem; }
+  overflow: scroll;
+  min-height: 22rem;
+  border: solid 1rem goldenrod;
+  border-radius: 24px; }
 
 .details article {
   background-color: black;
@@ -32,11 +36,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 22.5rem;
+  min-height: 22rem;
   opacity: 0.8;
   position: absolute;
-  transition: all 500ms ease;
-  width: 15rem; }
+  width: 15rem;
+  padding-top: 1rem; }
+
+h2 {
+  text-decoration: underline; }
 
 h2,
 p {
@@ -48,10 +55,19 @@ p {
 
 img {
   width: 15rem;
-  min-height: 22rem; }
+  min-height: 22rem;
+  border: 2px solid black; }
 
 button {
   background: red;
-  border: none;
-  height: 1.5rem;
+  border: 2px solid black;
+  box-shadow: 0 0 30px #000000;
+  width: 15.36rem;
+  border-radius: 4px;
+  height: 2.5rem;
+  color: #f9f9f9;
+  text-decoration: underline;
+  font-size: 1rem;
+  text-shadow: 2px 2px black;
+  font-weight: 400;
   cursor: pointer; }
