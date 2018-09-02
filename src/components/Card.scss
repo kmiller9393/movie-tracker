@@ -65,6 +65,11 @@ img {
 button {
   background: red;
   border: none;
-  height: 1.5rem;
+  height: 2.5rem;
+  color: #f9f9f9;
+  text-decoration: underline;
+  font-size: 1rem;
+  text-shadow: 2px 2px black;
+  font-weight: 400;
   cursor: pointer;
 }
