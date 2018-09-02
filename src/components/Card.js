@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { addMovieToDatabase, deleteMovieFromDatabase } from '../utils/apiCalls';
 import { toggleFavorite } from '../actions';
 import PropTypes from 'prop-types'
+import { withRouter } from 'react-router-dom';
 import './Card.css';
 
 export class Card extends Component {
@@ -14,15 +15,15 @@ export class Card extends Component {
   }
 
   setFavoriteData = async movie => {
-    console.log(movie)
     const { user, favorites, handleToggle, movies } = this.props;
+    if (!user.length) {
+      this.props.history.push('/login')
+    }
     if (!favorites.includes(movie.title) && !favorites.includes(movie)) {
       handleToggle(movie);
       await addMovieToDatabase(user, movie);
     } else {
-      console.log(movie)
       const foundMovie = movies.find(theMovie => theMovie.title === movie || theMovie === movie)
-      console.log(foundMovie)
       handleToggle(movie);
       await deleteMovieFromDatabase(user, foundMovie);
     }
@@ -44,7 +45,7 @@ export class Card extends Component {
           alt="Murray Movie"
         />
         <button onClick={() => this.setFavoriteData(movie)}>
-          ADD TO FAVORITES
+          FAVORITE
         </button>
       </div>
     );
@@ -61,10 +62,10 @@ export const mapStateToProps = state => ({
   favorites: state.favorites
 });
 
-export default connect(
+export default withRouter(connect(
   mapStateToProps,
   mapDispatchToProps
-)(Card);
+)(Card));
 
 Card.propTypes = {
   image: PropTypes.string,
