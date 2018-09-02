@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addMovieToDatabase, deleteMovieFromDatabase } from '../utils/apiCalls';
-import { addFavorite } from '../actions';
+import { addFavorite, deleteFavorite } from '../actions';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import './Card.css';
@@ -15,7 +15,7 @@ export class Card extends Component {
   }
 
   addFavoriteData = async movie => {
-    const { user, favorites, addMovie, movies } = this.props;
+    const { user, addMovie } = this.props;
 
     if (!user.name) {
       this.props.history.push('/login');
@@ -27,30 +27,14 @@ export class Card extends Component {
   };
 
   deleteFavoriteData = async movie => {
-    console.log('DELETEFAV-ORITE');
+    const { deleteMovie, user } = this.props;
+
+    deleteMovie(movie);
+    await deleteMovieFromDatabase(user, movie);
   };
 
-  // setFavoriteData = async movie => {
-  //   const { user, favorites, handleToggle, movies } = this.props;
-  //   if (!user.name) {
-  //     this.props.history.push('/login');
-  //     alert('You must log-in to favorite a movie!!!!');
-  //   }
-  //   if (!favorites.includes(movie.movie_id)) {
-  //     handleToggle(movie);
-  //     await addMovieToDatabase(user, movie);
-  //   } else {
-  //     const foundMovie = movies.find(
-  //       theMovie => console.log(movie) || theMovie.movie_id === movie
-  //     );
-  //     console.log(foundMovie);
-  //     handleToggle(movie);
-  //     await deleteMovieFromDatabase(user, foundMovie);
-  //   }
-  // };
-
   render() {
-    let { image, favorite, movie, favorites } = this.props;
+    let { image, movie, favorites } = this.props;
     return (
       <div className={this.state.toggle ? 'details' : 'Card'}>
         <article onClick={() => this.setState({ toggle: !this.state.toggle })}>
@@ -78,7 +62,8 @@ export class Card extends Component {
 }
 
 export const mapDispatchToProps = dispatch => ({
-  addMovie: movie => dispatch(addFavorite(movie))
+  addMovie: movie => dispatch(addFavorite(movie)),
+  deleteMovie: movie => dispatch(deleteFavorite(movie))
 });
 
 export const mapStateToProps = state => ({
@@ -96,7 +81,7 @@ export default withRouter(
 
 Card.propTypes = {
   image: PropTypes.string,
-  favorite: PropTypes.object,
+  favorite: PropTypes.number,
   movie: PropTypes.object,
   favorites: PropTypes.array,
   handleToggle: PropTypes.func
