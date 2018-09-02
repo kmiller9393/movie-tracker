@@ -3,8 +3,8 @@ import Card from '../components/Card';
 import { connect } from 'react-redux';
 import { logoutUser } from '../actions';
 import { Link } from 'react-router-dom';
-import './MovieContainer.css'
-import PropTypes from 'prop-types'
+import './MovieContainer.css';
+import PropTypes from 'prop-types';
 
 const MovieContainer = ({
   movies,
@@ -14,16 +14,18 @@ const MovieContainer = ({
   favorites
 }) => {
   const displayMovies = movies.map(movie => {
-    if  (movie.image.includes('null')) {
-      return
+    if (movie.image.includes('null')) {
+      return;
     }
-    return <Card
-       {...movie}
-       key={movie.id}
-       movie={movie}
-       user={user}
-       favorites={favorites}
-     />
+    return (
+      <Card
+        {...movie}
+        key={movie.movie_id}
+        movie={movie}
+        user={user}
+        favorites={favorites}
+      />
+    );
   });
 
   return (
@@ -68,4 +70,4 @@ MovieContainer.propTypes = {
   logoutUser: PropTypes.func,
   handleToggle: PropTypes.func,
   favorites: PropTypes.array
-}
+};

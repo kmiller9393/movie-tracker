@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addMovieToDatabase, deleteMovieFromDatabase } from '../utils/apiCalls';
-import { toggleFavorite } from '../actions';
-import PropTypes from 'prop-types'
+import { addFavorite, deleteFavorite } from '../actions';
+import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import './Card.css';
 
@@ -14,24 +14,27 @@ export class Card extends Component {
     };
   }
 
-  setFavoriteData = async movie => {
-    const { user, favorites, handleToggle, movies } = this.props;
+  addFavoriteData = async movie => {
+    const { user, addMovie } = this.props;
+
     if (!user.name) {
       this.props.history.push('/login');
-      alert('You must log-in to favorite a movie!!!!');
-    }
-    if (!favorites.includes(movie) && !favorites.includes(movie.title)) {
-      handleToggle(movie);
-      await addMovieToDatabase(user, movie);
+      alert('You must log-in to favorite a movie!');
     } else {
-      const foundMovie = movies.find(theMovie => theMovie.title === movie || theMovie === movie)
-      handleToggle(movie);
-      await deleteMovieFromDatabase(user, foundMovie);
+      addMovie(movie);
+      await addMovieToDatabase(user, movie);
     }
   };
 
+  deleteFavoriteData = async movie => {
+    const { deleteMovie, user } = this.props;
+
+    deleteMovie(movie);
+    await deleteMovieFromDatabase(user, movie);
+  };
+
   render() {
-    let { image, favorite, movie } = this.props;
+    let { image, movie, favorites } = this.props;
     return (
       <div className={this.state.toggle ? 'details' : 'Card'}>
         <article onClick={() => this.setState({ toggle: !this.state.toggle })}>
@@ -45,16 +48,22 @@ export class Card extends Component {
           src={image}
           alt="Murray Movie"
         />
-        <button onClick={() => this.setFavoriteData(movie)}>
-          FAVORITE
-        </button>
+        {!favorites.includes(movie.movie_id) && (
+          <button onClick={() => this.addFavoriteData(movie)}>FAVORITE</button>
+        )}
+        {favorites.includes(movie.movie_id) && (
+          <button onClick={() => this.deleteFavoriteData(movie)}>
+            UNFAVORITE
+          </button>
+        )}
       </div>
     );
   }
 }
 
 export const mapDispatchToProps = dispatch => ({
-  handleToggle: movie => dispatch(toggleFavorite(movie))
+  addMovie: movie => dispatch(addFavorite(movie)),
+  deleteMovie: movie => dispatch(deleteFavorite(movie))
 });
 
 export const mapStateToProps = state => ({
@@ -63,15 +72,17 @@ export const mapStateToProps = state => ({
   favorites: state.favorites
 });
 
-export default withRouter(connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Card));
+export default withRouter(
+  connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )(Card)
+);
 
 Card.propTypes = {
   image: PropTypes.string,
-  favorite: PropTypes.object,
+  favorite: PropTypes.number,
   movie: PropTypes.object,
   favorites: PropTypes.array,
   handleToggle: PropTypes.func
-}
+};

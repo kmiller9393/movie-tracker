@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { getUserInfo, populateFavorites } from '../actions';
 import { withRouter } from 'react-router-dom';
 import { fetchUserData, getUserFavorites } from '../utils/apiCalls';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
 class LoginForm extends Component {
   constructor() {
@@ -27,9 +27,9 @@ class LoginForm extends Component {
     if (result) {
       const { name, id } = result.data;
       this.props.userLogin(name, id);
-      const userFavorites = await getUserFavorites(id)
-      const userFavoritesIds = userFavorites.map(favorite => favorite.title)
-      this.props.getFavorites(userFavoritesIds)
+      const userFavorites = await getUserFavorites(id);
+      const userFavoritesIds = userFavorites.map(favorite => favorite.movie_id);
+      this.props.getFavorites(userFavoritesIds);
       this.props.history.push('/');
     }
     return;
@@ -60,7 +60,7 @@ class LoginForm extends Component {
 
 export const mapDispatchToProps = dispatch => ({
   userLogin: (name, id) => dispatch(getUserInfo(name, id)),
-  getFavorites: (favorites) => dispatch(populateFavorites(favorites))
+  getFavorites: favorites => dispatch(populateFavorites(favorites))
 });
 
 export default withRouter(
@@ -73,4 +73,4 @@ export default withRouter(
 LoginForm.propTypes = {
   userLogin: PropTypes.func,
   getFavorites: PropTypes.func
-}
+};

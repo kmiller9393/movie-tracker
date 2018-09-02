@@ -28,7 +28,7 @@ export const fetchUserData = async (email, password) => {
     const result = await response.json();
     return result;
   } catch (error) {
-    throw new Error ('Invalid Email or Password')
+    throw new Error('Invalid Email or Password');
   }
 };
 
@@ -43,7 +43,7 @@ export const setUserData = async (name, email, password) => {
     });
     await response.json();
   } catch (error) {
-    throw new Error ('Email Already Exists')
+    throw new Error('Email Already Exists');
   }
 };
 
@@ -51,7 +51,7 @@ export const addMovieToDatabase = async (user, movie) => {
   await fetch('http://localhost:3000/api/users/favorites/new', {
     method: 'POST',
     body: JSON.stringify({
-      movie_id: movie.id,
+      movie_id: movie.movie_id,
       user_id: user.id,
       title: movie.title,
       poster_path: movie.image,
@@ -66,20 +66,21 @@ export const addMovieToDatabase = async (user, movie) => {
 };
 
 export const deleteMovieFromDatabase = async (user, movie) => {
-  const url = `http://localhost:3000/api/users/${user.id}/favorites/${movie.id}`
-    await fetch(url, {
-      method: 'DELETE',
-      body: JSON.stringify({user_id: user.id, movie_id: movie.id}),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-  }
+  const url = `http://localhost:3000/api/users/${user.id}/favorites/${
+    movie.movie_id
+  }`;
+  await fetch(url, {
+    method: 'DELETE',
+    body: JSON.stringify({ user_id: user.id, movie_id: movie.movie_id }),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  });
+};
 
-
-export const getUserFavorites = async (id) => {
+export const getUserFavorites = async id => {
   const url = `http://localhost:3000/api/users/${id}/favorites`;
-  const response = await fetch(url)
-  const result = await response.json()
+  const response = await fetch(url);
+  const result = await response.json();
   return result.data;
-}
+};

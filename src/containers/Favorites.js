@@ -2,29 +2,23 @@ import React from 'react';
 import Card from '../components/Card';
 import { connect } from 'react-redux';
 import { logoutUser } from '../actions';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
-const Favorites = ({
-  movies,
-  user,
-  logoutUser,
-  handleToggle,
-  favorites
-}) => {
+const Favorites = ({ movies, user, logoutUser, favorites }) => {
   const displayFavorites = favorites.map(favorite => {
-    console.log(favorite)
-    const foundMovie = movies.find(movie => movie.title === favorite)
-    return <Card
-    {...favorite}
-    {...foundMovie}
-    key={favorite.id}
-    movie={favorite}
-    favorite={favorite}
-    user={user}
-    favorites={favorites}
-  />
-  }
-  );
+    const foundMovie = movies.find(movie => movie.movie_id === favorite);
+    return (
+      <Card
+        {...favorite}
+        {...foundMovie}
+        key={favorite.movie_id}
+        movie={foundMovie}
+        favorite={favorite}
+        user={user}
+        favorites={favorites}
+      />
+    );
+  });
 
   return (
     <div>
@@ -66,4 +60,4 @@ Favorites.propTypes = {
   logoutUser: PropTypes.func,
   handleToggle: PropTypes.func,
   favorites: PropTypes.array
-}
+};
