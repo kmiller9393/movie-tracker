@@ -27,16 +27,15 @@ export const logoutUser = () => {
 };
 
 export const populateFavorites = favorites => {
-  console.log(favorites)
   return {
     type: 'POPULATE_FAVORITES',
     favorites
   };
 };
 
-export const toggleFavorite = movie => {
+export const addFavorite = movie => {
   return {
-    type: 'TOGGLE_FAVORITE',
+    type: 'ADD_FAVORITE',
     movie
   };
 };
