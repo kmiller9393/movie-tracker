@@ -32,3 +32,10 @@ h1 {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+
+
+.murray-tracker {
+  width: 34%;
+  min-height: 5em;
+}
