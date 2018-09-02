@@ -1,4 +1,4 @@
-import { deleteMovieFromDatabase, addMovieToDatabase, getUserFavorites, setUserData } from './apiCalls'
+import { deleteMovieFromDatabase, addMovieToDatabase, getUserFavorites, setUserData, fetchUserData } from './apiCalls'
 import { mockMurrayData, mockMovie, mockUser, mockFavorites, mockFavoriteResult } from './mockData/mockMurrayData'
 
 describe('apiCalls', () => {
@@ -77,14 +77,25 @@ describe('apiCalls', () => {
       setUserData('kurt', 'brandon', 'jesse')
       expect(window.fetch).toHaveBeenCalledWith(...expected)
     })
+    it('should throw an error if status code is not ok', async () => {
+      const expected = new Error('Email Already Exists')
+      window.fetch = jest.fn().mockImplementation(() => Promise.reject(new Error('Email Already Exists')));
+
+      await expect(setUserData(1)).rejects.toEqual(expected)
+    })
+  })
+  describe('fetchUserData', () => {
+    it('should call fetch with with a URL', async () => {
+      await fetchUserData('Brandon', 'Bools')
+      const expected = ["http://localhost:3000/api/users", {"body": "{\"password\":\"Bools\",\"email\":\"Brandon\"}", "headers": {"Content-Type": "application/json"}, "method": "POST"}]
+      expect(window.fetch).toHaveBeenCalledWith(...expected)
+    })
+    it('should throw an error if status code is not ok', async () => {
+      const expected = new Error('Invalid Email or Password')
+      window.fetch = jest.fn().mockImplementation(() => Promise.reject(new Error('Invalid Email or Password')));
+
+      await expect(fetchUserData(1)).rejects.toEqual(expected)
+    })
   })
 })
 
-// const url = `http://localhost:3000/api/users/${user.id}/favorites/${movie.id}`
-//     await fetch(url, {
-//       method: 'DELETE',
-//       body: JSON.stringify({user_id: user.id, movie_id: movie.id}),
-//       headers: {
-//         'Content-Type': 'application/json'
-//       }
-//     })

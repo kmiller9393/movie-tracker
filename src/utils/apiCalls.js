@@ -28,7 +28,7 @@ export const fetchUserData = async (email, password) => {
     const result = await response.json();
     return result;
   } catch (error) {
-    alert('Invalid Email or Password');
+    throw new Error ('Invalid Email or Password')
   }
 };
 
@@ -43,7 +43,7 @@ export const setUserData = async (name, email, password) => {
     });
     await response.json();
   } catch (error) {
-    alert('Email already exists');
+    throw new Error ('Email Already Exists')
   }
 };
 
