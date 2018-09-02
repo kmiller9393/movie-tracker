@@ -16,10 +16,14 @@ class App extends Component {
     this.props.getMovies(murrayMovies);
   }
 
+// <a href="https://fontmeme.com/netflix-font/"><img src="https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png" alt="netflix-font" border="0"></a>
+
+
   render() {
     return (
       <div className="App">
-        <h1>Murray Tracker</h1>
+       
+        <h1 className='title-container'> <img className='murray-tracker'src="https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png" alt="netflix-font" border="0" /> </h1>
         <Route exact path="/" component={MovieContainer} />
         <Route exact path="/login" component={LoginForm} />
         <Route exact path="/sign-up" component={SignUp} />
