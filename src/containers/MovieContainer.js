@@ -36,9 +36,6 @@ const MovieContainer = ({
         </header>
       ) : (
         <header>
-          <h2>
-          Welcome
-          </h2>
           <section>
             <a href="http://localhost:3001/login">Login</a>
             <a href="http://localhost:3001/sign-up">Sign Up</a>
