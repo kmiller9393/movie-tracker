@@ -18,7 +18,8 @@ export class Card extends Component {
     const { user, favorites, handleToggle, movies } = this.props;
     console.log(user)
     if (!user.name) {
-      this.props.history.push('/login')
+      this.props.history.push('/login');
+      alert('You must log-in to favorite a movie!!!!');
     }
     if (!favorites.includes(movie.title) && !favorites.includes(movie)) {
       handleToggle(movie);
