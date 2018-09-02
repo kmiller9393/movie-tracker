@@ -16,7 +16,8 @@ export class Card extends Component {
 
   setFavoriteData = async movie => {
     const { user, favorites, handleToggle, movies } = this.props;
-    if (!user.length) {
+    console.log(user)
+    if (!user.name) {
       this.props.history.push('/login')
     }
     if (!favorites.includes(movie.title) && !favorites.includes(movie)) {
