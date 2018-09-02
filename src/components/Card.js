@@ -20,7 +20,7 @@ export class Card extends Component {
       this.props.history.push('/login');
       alert('You must log-in to favorite a movie!!!!');
     }
-    if (!favorites.includes(movie.title) && !favorites.includes(movie)) {
+    if (!favorites.includes(movie) && !favorites.includes(movie.title)) {
       handleToggle(movie);
       await addMovieToDatabase(user, movie);
     } else {

@@ -1516,3 +1516,7 @@ export const fetchMurrayMovies = jest.fn().mockImplementation(() => ({
 export const addMovieToDatabase = jest.fn().mockImplementation(() => ({
   status: 'complete'
 }))
+
+export const deleteMovieFromDatabase = jest.fn().mockImplementation(() => ({
+  status: 'complete'
+}))

@@ -27,6 +27,7 @@ export const logoutUser = () => {
 };
 
 export const populateFavorites = favorites => {
+  console.log(favorites)
   return {
     type: 'POPULATE_FAVORITES',
     favorites
