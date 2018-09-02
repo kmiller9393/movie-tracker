@@ -24,7 +24,9 @@ h1 {
   margin: 0; }
 
 .murray-tracker {
-  width: 34%;
-  min-height: 5em;
+  width: 500px;
+  min-height: 2em;
+  border: none;
+  box-shadow: grey;
 }
 
