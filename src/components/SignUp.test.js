@@ -6,7 +6,6 @@ import { setUserData } from '../utils/__mocks__/apiCalls';
 
 
 describe('SignUp', () => {
-  console.log(setUserData)
   let wrapper;
   let event;
   beforeEach(() => {
@@ -39,7 +38,6 @@ describe('SignUp', () => {
       wrapper.state().name = 'dude'
       wrapper.state().email = 'yam';
       wrapper.state().password = 'juice'
-      console.log(wrapper.state())
       await wrapper.instance().handleSubmit(event);
   
       // expect(wrapper.instance().handleSubmit).toHaveBeenCalled

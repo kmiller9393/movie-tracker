@@ -25,7 +25,7 @@ describe('apiCalls', () => {
   describe('deleteMovieFromDatabase', () => {
     it('should call fetch with the correct params', () => {
       const url = `http://localhost:3000/api/users/${mockUser.id}/favorites/${
-        mockMovie.id
+        mockMovie.movie_id
       }`;
 
       const expected = [
@@ -34,7 +34,7 @@ describe('apiCalls', () => {
           method: 'DELETE',
           body: JSON.stringify({
             user_id: mockUser.id,
-            movie_id: mockMovie.id
+            movie_id: mockMovie.movie_id
           }),
           headers: {
             'Content-Type': 'application/json'
@@ -55,7 +55,7 @@ describe('apiCalls', () => {
         {
           method: 'POST',
           body: JSON.stringify({
-            movie_id: mockMovie.id,
+            movie_id: mockMovie.movie_id,
             user_id: mockUser.id,
             title: mockMovie.title,
             poster_path: mockMovie.image,
