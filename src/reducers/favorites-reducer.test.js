@@ -3,7 +3,7 @@ import * as actions from '../actions';
 import { mockFavoriteResult, mockMovie } from '../utils/mockData/mockMurrayData'
 
 describe('favoritesReducer', () => {
-  it('should return intial state be default', () => {
+  it('should return intial state by default', () => {
     const expected = [];
     const result = favoritesReducer(undefined, {});
     expect(result).toEqual(expected);
