@@ -42,6 +42,7 @@ describe('SignUp', () => {
       wrapper.state().email = 'yam@aol.com';
       wrapper.state().password = 'juice';
       console.log(wrapper.state());
+
       await wrapper.instance().handleSubmit(event);
 
       expect(setUserData).toHaveBeenCalledWith(wrapper.state());

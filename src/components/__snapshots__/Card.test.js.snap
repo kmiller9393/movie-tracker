@@ -7,10 +7,10 @@ ShallowWrapper {
     addMovie={[Function]}
     deleteMovie={[Function]}
     favorites={Array []}
-    image="https://image.tmdb.org/t/p/w500/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg"
+    image="https://image.tmdb.org/t/p/w300/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg"
     movie={
         Object {
-            "image": "https://image.tmdb.org/t/p/w500/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg",
+            "image": "https://image.tmdb.org/t/p/w300/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg",
             "movie_id": 164808,
             "overview": "Fear and Loathing on the Road to Hollywood, also known as Fear and Loathing in Gonzovision, is a documentary film producedby BBC in 1978 on the subject of Hunter S. Thompson, directed by Nigel Finch.  The road trip/film pairs Thompson with Finch's fellow Briton the illustrator Ralph Steadman. The party travel to Hollywood via Death Valley and Barstow from Las Vegas, scene of the pair's 1971 collaboration. It contains interviews with Thompson and Steadman, as well as some short excerpts from some of his work.",
             "release": "1978-11-02",
@@ -59,7 +59,7 @@ ShallowWrapper {
         <img
           alt="Murray Movie"
           onClick={[Function]}
-          src="https://image.tmdb.org/t/p/w500/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg"
+          src="https://image.tmdb.org/t/p/w300/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg"
 />,
         <button
           className="add-button"
@@ -164,7 +164,7 @@ ShallowWrapper {
         "props": Object {
           "alt": "Murray Movie",
           "onClick": [Function],
-          "src": "https://image.tmdb.org/t/p/w500/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg",
+          "src": "https://image.tmdb.org/t/p/w300/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg",
         },
         "ref": null,
         "rendered": null,
@@ -215,7 +215,7 @@ ShallowWrapper {
           <img
             alt="Murray Movie"
             onClick={[Function]}
-            src="https://image.tmdb.org/t/p/w500/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg"
+            src="https://image.tmdb.org/t/p/w300/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg"
 />,
           <button
             className="add-button"
@@ -320,7 +320,7 @@ ShallowWrapper {
           "props": Object {
             "alt": "Murray Movie",
             "onClick": [Function],
-            "src": "https://image.tmdb.org/t/p/w500/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg",
+            "src": "https://image.tmdb.org/t/p/w300/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg",
           },
           "ref": null,
           "rendered": null,
