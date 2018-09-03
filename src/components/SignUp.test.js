@@ -2,7 +2,7 @@ import { SignUp } from './SignUp';
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { mockHistory } from '../utils/mockData/mockMurrayData'
-jest.mock('../utils/__mocks__/apiCalls');
+// jest.mock('../utils/__mocks__/apiCalls');
 import { setUserData } from '../utils/__mocks__/apiCalls';
 
 
@@ -36,7 +36,7 @@ describe('SignUp', () => {
 
   describe('handleSubmit', () => {
     it('should call setUserData', async () => {
-      
+      wrapper = mount(<SignUp history={mockHistory}/>)
       wrapper.state().name = 'dude'
       wrapper.state().email = 'yam';
       wrapper.state().password = 'juice'

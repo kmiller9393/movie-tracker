@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { logoutUser } from '../actions';
 import PropTypes from 'prop-types';
 
-const Favorites = ({ movies, user, logoutUser, favorites }) => {
+export const Favorites = ({ movies, user, logoutUser, favorites }) => {
   const displayFavorites = favorites.map(favorite => {
     const foundMovie = movies.find(movie => movie.movie_id === favorite);
     return (
