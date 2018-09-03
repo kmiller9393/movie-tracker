@@ -664,8 +664,18 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <header>
-          <section>
+        <header
+          className="login-header"
+>
+          <img
+                    alt="netflix-font"
+                    border="0"
+                    className="home-image"
+                    src="https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png"
+          />
+          <section
+                    className="right-links"
+          >
                     <a
                               href="http://localhost:3001/login"
                     >
@@ -2230,67 +2240,95 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <section>
-            <a
-                        href="http://localhost:3001/login"
-            >
-                        Login
-            </a>
-            <a
-                        href="http://localhost:3001/sign-up"
-            >
-                        Sign Up
-            </a>
+          "children": Array [
+            <img
+              alt="netflix-font"
+              border="0"
+              className="home-image"
+              src="https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png"
+/>,
+            <section
+              className="right-links"
+>
+              <a
+                            href="http://localhost:3001/login"
+              >
+                            Login
+              </a>
+              <a
+                            href="http://localhost:3001/sign-up"
+              >
+                            Sign Up
+              </a>
 </section>,
+          ],
+          "className": "login-header",
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <a
-                href="http://localhost:3001/login"
->
-                Login
-</a>,
-              <a
-                href="http://localhost:3001/sign-up"
->
-                Sign Up
-</a>,
-            ],
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "netflix-font",
+              "border": "0",
+              "className": "home-image",
+              "src": "https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
           },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Login",
-                "href": "http://localhost:3001/login",
-              },
-              "ref": null,
-              "rendered": "Login",
-              "type": "a",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <a
+                  href="http://localhost:3001/login"
+>
+                  Login
+</a>,
+                <a
+                  href="http://localhost:3001/sign-up"
+>
+                  Sign Up
+</a>,
+              ],
+              "className": "right-links",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Sign Up",
-                "href": "http://localhost:3001/sign-up",
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Login",
+                  "href": "http://localhost:3001/login",
+                },
+                "ref": null,
+                "rendered": "Login",
+                "type": "a",
               },
-              "ref": null,
-              "rendered": "Sign Up",
-              "type": "a",
-            },
-          ],
-          "type": "section",
-        },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Sign Up",
+                  "href": "http://localhost:3001/sign-up",
+                },
+                "ref": null,
+                "rendered": "Sign Up",
+                "type": "a",
+              },
+            ],
+            "type": "section",
+          },
+        ],
         "type": "header",
       },
       Object {
@@ -5864,8 +5902,18 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <header>
-            <section>
+          <header
+            className="login-header"
+>
+            <img
+                        alt="netflix-font"
+                        border="0"
+                        className="home-image"
+                        src="https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png"
+            />
+            <section
+                        className="right-links"
+            >
                         <a
                                     href="http://localhost:3001/login"
                         >
@@ -7430,67 +7478,95 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <section>
-              <a
-                            href="http://localhost:3001/login"
-              >
-                            Login
-              </a>
-              <a
-                            href="http://localhost:3001/sign-up"
-              >
-                            Sign Up
-              </a>
+            "children": Array [
+              <img
+                alt="netflix-font"
+                border="0"
+                className="home-image"
+                src="https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png"
+/>,
+              <section
+                className="right-links"
+>
+                <a
+                                href="http://localhost:3001/login"
+                >
+                                Login
+                </a>
+                <a
+                                href="http://localhost:3001/sign-up"
+                >
+                                Sign Up
+                </a>
 </section>,
+            ],
+            "className": "login-header",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <a
-                  href="http://localhost:3001/login"
->
-                  Login
-</a>,
-                <a
-                  href="http://localhost:3001/sign-up"
->
-                  Sign Up
-</a>,
-              ],
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "netflix-font",
+                "border": "0",
+                "className": "home-image",
+                "src": "https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
             },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Login",
-                  "href": "http://localhost:3001/login",
-                },
-                "ref": null,
-                "rendered": "Login",
-                "type": "a",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <a
+                    href="http://localhost:3001/login"
+>
+                    Login
+</a>,
+                  <a
+                    href="http://localhost:3001/sign-up"
+>
+                    Sign Up
+</a>,
+                ],
+                "className": "right-links",
               },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Sign Up",
-                  "href": "http://localhost:3001/sign-up",
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Login",
+                    "href": "http://localhost:3001/login",
+                  },
+                  "ref": null,
+                  "rendered": "Login",
+                  "type": "a",
                 },
-                "ref": null,
-                "rendered": "Sign Up",
-                "type": "a",
-              },
-            ],
-            "type": "section",
-          },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Sign Up",
+                    "href": "http://localhost:3001/sign-up",
+                  },
+                  "ref": null,
+                  "rendered": "Sign Up",
+                  "type": "a",
+                },
+              ],
+              "type": "section",
+            },
+          ],
           "type": "header",
         },
         Object {

@@ -695,8 +695,6 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <header>
-          Welcome 
-          Taylor
           <button
                     onClick={undefined}
           >
@@ -826,8 +824,6 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Welcome ",
-            "Taylor",
             <button
               onClick={undefined}
 >
@@ -838,8 +834,6 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
-          "Welcome ",
-          "Taylor",
           Object {
             "instance": null,
             "key": undefined,
@@ -1104,8 +1098,6 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <header>
-            Welcome 
-            Taylor
             <button
                         onClick={undefined}
             >
@@ -1235,8 +1227,6 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Welcome ",
-              "Taylor",
               <button
                 onClick={undefined}
 >
@@ -1247,8 +1237,6 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
-            "Welcome ",
-            "Taylor",
             Object {
               "instance": null,
               "key": undefined,
@@ -1549,7 +1537,6 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <header>
-          Welcome
           <a
                     href="http://localhost:3001/login"
           >
@@ -1574,7 +1561,6 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "Welcome",
             <a
               href="http://localhost:3001/login"
 >
@@ -1589,7 +1575,6 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
-          "Welcome",
           Object {
             "instance": null,
             "key": undefined,
@@ -1639,7 +1624,6 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <header>
-            Welcome
             <a
                         href="http://localhost:3001/login"
             >
@@ -1664,7 +1648,6 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "Welcome",
               <a
                 href="http://localhost:3001/login"
 >
@@ -1679,7 +1662,6 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
-            "Welcome",
             Object {
               "instance": null,
               "key": undefined,

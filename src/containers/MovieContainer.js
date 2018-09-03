@@ -10,7 +10,6 @@ export const MovieContainer = ({
   movies,
   user,
   logoutUser,
-  handleToggle,
   favorites
 }) => {
   const displayMovies = movies.map(movie => {
@@ -31,19 +30,35 @@ export const MovieContainer = ({
   return (
     <div className="movie-container">
       {user.name ? (
-        <header>
-          <Link to="/favorites">favorites</Link>
-          Welcome {user.name}
-          <button onClick={logoutUser}> Sign Out </button>{' '}
-        </header>
-      ) : (
-        <header>
-          <section>
-            <a href="http://localhost:3001/login">Login</a>
-            <a href="http://localhost:3001/sign-up">Sign Up</a>
+        <header className="signout-header">
+          <img
+            className="home-image"
+            src="https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png"
+            alt="netflix-font"
+            border="0"
+          />
+          <p className="welcome-text">
+            {`Welcome, ${user.name}`}
+          </p>
+          <section className="right-links">
+            <Link to="/favorites">Favorites</Link>
+            <button className="signout-button" onClick={logoutUser}>Sign Out</button>
           </section>
         </header>
-      )}
+      ) : (
+          <header className="login-header">
+            <img
+              className="home-image"
+              src="https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png"
+              alt="netflix-font"
+              border="0"
+            />
+            <section className="right-links">
+              <a href="http://localhost:3001/login">Login</a>
+              <a href="http://localhost:3001/sign-up">Sign Up</a>
+            </section>
+          </header>
+        )}
       <ul>{displayMovies}</ul>
     </div>
   );
