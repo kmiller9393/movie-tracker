@@ -18,6 +18,7 @@ export class Card extends Component {
     const { user, addMovie } = this.props;
 
     if (!user.name) {
+      console.log(user);
       this.props.history.push('/login');
       alert('You must log-in to favorite a movie!');
     } else {
@@ -49,10 +50,18 @@ export class Card extends Component {
           alt="Murray Movie"
         />
         {!favorites.includes(movie.movie_id) && (
-          <button onClick={() => this.addFavoriteData(movie)}>FAVORITE</button>
+          <button
+            className="add-button"
+            onClick={() => this.addFavoriteData(movie)}
+          >
+            FAVORITE
+          </button>
         )}
         {favorites.includes(movie.movie_id) && (
-          <button onClick={() => this.deleteFavoriteData(movie)}>
+          <button
+            className="delete-button"
+            onClick={() => this.deleteFavoriteData(movie)}
+          >
             UNFAVORITE
           </button>
         )}
