@@ -1512,6 +1512,9 @@ export const fetchMurrayMovies = jest.fn().mockImplementation(() => ({
   ]
 }));
 
+export const setUserData = jest.fn().mockImplementation(() => ({
+  status: 'complete'
+}))
 
 export const addMovieToDatabase = jest.fn().mockImplementation(() => ({
   status: 'complete'
