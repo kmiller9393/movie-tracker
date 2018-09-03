@@ -5,7 +5,7 @@ import { withRouter } from 'react-router-dom';
 import { fetchUserData, getUserFavorites } from '../utils/apiCalls';
 import PropTypes from 'prop-types';
 
-class LoginForm extends Component {
+export class LoginForm extends Component {
   constructor() {
     super();
     this.state = {

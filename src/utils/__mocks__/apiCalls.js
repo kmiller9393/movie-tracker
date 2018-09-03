@@ -1523,3 +1523,12 @@ export const addMovieToDatabase = jest.fn().mockImplementation(() => ({
 export const deleteMovieFromDatabase = jest.fn().mockImplementation(() => ({
   status: 'complete'
 }))
+
+export const fetchUserData = jest.fn().mockImplementation(() => ({
+  data: {
+    id: 1,
+    name: 'Taylor',
+    password: 'password',
+    email: 'tman2272@aol.com'
+  }
+}))

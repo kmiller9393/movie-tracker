@@ -2,7 +2,6 @@ import { SignUp } from './SignUp';
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { mockHistory } from '../utils/mockData/mockMurrayData'
-// jest.mock('../utils/__mocks__/apiCalls');
 import { setUserData } from '../utils/__mocks__/apiCalls';
 
 
