@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { getUserInfo, populateFavorites } from '../actions';
 import { withRouter } from 'react-router-dom';
 import { fetchUserData, getUserFavorites } from '../utils/apiCalls';
+import './LoginForm.css';
 import PropTypes from 'prop-types';
 
 export class LoginForm extends Component {
@@ -37,23 +38,31 @@ export class LoginForm extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <input
-          name="email"
-          value={this.state.email}
-          onChange={this.handleChange}
-          placeholder="Email"
-          type="text"
+      <div>
+        <img
+          className="login-image"
+          src="https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png"
+          alt="netflix-font"
+          border="0"
         />
-        <input
-          name="password"
-          value={this.state.password}
-          onChange={this.handleChange}
-          placeholder="Password"
-          type="text"
-        />
-        <button>LOGIN</button>
-      </form>
+        <form onSubmit={this.handleSubmit}>
+          <input
+            name="email"
+            value={this.state.email}
+            onChange={this.handleChange}
+            placeholder="Email"
+            type="text"
+          />
+          <input
+            name="password"
+            value={this.state.password}
+            onChange={this.handleChange}
+            placeholder="Password"
+            type="text"
+          />
+          <button className="login-button">LOGIN</button>
+        </form>
+      </div>
     );
   }
 }
