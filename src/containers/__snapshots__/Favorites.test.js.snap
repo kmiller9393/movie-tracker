@@ -694,13 +694,22 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <header>
-          <button
-                    onClick={undefined}
+        <header
+          className="favorites-header"
+>
+          <h1>
+                    Favorites
+          </h1>
+          <section
+                    className="favorites-section"
           >
-                     Sign Out 
-          </button>
-           
+                    <Link
+                              replace={false}
+                              to="/"
+                    >
+                              Home
+                    </Link>
+          </section>
 </header>,
         <ul>
           <withRouter(Connect(Card))
@@ -824,13 +833,21 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <button
-              onClick={undefined}
+            <h1>
+              Favorites
+</h1>,
+            <section
+              className="favorites-section"
 >
-               Sign Out 
-</button>,
-            " ",
+              <Link
+                            replace={false}
+                            to="/"
+              >
+                            Home
+              </Link>
+</section>,
           ],
+          "className": "favorites-header",
         },
         "ref": null,
         "rendered": Array [
@@ -839,14 +856,41 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": " Sign Out ",
-              "onClick": undefined,
+              "children": "Favorites",
             },
             "ref": null,
-            "rendered": " Sign Out ",
-            "type": "button",
+            "rendered": "Favorites",
+            "type": "h1",
           },
-          " ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/"
+>
+                Home
+</Link>,
+              "className": "favorites-section",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Home",
+                "replace": false,
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "Home",
+              "type": [Function],
+            },
+            "type": "section",
+          },
         ],
         "type": "header",
       },
@@ -1097,13 +1141,22 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <header>
-            <button
-                        onClick={undefined}
+          <header
+            className="favorites-header"
+>
+            <h1>
+                        Favorites
+            </h1>
+            <section
+                        className="favorites-section"
             >
-                         Sign Out 
-            </button>
-             
+                        <Link
+                                    replace={false}
+                                    to="/"
+                        >
+                                    Home
+                        </Link>
+            </section>
 </header>,
           <ul>
             <withRouter(Connect(Card))
@@ -1227,13 +1280,21 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <button
-                onClick={undefined}
+              <h1>
+                Favorites
+</h1>,
+              <section
+                className="favorites-section"
 >
-                 Sign Out 
-</button>,
-              " ",
+                <Link
+                                replace={false}
+                                to="/"
+                >
+                                Home
+                </Link>
+</section>,
             ],
+            "className": "favorites-header",
           },
           "ref": null,
           "rendered": Array [
@@ -1242,14 +1303,41 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": " Sign Out ",
-                "onClick": undefined,
+                "children": "Favorites",
               },
               "ref": null,
-              "rendered": " Sign Out ",
-              "type": "button",
+              "rendered": "Favorites",
+              "type": "h1",
             },
-            " ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Link
+                  replace={false}
+                  to="/"
+>
+                  Home
+</Link>,
+                "className": "favorites-section",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Home",
+                  "replace": false,
+                  "to": "/",
+                },
+                "ref": null,
+                "rendered": "Home",
+                "type": [Function],
+              },
+              "type": "section",
+            },
           ],
           "type": "header",
         },
@@ -1537,6 +1625,9 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <header>
+          <h1>
+                    Favorites
+          </h1>
           <a
                     href="http://localhost:3001/login"
           >
@@ -1561,6 +1652,9 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
+            <h1>
+              Favorites
+</h1>,
             <a
               href="http://localhost:3001/login"
 >
@@ -1575,6 +1669,17 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Favorites",
+            },
+            "ref": null,
+            "rendered": "Favorites",
+            "type": "h1",
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -1624,6 +1729,9 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <header>
+            <h1>
+                        Favorites
+            </h1>
             <a
                         href="http://localhost:3001/login"
             >
@@ -1648,6 +1756,9 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+              <h1>
+                Favorites
+</h1>,
               <a
                 href="http://localhost:3001/login"
 >
@@ -1662,6 +1773,17 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Favorites",
+              },
+              "ref": null,
+              "rendered": "Favorites",
+              "type": "h1",
+            },
             Object {
               "instance": null,
               "key": undefined,

@@ -21,7 +21,7 @@ export class App extends Component {
       <div className="App">
         <Route exact path="/" component={MovieContainer} />
         <Route exact path="/login" component={LoginForm} />
-        <Route exact path="/sign-up" component={SignUp} />
+        <Route exact path="/sign-up" render={() => <SignUp />} />
         <Route exact path="/favorites" render={() => <Favorites />} />
       </div>
     );

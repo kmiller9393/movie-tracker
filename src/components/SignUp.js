@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { setUserData } from '../utils/apiCalls';
-import { Link } from 'react-router-dom';
-import './SignUp.css'
+import { NavLink } from 'react-router-dom';
+import './SignUp.css';
 
 export class SignUp extends Component {
   constructor() {
@@ -33,7 +33,9 @@ export class SignUp extends Component {
         <form className="signup-form" onSubmit={this.handleSubmit}>
           <article className="signup-article">
             <h1 className="signup-header">Sign Up Here</h1>
-            <Link className="signup-home" to="/">Home</Link>
+            <NavLink className="signup-home" to="/">
+              Home
+            </NavLink>
           </article>
           <input
             name="name"
