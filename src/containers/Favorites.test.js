@@ -1,7 +1,7 @@
-import { Favorites, mapDispatchToProps } from './Favorites'
+import { Favorites, mapDispatchToProps, mapStateToProps } from './Favorites'
 import React from 'react'
 import { shallow, mount } from 'enzyme';
-import { mockFavorites, mockMurrayData, mockUser } from '../utils/mockData/mockMurrayData';
+import { mockFavorites, mockMurrayData, mockUser, mockFavoriteStateResult } from '../utils/mockData/mockMurrayData';
 
 describe('Favorites', () => {
   let wrapper;
@@ -28,4 +28,22 @@ describe('Favorites', () => {
       expect(mockDispatch).toHaveBeenCalled();
     })
   });
+
+  describe('mapStateToProps', () => {
+    it('should return an object with movies, user and favorites', () => {
+      const movies = mockMurrayData.data;
+      const favorites = [mockFavorites];
+      const user = mockUser;
+
+      const mockState = {
+        movies,
+        favorites,
+        user
+      };
+
+      const mappedProps = mapStateToProps(mockState);
+
+      expect(mappedProps).toEqual(mockFavoriteStateResult);
+    })
+  })
 })
