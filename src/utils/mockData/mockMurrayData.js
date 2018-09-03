@@ -726,7 +726,7 @@ export const mockMovie = {
     "Fear and Loathing on the Road to Hollywood, also known as Fear and Loathing in Gonzovision, is a documentary film producedby BBC in 1978 on the subject of Hunter S. Thompson, directed by Nigel Finch.  The road trip/film pairs Thompson with Finch's fellow Briton the illustrator Ralph Steadman. The party travel to Hollywood via Death Valley and Barstow from Las Vegas, scene of the pair's 1971 collaboration. It contains interviews with Thompson and Steadman, as well as some short excerpts from some of his work.",
   release: '1978-11-02',
   image: 'https://image.tmdb.org/t/p/w500/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg',
-  id: 164808,
+  movie_id: 164808,
   vote_average: 8
 };
 
@@ -845,3 +845,6 @@ export const mockStateResult = {
   ],
   user: undefined
 };
+
+
+export const mockFavoriteStateResult = {"favorites": [{"data": [{"id": 13, "movie_id": 152760, "overview": "Based on the true story of the greatest treasure hunt in history, The Monuments Men is an action drama focusing on seven over-the-hill, out-of-shape museum directors, artists, architects, curators, and art historians who went to the front lines of WWII to rescue the world’s artistic masterpieces from Nazi thieves and return them to their rightful owners.  With the art hidden behind enemy lines, how could these guys hope to succeed?", "poster_path": "https://image.tmdb.org/t/p/w500/lhCUqVEPA3MMxnV8QTeVBTmRrP4.jpg", "release_date": "2014-01-24", "title": "The Monuments Men", "user_id": 1, "vote_average": "5.9"}, {"id": 25, "movie_id": 152760, "overview": "Based on the true story of the greatest treasure hunt in history, The Monuments Men is an action drama focusing on seven over-the-hill, out-of-shape museum directors, artists, architects, curators, and art historians who went to the front lines of WWII to rescue the world’s artistic masterpieces from Nazi thieves and return them to their rightful owners.  With the art hidden behind enemy lines, how could these guys hope to succeed?", "poster_path": "https://image.tmdb.org/t/p/w500/lhCUqVEPA3MMxnV8QTeVBTmRrP4.jpg", "release_date": "2014-01-24", "title": "The Monuments Men", "user_id": 1, "vote_average": "5.9"}], "message": "Retrieved All favorites", "status":"success"}], "movies": undefined, "user": undefined}
