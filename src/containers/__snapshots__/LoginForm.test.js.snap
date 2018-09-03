@@ -19,12 +19,23 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <img
-          alt="netflix-font"
-          border="0"
-          className="login-image"
-          src="https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png"
-/>,
+        <section
+          className="login-section"
+>
+          <img
+                    alt="netflix-font"
+                    border="0"
+                    className="login-image"
+                    src="https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png"
+          />
+          <Link
+                    className="login-home-link"
+                    replace={false}
+                    to="/"
+          >
+                    Home
+          </Link>
+</section>,
         <form
           onSubmit={[Function]}
 >
@@ -57,14 +68,55 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "alt": "netflix-font",
-          "border": "0",
-          "className": "login-image",
-          "src": "https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png",
+          "children": Array [
+            <img
+              alt="netflix-font"
+              border="0"
+              className="login-image"
+              src="https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png"
+/>,
+            <Link
+              className="login-home-link"
+              replace={false}
+              to="/"
+>
+              Home
+</Link>,
+          ],
+          "className": "login-section",
         },
         "ref": null,
-        "rendered": null,
-        "type": "img",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "netflix-font",
+              "border": "0",
+              "className": "login-image",
+              "src": "https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Home",
+              "className": "login-home-link",
+              "replace": false,
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": "Home",
+            "type": [Function],
+          },
+        ],
+        "type": "section",
       },
       Object {
         "instance": null,
@@ -151,12 +203,23 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <img
-            alt="netflix-font"
-            border="0"
-            className="login-image"
-            src="https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png"
-/>,
+          <section
+            className="login-section"
+>
+            <img
+                        alt="netflix-font"
+                        border="0"
+                        className="login-image"
+                        src="https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png"
+            />
+            <Link
+                        className="login-home-link"
+                        replace={false}
+                        to="/"
+            >
+                        Home
+            </Link>
+</section>,
           <form
             onSubmit={[Function]}
 >
@@ -189,14 +252,55 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "alt": "netflix-font",
-            "border": "0",
-            "className": "login-image",
-            "src": "https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png",
+            "children": Array [
+              <img
+                alt="netflix-font"
+                border="0"
+                className="login-image"
+                src="https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png"
+/>,
+              <Link
+                className="login-home-link"
+                replace={false}
+                to="/"
+>
+                Home
+</Link>,
+            ],
+            "className": "login-section",
           },
           "ref": null,
-          "rendered": null,
-          "type": "img",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "netflix-font",
+                "border": "0",
+                "className": "login-image",
+                "src": "https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Home",
+                "className": "login-home-link",
+                "replace": false,
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "Home",
+              "type": [Function],
+            },
+          ],
+          "type": "section",
         },
         Object {
           "instance": null,

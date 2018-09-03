@@ -66,6 +66,7 @@ ShallowWrapper {
               "image": "https://image.tmdb.org/t/p/w300/vOipe2myi26UDwP978hsYOrnUWC.jpg",
               "movie_id": 278927,
               "overview": "A man-cub named Mowgli fostered by wolves. After a threat from the tiger Shere Khan, Mowgli is forced to flee the jungle, by which he embarks on a journey of self discovery with the help of the panther, Bagheera and the free-spirited bear, Baloo.",
+              "release": "2016-04-07",
               "title": "The Jungle Book",
               "vote_average": 6.8,
             },
@@ -312,7 +313,7 @@ ShallowWrapper {
             Object {
               "image": "https://image.tmdb.org/t/p/w300/kKwNRePEqTfC6DnNlJzz1yX44iR.jpg",
               "movie_id": 421,
-              "overview": "Wes Anderson’s incisive quirky comedy build up stars complex characters like in ‘The Royal Tenenbaums’ with Bill Murray onin the leading role. An ocean adventure documentary film maker Zissou is put in all imaginable life situations and a tough life crisis as he attempts to make a new film about capturing the creature that caused him pain.",
+              "overview": "Wes Anderson’s incisive quirky comedy build up stars complex characters like in ‘The Royal Tenenbaums’ with Bill Murray on in the leading role. An ocean adventure documentary film maker Zissou is put in all imaginable life situations and a tough life crisis as he attempts to make a new film about capturing the creature that caused him pain.",
               "release": "2004-12-10",
               "title": "The Life Aquatic with Steve Zissou",
               "vote_average": 7.1,
@@ -320,7 +321,7 @@ ShallowWrapper {
             Object {
               "image": "https://image.tmdb.org/t/p/w300/v6xvth8PjDG350ARG9H2sF7N3SF.jpg",
               "movie_id": 8920,
-              "overview": "Garfield, the fat, lazy, lasagna lover, has everything a cat could want. But when Jon, in an effort to impress the Liz - the vet and an old high-school crush - adopts a dog named Odie and bringshim home, Garfield gets the one thing he doesn't want. Competition.",
+              "overview": "Garfield, the fat, lazy, lasagna lover, has everything a cat could want. But when Jon, in an effort to impress the Liz - the vet and an old high-school crush - adopts a dog named Odie and brings him home, Garfield gets the one thing he doesn't want. Competition.",
               "release": "2004-06-10",
               "title": "Garfield",
               "vote_average": 5.3,
@@ -358,8 +359,8 @@ ShallowWrapper {
               "vote_average": 7.2,
             },
             Object {
-              "id": 16435,
               "image": "https://image.tmdb.org/t/p/w300/imCndGIIYvbGkw5PHra3suxITq9.jpg",
+              "movie_id": 16435,
               "overview": "A counselor, an expert on depression, and two attorneys try to help a couple who have marital problems.",
               "release": "2001-10-18",
               "title": "Speaking of Sex",
@@ -368,7 +369,7 @@ ShallowWrapper {
             Object {
               "image": "https://image.tmdb.org/t/p/w300/5xw30y0pSaMtTcuZW5VaQPiR8qb.jpg",
               "movie_id": 9428,
-              "overview": "Royal Tenenbaum and his wife Etheline had three children and then they separated. All three children are extraordinary ---all geniuses. Virtually all memory of the brilliance of the young Tenenbaums was subsequently erased by two decades of betrayal, failure, and disaster. Most of this was generally considered to be their father's fault. \\"The Royal Tenenbaums\\" is the story of the family's sudden, unexpected reunion one recent winter.",
+              "overview": "Royal Tenenbaum and his wife Etheline had three children and then they separated. All three children are extraordinary --- all geniuses. Virtually all memory of the brilliance of the young Tenenbaums was subsequently erased by two decades of betrayal, failure, and disaster. Most of this was generally considered to be their father's fault. \\"The Royal Tenenbaums\\" is the story of the family's sudden, unexpected reunion one recent winter.",
               "release": "2001-10-12",
               "title": "The Royal Tenenbaums",
               "vote_average": 7.4,
@@ -400,7 +401,7 @@ ShallowWrapper {
             Object {
               "image": "https://image.tmdb.org/t/p/w300/6mpDcmOOjgls5aVSOwp6rNmSTOB.jpg",
               "movie_id": 24977,
-              "overview": "This documentary showcases basketball player Michael Jordan's awe-inspiring moves, providing behind-the-scenes and on-the-court action, including footage of Jordan and the Chicago Bulls going head-to-head against the Utah Jazz in the 1997 NBA Finals. Phil Jackson and Bob Costas are interviewed (among others), and the awesome soundtrackincludes songs by Earth, Wind and Fire, Fatboy Slim and Freddie King.",
+              "overview": "This documentary showcases basketball player Michael Jordan's awe-inspiring moves, providing behind-the-scenes and on-the-court action, including footage of Jordan and the Chicago Bulls going head-to-head against the Utah Jazz in the 1997 NBA Finals. Phil Jackson and Bob Costas are interviewed (among others), and the awesome soundtrack includes songs by Earth, Wind and Fire, Fatboy Slim and Freddie King.",
               "release": "2000-05-05",
               "title": "Michael Jordan to the Max",
               "vote_average": 7.5,
@@ -408,7 +409,7 @@ ShallowWrapper {
             Object {
               "image": "https://image.tmdb.org/t/p/w300/1fTdEqJFZMSTRtZSnT2IL3MibvW.jpg",
               "movie_id": 32274,
-              "overview": "A true story of politics and art in the 1930s USA,centered around a leftist musical drama and attempts to stop its production.",
+              "overview": "A true story of politics and art in the 1930s USA, centered around a leftist musical drama and attempts to stop its production.",
               "release": "1999-12-10",
               "title": "Cradle Will Rock",
               "vote_average": 6.8,
@@ -440,7 +441,7 @@ ShallowWrapper {
             Object {
               "image": "https://image.tmdb.org/t/p/w300/dI9iYo1cL81yzJkBVyNGipjSvy0.jpg",
               "movie_id": 617,
-              "overview": "When teen-socialite Kelly Van Ryan and troubled bad girl Suzie Toller accuse guidance counselor Sam Lombardo of rape, he's suspended by the school, rejected by the town, and fighting to get hislife back. One cop suspects conspiracy, but nothing is what it seems...",
+              "overview": "When teen-socialite Kelly Van Ryan and troubled bad girl Suzie Toller accuse guidance counselor Sam Lombardo of rape, he's suspended by the school, rejected by the town, and fighting to get his life back. One cop suspects conspiracy, but nothing is what it seems...",
               "release": "1998-03-20",
               "title": "Wild Things",
               "vote_average": 6.3,
@@ -448,7 +449,7 @@ ShallowWrapper {
             Object {
               "image": "https://image.tmdb.org/t/p/w300/32UQkAUWy9NpuvJfF82xrMr2A0G.jpg",
               "movie_id": 9414,
-              "overview": "An American gets a ticket for an audience participation game in London, then gets involved in a case of mistaken identity.As an international plot unravels around him, he thinks it's all part of the act.",
+              "overview": "An American gets a ticket for an audience participation game in London, then gets involved in a case of mistaken identity. As an international plot unravels around him, he thinks it's all part of the act.",
               "release": "1997-11-14",
               "title": "The Man Who Knew Too Little",
               "vote_average": 6.4,
@@ -464,7 +465,7 @@ ShallowWrapper {
             Object {
               "image": "https://image.tmdb.org/t/p/w300/hrnStoGvCyJT4vvIWinTlt8fNVG.jpg",
               "movie_id": 34170,
-              "overview": "Motivational Speaker Jack Corcoran is determined to get his career off the ground, but the biggest gigs he can get are theones nobody wants. Then one day, he receives a telegram that his circusclown father has passed away, and has left a \\"huge\\" inheritance. When he gets there, he finds that his inheritance has come in the form of an elephant that was his father's pride and joy in circus acts. His main intention is to sell the pachyderm off. Jack must choose between loud and rude zookeeper Mo or attractive animal show owner Terry. As the two treks through the country Jack and the elephant develop a bond, and it changes his approach on life for the better.",
+              "overview": "Motivational Speaker Jack Corcoran is determined to get his career off the ground, but the biggest gigs he can get are the ones nobody wants. Then one day, he receives a telegram that his circus clown father has passed away, and has left a \\"huge\\" inheritance. When he gets there, he finds that his inheritance has come in the form of an elephant that was his father's pride and joy in circus acts. His main intention is to sell the pachyderm off. Jack must choose between loud and rude zookeeper Mo or attractive animal show owner Terry. As the two treks through the country Jack and the elephant develop a bond, and it changes his approach on life for the better.",
               "release": "1996-10-31",
               "title": "Larger than Life",
               "vote_average": 5.6,
@@ -472,7 +473,7 @@ ShallowWrapper {
             Object {
               "image": "https://image.tmdb.org/t/p/w300/l2LObt7s0hakFi9ga6tOKMqKkuo.jpg",
               "movie_id": 11543,
-              "overview": "After bowler Roy Munson swindles the wrong crowd and is left with a hook for a hand, he settles into impoverished obscurity. That is, until he uncovers the next big thing: an Amish kid named Ishmael. So, the corrupt and the hopelessly naïve hit the circuit intent onsettling an old score with Big Ern.",
+              "overview": "After bowler Roy Munson swindles the wrong crowd and is left with a hook for a hand, he settles into impoverished obscurity. That is, until he uncovers the next big thing: an Amish kid named Ishmael. So, the corrupt and the hopelessly naïve hit the circuit intent on settling an old score with Big Ern.",
               "release": "1996-07-04",
               "title": "Kingpin",
               "vote_average": 6.6,
@@ -488,7 +489,7 @@ ShallowWrapper {
             Object {
               "image": "https://image.tmdb.org/t/p/w300/xZlVITyuTxI3Olu9h64xYPdpZyP.jpg",
               "movie_id": 10433,
-              "overview": "Wayne Dobie is a shy cop whose low-key demeanor has earned him the affectionate nickname \\"Mad Dog.\\" After Mad Dog saves the life of Frank Milo, a crime boss and aspiring stand-up comedian, he'soffered the company of an attractive young waitress named Glory for a week. At first both are uneasy about the arrangement, but they eventuallyfall in love. However, the situation becomes complicated when Milo demands Glory back.",
+              "overview": "Wayne Dobie is a shy cop whose low-key demeanor has earned him the affectionate nickname \\"Mad Dog.\\" After Mad Dog saves the life of Frank Milo, a crime boss and aspiring stand-up comedian, he's offered the company of an attractive young waitress named Glory for a week. At first both are uneasy about the arrangement, but they eventually fall in love. However, the situation becomes complicated when Milo demands Glory back.",
               "release": "1993-03-05",
               "title": "Mad Dog and Glory",
               "vote_average": 5.7,
@@ -512,7 +513,7 @@ ShallowWrapper {
             Object {
               "image": "https://image.tmdb.org/t/p/w300/jvaXUsDiX3r2RgVrdNK5SstsEqT.jpg",
               "movie_id": 10729,
-              "overview": "With the aid of his girlfriend, Phyllis Potter, and best friend, Loomis, Grimm enters a Manhattan bank dressed as a clown,creates a hostage situation and executes a flawless robbery. The only thing left for the trio to do is make their getaway out of the city and to the airport. It sounds simple enough, but it seems that fate deserts them immediately after the bank heist. One mishap after another conspiresto keep these robbers from reaching freedom.",
+              "overview": "With the aid of his girlfriend, Phyllis Potter, and best friend, Loomis, Grimm enters a Manhattan bank dressed as a clown, creates a hostage situation and executes a flawless robbery. The only thing left for the trio to do is make their getaway out of the city and to the airport. It sounds simple enough, but it seems that fate deserts them immediately after the bank heist. One mishap after another conspires to keep these robbers from reaching freedom.",
               "release": "1990-07-13",
               "title": "Quick Change",
               "vote_average": 6.5,
@@ -520,7 +521,7 @@ ShallowWrapper {
             Object {
               "image": "https://image.tmdb.org/t/p/w300/4nN0EYNbOWHJ9UO39maO5Kvcdfa.jpg",
               "movie_id": 2978,
-              "overview": "Five years after they defeated Gozer, the Ghostbusters are out of business. When Dana begins to have ghost problems again,the boys come out of retirement to aid her and hopefully save New York City from a new paranormal threat.",
+              "overview": "Five years after they defeated Gozer, the Ghostbusters are out of business. When Dana begins to have ghost problems again, the boys come out of retirement to aid her and hopefully save New York City from a new paranormal threat.",
               "release": "1989-06-15",
               "title": "Ghostbusters II",
               "vote_average": 6.4,
@@ -536,7 +537,7 @@ ShallowWrapper {
             Object {
               "image": "https://image.tmdb.org/t/p/w300/5vYlV82YQUSubsuGzubnviuyPW9.jpg",
               "movie_id": 12714,
-              "overview": "Jake and Kristy Briggs are newlyweds. Being young,they are perhaps a bit unprepared for the full reality of marriage and all that it (and their parents) expect from them. Do they want babies? Their parents certainly want them to. Is married life all that there is? Things certainly aren't helped by Jake's friend Davis, who always seems to turn up just in time to put a spanner in the works.",
+              "overview": "Jake and Kristy Briggs are newlyweds. Being young, they are perhaps a bit unprepared for the full reality of marriage and all that it (and their parents) expect from them. Do they want babies? Their parents certainly want them to. Is married life all that there is? Things certainly aren't helped by Jake's friend Davis, who always seems to turn up just in time to put a spanner in the works.",
               "release": "1988-02-05",
               "title": "She's Having a Baby",
               "vote_average": 5.7,
@@ -544,7 +545,7 @@ ShallowWrapper {
             Object {
               "image": "https://image.tmdb.org/t/p/w300/iKkbN17OmFosaW6asCNZTTsyvpu.jpg",
               "movie_id": 10776,
-              "overview": "Seymour Krelborn is a nerdy orphan working at Mushnik's, a flower shop in urban Skid Row. He harbors a crush on fellow co-worker Audrey Fulquard, and is berated by Mr. Mushnik daily. One day asSeymour is seeking a new mysterious plant, he finds a very mysterious unidentified plant which he calls Audrey II. The plant seems to have a craving for blood and soon begins to sing for his supper.",
+              "overview": "Seymour Krelborn is a nerdy orphan working at Mushnik's, a flower shop in urban Skid Row. He harbors a crush on fellow co-worker Audrey Fulquard, and is berated by Mr. Mushnik daily. One day as Seymour is seeking a new mysterious plant, he finds a very mysterious unidentified plant which he calls Audrey II. The plant seems to have a craving for blood and soon begins to sing for his supper.",
               "release": "1986-12-19",
               "title": "Little Shop of Horrors",
               "vote_average": 6.7,
@@ -560,7 +561,7 @@ ShallowWrapper {
             Object {
               "image": "https://image.tmdb.org/t/p/w300/ai6iFng036xuBGeDVSEOdhkKrZ2.jpg",
               "movie_id": 24453,
-              "overview": "He had everything and wanted nothing. He learned that he had nothing and wanted everything. He saved the world and then itshattered. The path to enlightenment is as sharp and narrow as a razor's edge.",
+              "overview": "He had everything and wanted nothing. He learned that he had nothing and wanted everything. He saved the world and then it shattered. The path to enlightenment is as sharp and narrow as a razor's edge.",
               "release": "1984-10-19",
               "title": "The Razor's Edge",
               "vote_average": 6.5,
@@ -576,7 +577,7 @@ ShallowWrapper {
             Object {
               "image": "https://image.tmdb.org/t/p/w300/3FS3oBdorgczgfCkFi2u8ZTFfpS.jpg",
               "movie_id": 620,
-              "overview": "After losing their academic posts at a prestigiousuniversity, a team of parapsychologists goes into business as proton-pack-toting \\"ghostbusters\\" who exterminate ghouls, hobgoblins and supernatural pests of all stripes. An ad campaign pays off when a knockout cellist hires the squad to purge her swanky digs of demons that appear to be living in her refrigerator.",
+              "overview": "After losing their academic posts at a prestigious university, a team of parapsychologists goes into business as proton-pack-toting \\"ghostbusters\\" who exterminate ghouls, hobgoblins and supernatural pests of all stripes. An ad campaign pays off when a knockout cellist hires the squad to purge her swanky digs of demons that appear to be living in her refrigerator.",
               "release": "1984-06-07",
               "title": "Ghostbusters",
               "vote_average": 7.4,
@@ -584,7 +585,7 @@ ShallowWrapper {
             Object {
               "image": "https://image.tmdb.org/t/p/w300/ngyCzZwb9y5sMUCig5JQT4Y33Q.jpg",
               "movie_id": 9576,
-              "overview": "When struggling, out of work actor Michael Dorsey secretly adopts a female alter ego -- Dorothy Michaels -- in order to land a part in a daytime drama, he unwittingly becomes a feminist icon andends up in a romantic pickle.",
+              "overview": "When struggling, out of work actor Michael Dorsey secretly adopts a female alter ego -- Dorothy Michaels -- in order to land a part in a daytime drama, he unwittingly becomes a feminist icon and ends up in a romantic pickle.",
               "release": "1982-12-16",
               "title": "Tootsie",
               "vote_average": 7.1,
@@ -592,7 +593,7 @@ ShallowWrapper {
             Object {
               "image": "https://image.tmdb.org/t/p/w300/2FKmtCyl3Pjqv1sz4RjC6wHYiLu.jpg",
               "movie_id": 62552,
-              "overview": "Rodney Dangerfield special, featuring stand-up andsketches.",
+              "overview": "Rodney Dangerfield special, featuring stand-up and sketches.",
               "release": "1982-05-12",
               "title": "The Rodney Dangerfield Show: It's Not Easy Bein' Me",
               "vote_average": 0,
@@ -608,7 +609,7 @@ ShallowWrapper {
             Object {
               "image": "https://image.tmdb.org/t/p/w300/nqfLX1bJLUlZnfflqpUIWrGQwSv.jpg",
               "movie_id": 10890,
-              "overview": "John Winger, an indolent sad sack in his 30s, impulsively joins the U.S. Army after losing his job, his girlfriend and hisapartment.",
+              "overview": "John Winger, an indolent sad sack in his 30s, impulsively joins the U.S. Army after losing his job, his girlfriend and his apartment.",
               "release": "1981-06-25",
               "title": "Stripes",
               "vote_average": 6.6,
@@ -640,7 +641,7 @@ ShallowWrapper {
             Object {
               "image": "https://image.tmdb.org/t/p/w300/etoQq5a3fDuj2hKMLxUCnKqiIJh.jpg",
               "movie_id": 13005,
-              "overview": "Semi-biographical film based on the experiences ofgonzo journalist Hunter S. Thompson.",
+              "overview": "Semi-biographical film based on the experiences of gonzo journalist Hunter S. Thompson.",
               "release": "1980-04-25",
               "title": "Where the Buffalo Roam",
               "vote_average": 6.3,
@@ -648,7 +649,7 @@ ShallowWrapper {
             Object {
               "image": "https://image.tmdb.org/t/p/w300/h9sa8TaVjpNBrGkWK4hoEarPCmr.jpg",
               "movie_id": 49036,
-              "overview": "Mike O'Donoghue's parody of \\"Mondo Cane\\" showcases curious performers, strange musicians, celebrity mutations and unusual short films, including Thomas Alva Edison's \\"Elephant Electrocution\\".In the tradition of films like Groove Tube (1974),  The Kentucky Fried Movie (1977),  and Saturday Night Live.",
+              "overview": "Mike O'Donoghue's parody of \\"Mondo Cane\\" showcases curious performers, strange musicians, celebrity mutations and unusual short films, including Thomas Alva Edison's \\"Elephant Electrocution\\". In the tradition of films like Groove Tube (1974),  The Kentucky Fried Movie (1977),  and Saturday Night Live.",
               "release": "1979-09-20",
               "title": "Mr. Mike's Mondo Video",
               "vote_average": 4.2,
@@ -656,7 +657,7 @@ ShallowWrapper {
             Object {
               "image": "https://image.tmdb.org/t/p/w300/o0NmLgnCVph7I07OP0yKGPFoLrO.jpg",
               "movie_id": 14035,
-              "overview": "Tripper is the head counselor at a budget summer camp called Camp Northstar. In truth, he's young at heart and only marginally more mature than the campers themselves. Tripper befriends Rudy, aloner camper who has trouble fitting in. As Tripper inspires his young charges to defeat rival Camp Mohawk in the annual Olympiad competition, Rudy plays matchmaker between Tripper and Roxanne, a female counselor atNorthstar.",
+              "overview": "Tripper is the head counselor at a budget summer camp called Camp Northstar. In truth, he's young at heart and only marginally more mature than the campers themselves. Tripper befriends Rudy, a loner camper who has trouble fitting in. As Tripper inspires his young charges to defeat rival Camp Mohawk in the annual Olympiad competition, Rudy plays matchmaker between Tripper and Roxanne, a female counselor at Northstar.",
               "release": "1979-06-28",
               "title": "Meatballs",
               "vote_average": 6,
@@ -664,7 +665,7 @@ ShallowWrapper {
             Object {
               "image": "https://image.tmdb.org/t/p/w300/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg",
               "movie_id": 164808,
-              "overview": "Fear and Loathing on the Road to Hollywood, also known as Fear and Loathing in Gonzovision, is a documentary film producedby BBC in 1978 on the subject of Hunter S. Thompson, directed by Nigel Finch.  The road trip/film pairs Thompson with Finch's fellow Briton the illustrator Ralph Steadman. The party travel to Hollywood via Death Valley and Barstow from Las Vegas, scene of the pair's 1971 collaboration. It contains interviews with Thompson and Steadman, as well as some short excerpts from some of his work.",
+              "overview": "Fear and Loathing on the Road to Hollywood, also known as Fear and Loathing in Gonzovision, is a documentary film produced by BBC in 1978 on the subject of Hunter S. Thompson, directed by Nigel Finch.  The road trip/film pairs Thompson with Finch's fellow Briton the illustrator Ralph Steadman. The party travel to Hollywood via Death Valley and Barstow from Las Vegas, scene of the pair's 1971 collaboration. It contains interviews with Thompson and Steadman, as well as some short excerpts from some of his work.",
               "release": "1978-11-02",
               "title": "Fear and Loathing on the Road to Hollywood",
               "vote_average": 8,
@@ -693,13 +694,22 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <header>
-          <button
-                    onClick={undefined}
+        <header
+          className="favorites-header"
+>
+          <h1>
+                    Favorites
+          </h1>
+          <section
+                    className="favorites-section"
           >
-                     Sign Out 
-          </button>
-           
+                    <Link
+                              replace={false}
+                              to="/"
+                    >
+                              Home
+                    </Link>
+          </section>
 </header>,
         <ul>
           <withRouter(Connect(Card))
@@ -823,13 +833,21 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <button
-              onClick={undefined}
+            <h1>
+              Favorites
+</h1>,
+            <section
+              className="favorites-section"
 >
-               Sign Out 
-</button>,
-            " ",
+              <Link
+                            replace={false}
+                            to="/"
+              >
+                            Home
+              </Link>
+</section>,
           ],
+          "className": "favorites-header",
         },
         "ref": null,
         "rendered": Array [
@@ -838,14 +856,41 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": " Sign Out ",
-              "onClick": undefined,
+              "children": "Favorites",
             },
             "ref": null,
-            "rendered": " Sign Out ",
-            "type": "button",
+            "rendered": "Favorites",
+            "type": "h1",
           },
-          " ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/"
+>
+                Home
+</Link>,
+              "className": "favorites-section",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Home",
+                "replace": false,
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "Home",
+              "type": [Function],
+            },
+            "type": "section",
+          },
         ],
         "type": "header",
       },
@@ -1096,13 +1141,22 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <header>
-            <button
-                        onClick={undefined}
+          <header
+            className="favorites-header"
+>
+            <h1>
+                        Favorites
+            </h1>
+            <section
+                        className="favorites-section"
             >
-                         Sign Out 
-            </button>
-             
+                        <Link
+                                    replace={false}
+                                    to="/"
+                        >
+                                    Home
+                        </Link>
+            </section>
 </header>,
           <ul>
             <withRouter(Connect(Card))
@@ -1226,13 +1280,21 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <button
-                onClick={undefined}
+              <h1>
+                Favorites
+</h1>,
+              <section
+                className="favorites-section"
 >
-                 Sign Out 
-</button>,
-              " ",
+                <Link
+                                replace={false}
+                                to="/"
+                >
+                                Home
+                </Link>
+</section>,
             ],
+            "className": "favorites-header",
           },
           "ref": null,
           "rendered": Array [
@@ -1241,14 +1303,41 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": " Sign Out ",
-                "onClick": undefined,
+                "children": "Favorites",
               },
               "ref": null,
-              "rendered": " Sign Out ",
-              "type": "button",
+              "rendered": "Favorites",
+              "type": "h1",
             },
-            " ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Link
+                  replace={false}
+                  to="/"
+>
+                  Home
+</Link>,
+                "className": "favorites-section",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Home",
+                  "replace": false,
+                  "to": "/",
+                },
+                "ref": null,
+                "rendered": "Home",
+                "type": [Function],
+              },
+              "type": "section",
+            },
           ],
           "type": "header",
         },
@@ -1536,6 +1625,9 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <header>
+          <h1>
+                    Favorites
+          </h1>
           <a
                     href="http://localhost:3001/login"
           >
@@ -1560,6 +1652,9 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
+            <h1>
+              Favorites
+</h1>,
             <a
               href="http://localhost:3001/login"
 >
@@ -1574,6 +1669,17 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Favorites",
+            },
+            "ref": null,
+            "rendered": "Favorites",
+            "type": "h1",
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -1623,6 +1729,9 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <header>
+            <h1>
+                        Favorites
+            </h1>
             <a
                         href="http://localhost:3001/login"
             >
@@ -1647,6 +1756,9 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+              <h1>
+                Favorites
+</h1>,
               <a
                 href="http://localhost:3001/login"
 >
@@ -1661,6 +1773,17 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Favorites",
+              },
+              "ref": null,
+              "rendered": "Favorites",
+              "type": "h1",
+            },
             Object {
               "instance": null,
               "key": undefined,
