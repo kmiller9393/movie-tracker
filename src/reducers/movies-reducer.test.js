@@ -6,7 +6,7 @@ import { mockMovie, mockMurrayData } from '../utils/mockData/mockMurrayData'
 describe('moviesReducer', () => {
   it('should return initial state by default', () => {
     const expected = [];
-    const result = movieReducer(undefined, {})
+    const result = movieReducer(undefined, [])
 
     expect(result).toEqual(expected)
   })

@@ -3,7 +3,7 @@ import * as actions from '../actions';
 
 describe('loginReducer', () => {
   it('should return initial state by default', () => {
-    const expected = [];
+    const expected = {};
     const result = loginReducer(undefined, {});
     expect(result).toEqual(expected);
   })
@@ -19,7 +19,7 @@ describe('loginReducer', () => {
   })
 
   it('should be able to log out a user', () => {
-    const expected = [];
+    const expected = {};
     const result = loginReducer({name: 'Brandon', id: 2}, actions.logoutUser())
     expect(result).toEqual(expected)
   })
