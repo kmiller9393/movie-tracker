@@ -10,7 +10,7 @@ import PropTypes from 'prop-types'
 import './App.css';
 import Favorites from '../../containers/Favorites';
 
-class App extends Component {
+export class App extends Component {
   async componentDidMount() {
     const murrayMovies = await cleanMurrayData();
     this.props.getMovies(murrayMovies);
