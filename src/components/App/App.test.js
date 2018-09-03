@@ -6,21 +6,21 @@ import { cleanMurrayData } from '../../utils/__mocks__/helper'
 import { fetchMurrayMovies } from '../../utils/__mocks__/apiCalls'
 // jest.mock('../../utils/__mocks__/apiCalls');
 
-describe.skip('App', () => {
+describe('App', () => {
   let wrapper;
-  beforeEach(() => {
-    wrapper = shallow(<App getMovies={jest.fn()}/>)
-  })
-  
-  it('should call getMovies from props with the correct params', async () => {
+  beforeEach( async () => {
+   wrapper = await shallow(<App getMovies={jest.fn()}/>)
     window.fetch = jest
       .fn()
       .mockImplementation(() =>
-        Promise.resolve({ json: () => Promise.resolve(cleanMurrayData) })
+        Promise.resolve({ json: () => Promise.resolve(fetchMurrayMovies) })
       );
-    // const result = await wrapper.instance().fetchMurrayData()
-    console.log(result)
-    expect(wrapper.props().getMovies).toHaveBeenCalledWith('')
+  })
+  
+  it('should call getMovies from props with the correct params', async () => {
+    const result = await wrapper.instance().fetchMurrayData()
+    // console.log(result)
+    expect(cleanMurrayData).toHaveBeenCalledWith('')
   })
 
   describe('mapDispatchToPros', () => {

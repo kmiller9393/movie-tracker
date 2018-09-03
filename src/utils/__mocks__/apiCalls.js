@@ -1,4 +1,5 @@
-export const fetchMurrayMovies = jest.fn().mockImplementation(() => ({
+export const fetchMurrayMovies = jest.fn().mockImplementation(() => (
+  [{
   page: 1,
   total_results: 87,
   total_pages: 5,
@@ -1510,7 +1511,7 @@ export const fetchMurrayMovies = jest.fn().mockImplementation(() => ({
       ]
     }
   ]
-}));
+}]));
 
 export const setUserData = jest.fn().mockImplementation(() => ({
   status: 'complete'
