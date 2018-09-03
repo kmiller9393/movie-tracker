@@ -18,8 +18,9 @@ describe('App', () => {
   })
   
   it('should call getMovies from props with the correct params', async () => {
+
     const result = await wrapper.instance().fetchMurrayData()
-    // console.log(result)
+    console.log(result)
     expect(cleanMurrayData).toHaveBeenCalledWith('')
   })
 
