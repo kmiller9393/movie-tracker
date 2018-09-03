@@ -6,29 +6,34 @@
   cursor: pointer;
   filter: brightness(70%);
   opacity: 0.95;
-  min-height: 22rem;
-  border: solid 1rem goldenrod;
+  height: 24rem;
   box-shadow: 0 0 80px #000000;
-  border-radius: 24px; }
-  .Card:hover {
-    filter: brightness(100%);
-    opacity: 1; }
+  border-radius: 8px; }
+
+img {
+  border-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px; }
+
+.Card:hover {
+  filter: brightness(100%);
+  opacity: 1; }
 
 .Card article {
   display: none; }
 
 .details {
-  width: 15rem;
-  display: flex;
-  flex-direction: column;
   margin: 2rem 1rem 0 1rem;
   cursor: pointer;
   filter: brightness(100%);
   opacity: 0.95;
   overflow: scroll;
   min-height: 22rem;
-  border: solid 1rem goldenrod;
-  border-radius: 24px; }
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  height: 24rem;
+  box-shadow: 0 0 80px #000000; }
 
 .details article {
   background-color: black;
@@ -36,37 +41,45 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 22rem;
+  height: 20.8rem;
   opacity: 0.8;
   position: absolute;
   width: 15rem;
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  text-align: center;
+  overflow: scroll; }
 
 h2 {
   text-decoration: underline; }
+
+p {
+  line-height: 1.3rem; }
 
 h2,
 p {
   margin: 0;
   width: 13rem; }
 
-p {
-  line-height: 1.4rem; }
-
 img {
   width: 15rem;
-  min-height: 22rem;
+  min-height: 21.5rem;
   border: 2px solid black; }
+
+.add-button {
+  height: 3rem; }
+
+.delete-button {
+  height: 3rem; }
 
 button {
   background: red;
-  border: 2px solid black;
+  border: 1px solid black;
   box-shadow: 0 0 30px #000000;
-  width: 15.36rem;
-  border-radius: 4px;
-  height: 2.5rem;
+  width: 15.24rem;
+  border-radius: 8px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
   color: #f9f9f9;
-  text-decoration: underline;
   font-size: 1rem;
   text-shadow: 2px 2px black;
   font-weight: 400;

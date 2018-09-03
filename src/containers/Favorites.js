@@ -3,6 +3,8 @@ import Card from '../components/Card';
 import { connect } from 'react-redux';
 import { logoutUser } from '../actions';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import './Favorites.css';
 
 export const Favorites = ({ movies, user, logoutUser, favorites }) => {
   const displayFavorites = favorites.map(favorite => {
@@ -23,17 +25,19 @@ export const Favorites = ({ movies, user, logoutUser, favorites }) => {
   return (
     <div>
       {user.name ? (
-        <header>
-          Welcome {user.name}
-          <button onClick={logoutUser}> Sign Out </button>{' '}
+        <header className="favorites-header">
+          <h1>Favorites</h1>
+          <section className="favorites-section">
+            <Link to="/">Home</Link>
+          </section>
         </header>
       ) : (
-        <header>
-          Welcome
-          <a href="http://localhost:3001/login">Login</a>
-          <a href="http://localhost:3001/sign-up">Sign Up</a>
-        </header>
-      )}
+          <header>
+            <h1>Favorites</h1>
+            <a href="http://localhost:3001/login">Login</a>
+            <a href="http://localhost:3001/sign-up">Sign Up</a>
+          </header>
+        )}
       <ul>{displayFavorites}</ul>
     </div>
   );

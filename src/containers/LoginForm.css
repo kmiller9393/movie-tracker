@@ -1,0 +1,37 @@
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem; }
+
+div {
+  text-align: center; }
+
+input {
+  font-size: 1rem;
+  height: 22px;
+  margin-bottom: 0.9rem;
+  width: 250px; }
+
+::placeholder {
+  font-size: 1rem; }
+
+.login-image {
+  width: 250px;
+  min-height: 2em;
+  border: none;
+  box-shadow: grey;
+  padding: 1rem 0 0 0rem; }
+
+.login-button {
+  border-radius: 0px;
+  height: 30px;
+  width: 257px; }
+
+.login-section {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 33.4rem; }
+
+.login-home-link {
+  padding: 1rem 0 0 27rem; }

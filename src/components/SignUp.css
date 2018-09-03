@@ -1,0 +1,17 @@
+.signup-header {
+  padding-left: 37rem; }
+
+.signup-home {
+  padding-left: 35rem; }
+
+.signup-article {
+  padding-bottom: 2rem; }
+
+.signup-button {
+  border-radius: 0px;
+  height: 30px;
+  width: 257px; }
+
+.signup-form {
+  display: flex;
+  justify-content: center; }

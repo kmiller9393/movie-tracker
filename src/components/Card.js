@@ -18,7 +18,6 @@ export class Card extends Component {
     const { user, addMovie } = this.props;
 
     if (!user.name) {
-      console.log(user);
       this.props.history.push('/login');
       alert('You must log-in to favorite a movie!');
     } else {
@@ -41,8 +40,8 @@ export class Card extends Component {
         <article onClick={() => this.setState({ toggle: !this.state.toggle })}>
           <h2>{movie.title}</h2>
           <p>{movie.overview}</p>
-          <p>{movie.release}</p>
-          <p>{movie.vote_average}</p>
+          <p>Released: {movie.release}</p>
+          <p>Rating: {movie.vote_average}</p>
         </article>
         <img
           onClick={() => this.setState({ toggle: !this.state.toggle })}

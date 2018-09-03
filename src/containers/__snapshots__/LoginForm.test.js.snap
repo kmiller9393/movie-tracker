@@ -19,25 +19,36 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <input
-          name="email"
-          onChange={[Function]}
-          placeholder="Email"
-          type="text"
-          value=""
+        <img
+          alt="netflix-font"
+          border="0"
+          className="login-image"
+          src="https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png"
 />,
-        <input
-          name="password"
-          onChange={[Function]}
-          placeholder="Password"
-          type="text"
-          value=""
-/>,
-        <button>
-          LOGIN
-</button>,
+        <form
+          onSubmit={[Function]}
+>
+          <input
+                    name="email"
+                    onChange={[Function]}
+                    placeholder="Email"
+                    type="text"
+                    value=""
+          />
+          <input
+                    name="password"
+                    onChange={[Function]}
+                    placeholder="Password"
+                    type="text"
+                    value=""
+          />
+          <button
+                    className="login-button"
+          >
+                    LOGIN
+          </button>
+</form>,
       ],
-      "onSubmit": [Function],
     },
     "ref": null,
     "rendered": Array [
@@ -46,44 +57,92 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "name": "email",
-          "onChange": [Function],
-          "placeholder": "Email",
-          "type": "text",
-          "value": "",
+          "alt": "netflix-font",
+          "border": "0",
+          "className": "login-image",
+          "src": "https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png",
         },
         "ref": null,
         "rendered": null,
-        "type": "input",
+        "type": "img",
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "name": "password",
-          "onChange": [Function],
-          "placeholder": "Password",
-          "type": "text",
-          "value": "",
+          "children": Array [
+            <input
+              name="email"
+              onChange={[Function]}
+              placeholder="Email"
+              type="text"
+              value=""
+/>,
+            <input
+              name="password"
+              onChange={[Function]}
+              placeholder="Password"
+              type="text"
+              value=""
+/>,
+            <button
+              className="login-button"
+>
+              LOGIN
+</button>,
+          ],
+          "onSubmit": [Function],
         },
         "ref": null,
-        "rendered": null,
-        "type": "input",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "LOGIN",
-        },
-        "ref": null,
-        "rendered": "LOGIN",
-        "type": "button",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "name": "email",
+              "onChange": [Function],
+              "placeholder": "Email",
+              "type": "text",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "name": "password",
+              "onChange": [Function],
+              "placeholder": "Password",
+              "type": "text",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "LOGIN",
+              "className": "login-button",
+            },
+            "ref": null,
+            "rendered": "LOGIN",
+            "type": "button",
+          },
+        ],
+        "type": "form",
       },
     ],
-    "type": "form",
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -92,25 +151,36 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <input
-            name="email"
-            onChange={[Function]}
-            placeholder="Email"
-            type="text"
-            value=""
+          <img
+            alt="netflix-font"
+            border="0"
+            className="login-image"
+            src="https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png"
 />,
-          <input
-            name="password"
-            onChange={[Function]}
-            placeholder="Password"
-            type="text"
-            value=""
-/>,
-          <button>
-            LOGIN
-</button>,
+          <form
+            onSubmit={[Function]}
+>
+            <input
+                        name="email"
+                        onChange={[Function]}
+                        placeholder="Email"
+                        type="text"
+                        value=""
+            />
+            <input
+                        name="password"
+                        onChange={[Function]}
+                        placeholder="Password"
+                        type="text"
+                        value=""
+            />
+            <button
+                        className="login-button"
+            >
+                        LOGIN
+            </button>
+</form>,
         ],
-        "onSubmit": [Function],
       },
       "ref": null,
       "rendered": Array [
@@ -119,44 +189,92 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "name": "email",
-            "onChange": [Function],
-            "placeholder": "Email",
-            "type": "text",
-            "value": "",
+            "alt": "netflix-font",
+            "border": "0",
+            "className": "login-image",
+            "src": "https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png",
           },
           "ref": null,
           "rendered": null,
-          "type": "input",
+          "type": "img",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "name": "password",
-            "onChange": [Function],
-            "placeholder": "Password",
-            "type": "text",
-            "value": "",
+            "children": Array [
+              <input
+                name="email"
+                onChange={[Function]}
+                placeholder="Email"
+                type="text"
+                value=""
+/>,
+              <input
+                name="password"
+                onChange={[Function]}
+                placeholder="Password"
+                type="text"
+                value=""
+/>,
+              <button
+                className="login-button"
+>
+                LOGIN
+</button>,
+            ],
+            "onSubmit": [Function],
           },
           "ref": null,
-          "rendered": null,
-          "type": "input",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "LOGIN",
-          },
-          "ref": null,
-          "rendered": "LOGIN",
-          "type": "button",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "name": "email",
+                "onChange": [Function],
+                "placeholder": "Email",
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "name": "password",
+                "onChange": [Function],
+                "placeholder": "Password",
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "LOGIN",
+                "className": "login-button",
+              },
+              "ref": null,
+              "rendered": "LOGIN",
+              "type": "button",
+            },
+          ],
+          "type": "form",
         },
       ],
-      "type": "form",
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

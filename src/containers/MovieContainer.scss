@@ -3,10 +3,55 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
 }
-header {
-  display: flex;
-  justify-content: space-between;
+
+a {
+  color: #ededec;
+  padding-left: 1rem;
+  text-decoration: none;
 }
 
+p {
+  padding-top: 1.55rem;
+}
 
+.home-image {
+  width: 250px;
+  min-height: 2em;
+  border: none;
+  box-shadow: grey;
+  padding: 1rem 0 0 4.5rem;
+}
 
+.right-links {
+  padding-top: 1.2rem;
+}
+
+.login-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-right: 2.3rem;
+}
+
+.signout-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-right: 2.3rem;
+}
+
+.signout-button {
+  background-color: #36494e;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+  width: 125px;
+}
+
+.welcome-text {
+  color: #ededec;
+  display: inline;
+  font-size: 2rem;
+  padding-right: 3rem;
+  width: 250px;
+}

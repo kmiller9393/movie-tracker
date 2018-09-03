@@ -1,13 +1,7 @@
 .App {
-  text-align: center;
-  background: #36494E;
+  background: #36494e;
   height: 100vh;
   overflow: scroll;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
 }
 
 .App-header {
@@ -27,9 +21,4 @@
 
 h1 {
   margin: 0;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }
