@@ -3,19 +3,23 @@ import ReactDOM from 'react-dom';
 import {shallow, mount} from 'enzyme';
 import { App, mapDispatchToProps } from './App';
 import { cleanMurrayData } from '../../utils/__mocks__/helper'
+import { fetchMurrayMovies } from '../../utils/__mocks__/apiCalls'
+// jest.mock('../../utils/__mocks__/apiCalls');
 
-describe('App', () => {
+describe.skip('App', () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = mount(<App getMovies={jest.fn()}/>)
+    wrapper = shallow(<App getMovies={jest.fn()}/>)
+  })
+  
+  it('should call getMovies from props with the correct params', async () => {
     window.fetch = jest
       .fn()
       .mockImplementation(() =>
-        Promise.resolve({ json: () => Promise.resolve({ status: 200 }) })
+        Promise.resolve({ json: () => Promise.resolve(cleanMurrayData) })
       );
-  })
-
-  it('should call getMovies from props with the correct params', () => {
+    // const result = await wrapper.instance().fetchMurrayData()
+    console.log(result)
     expect(wrapper.props().getMovies).toHaveBeenCalledWith('')
   })
 
