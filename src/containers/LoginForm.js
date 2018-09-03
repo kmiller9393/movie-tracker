@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getUserInfo, populateFavorites } from '../actions';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 import { fetchUserData, getUserFavorites } from '../utils/apiCalls';
-import './LoginForm.css';
 import PropTypes from 'prop-types';
+import './LoginForm.css';
 
 export class LoginForm extends Component {
   constructor() {
@@ -39,12 +39,15 @@ export class LoginForm extends Component {
   render() {
     return (
       <div>
-        <img
-          className="login-image"
-          src="https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png"
-          alt="netflix-font"
-          border="0"
-        />
+        <section className="login-section">
+          <img
+            className="login-image"
+            src="https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png"
+            alt="netflix-font"
+            border="0"
+          />
+          <Link className="login-home-link" to="/">Home</Link>
+        </section>
         <form onSubmit={this.handleSubmit}>
           <input
             name="email"
