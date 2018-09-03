@@ -1,57 +1,144 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import { mockMurrayData, mockMovie, mockUser, mockFavorites, mockFavoritesArray } from '../utils/mockData/mockMurrayData'
-import { addFavoriteToDatabase, deleteMovieFromDatabase } from '../utils/__mocks__/apiCalls'
-import  { Card }  from './Card';
+import { addFavorite, deleteFavorite } from '../actions';
+import {
+  mockHistory,
+  mockMurrayData,
+  mockMovie,
+  mockUser,
+  mockFavorites,
+  mockFavoritesArray,
+  mockStateResult
+} from '../utils/mockData/mockMurrayData';
+import {
+  addFavoriteToDatabase,
+  deleteMovieFromDatabase
+} from '../utils/__mocks__/apiCalls';
+import { Card, mapStateToProps, mapDispatchToProps } from './Card';
 
 describe('Card', () => {
-  
   let wrapper;
   let user;
   beforeEach(() => {
-    user = {name: 'Kurt', password: 'Kurt'};
-    wrapper = shallow(<Card movie={mockMovie} image={mockMovie.image} favorites={[]} user={user} handleToggle={jest.fn()} />)
-    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({json:() => Promise.resolve({status: 200})}))
-
-  })
+    user = { name: 'Kurt', password: 'Kurt' };
+    wrapper = shallow(
+      <Card
+        movie={mockMovie}
+        image={mockMovie.image}
+        favorites={[]}
+        user={user}
+        addMovie={jest.fn()}
+        deleteMovie={jest.fn()}
+      />
+    );
+    window.fetch = jest
+      .fn()
+      .mockImplementation(() =>
+        Promise.resolve({ json: () => Promise.resolve({ status: 200 }) })
+      );
+  });
 
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
-  })
+  });
 
   it('should change state of toggle when the image is clicked', () => {
-  wrapper.find('img').simulate('click')
-  expect(wrapper.state().toggle).toEqual(true)
-  wrapper.find('img').simulate('click')
-  expect(wrapper.state().toggle).toEqual(false)
-  })
+    wrapper.find('img').simulate('click');
+    expect(wrapper.state().toggle).toEqual(true);
+    wrapper.find('img').simulate('click');
+    expect(wrapper.state().toggle).toEqual(false);
+  });
 
   it('should change the state of toggle when the article is clicked', () => {
-    wrapper.find('article').simulate('click')
-    expect(wrapper.state().toggle).toEqual(true)
-    wrapper.find('article').simulate('click')
-    expect(wrapper.state().toggle).toEqual(false)
-  })
+    wrapper.find('article').simulate('click');
+    expect(wrapper.state().toggle).toEqual(true);
+    wrapper.find('article').simulate('click');
+    expect(wrapper.state().toggle).toEqual(false);
+  });
 
-  it('should call setFavorieData when clicked', () => {
-    wrapper = mount(<Card movie={mockMovie} image={mockMovie.image} favorites={[]} user={user} handleToggle={jest.fn()} />)
-    wrapper.instance().setFavoriteData = jest.fn()
-    wrapper.find('button').simulate('click')
+  it('should call addFavoriteData when clicked', () => {
+    wrapper = mount(
+      <Card
+        movie={mockMovie}
+        image={mockMovie.image}
+        favorites={[]}
+        user={user}
+        addMovie={jest.fn()}
+        deleteMovie={jest.fn()}
+      />
+    );
 
-    expect(wrapper.instance().setFavoriteData).toHaveBeenCalledWith(mockMovie)
-  })
+    wrapper.find('[className="add-button"]').simulate('click');
+    expect(wrapper.props().addMovie).toHaveBeenCalledWith(mockMovie);
+  });
 
-  describe('setFavoriteData', async () => {
-    it('should call handleToggle with a movie that is passed in', () => {
-      wrapper = mount(<Card movie={mockMovie} image={mockMovie.image} favorites={[]} user={user} handleToggle={jest.fn()} />)
-      wrapper.instance().setFavoriteData(mockMovie);
-      expect(wrapper.props().handleToggle).toHaveBeenCalledWith(mockMovie)
-    })
-    it('should call history.push with the correct parameters if no user is signed in', () => {
-      wrapper = mount(<Card movie={mockMovie} image={mockMovie.image} favorites={[]} user={user} handleToggle={jest.fn()} />)
+  it('should call deleteFavoriteData when clicked', () => {
+    wrapper = mount(
+      <Card
+        movie={mockMovie}
+        image={mockMovie.image}
+        favorites={[mockMovie.movie_id]}
+        user={user}
+        addMovie={jest.fn()}
+        deleteMovie={jest.fn()}
+      />
+    );
 
-      console.log(wrapper.props().history)
+    wrapper.find('[className="delete-button"]').simulate('click');
+    expect(wrapper.props().deleteMovie).toHaveBeenCalledWith(mockMovie);
+  });
 
-    })
-  })
-})
+  it('should throw and error when there is no user logged in', async () => {
+    wrapper = mount(
+      <Card
+        movie={mockMovie}
+        image={mockMovie.image}
+        favorites={[]}
+        history={mockHistory}
+        user={{ name: undefined }}
+        handleToggle={jest.fn()}
+      />
+    );
+
+    const expected = alert('You must log-in to favorite a movie!');
+    const result = await wrapper.instance().addFavoriteData(mockMovie);
+
+    expect(result).toEqual(expected);
+  });
+
+  describe('mapStateToProps', () => {
+    it('should return an object with movies, favorites and a user', () => {
+      const movies = [mockMovie];
+      const favorites = [mockFavorites];
+      const user = mockUser;
+
+      const mockState = {
+        movies,
+        favorites,
+        user
+      };
+
+      const mappedProps = mapStateToProps(mockState);
+
+      expect(mappedProps).toEqual(mockStateResult);
+    });
+  });
+
+  describe('mapDispatchToProps', () => {
+    it('should call dispatch when using addMovie from mapDispatchToProps', () => {
+      const mockDispatch = jest.fn();
+
+      const mappedProps = mapDispatchToProps(mockDispatch);
+      mappedProps.addMovie(mockMovie);
+      expect(mockDispatch).toHaveBeenCalled();
+    });
+
+    it('should call dispatch when using deleteMovie from mapDispatchToProps', () => {
+      const mockDispatch = jest.fn();
+      const mappedProps = mapDispatchToProps(mockDispatch);
+
+      mappedProps.deleteMovie(mockMovie);
+      expect(mockDispatch).toHaveBeenCalled();
+    });
+  });
+});

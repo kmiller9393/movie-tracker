@@ -4,8 +4,9 @@ exports[`Card should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Card
+    addMovie={[Function]}
+    deleteMovie={[Function]}
     favorites={Array []}
-    handleToggle={[Function]}
     image="https://image.tmdb.org/t/p/w500/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg"
     movie={
         Object {
@@ -59,10 +60,12 @@ ShallowWrapper {
           src="https://image.tmdb.org/t/p/w500/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg"
 />,
         <button
+          className="add-button"
           onClick={[Function]}
 >
           FAVORITE
 </button>,
+        false,
       ],
       "className": "Card",
     },
@@ -157,12 +160,14 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "FAVORITE",
+          "className": "add-button",
           "onClick": [Function],
         },
         "ref": null,
         "rendered": "FAVORITE",
         "type": "button",
       },
+      false,
     ],
     "type": "div",
   },
@@ -195,10 +200,12 @@ ShallowWrapper {
             src="https://image.tmdb.org/t/p/w500/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg"
 />,
           <button
+            className="add-button"
             onClick={[Function]}
 >
             FAVORITE
 </button>,
+          false,
         ],
         "className": "Card",
       },
@@ -293,12 +300,14 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "FAVORITE",
+            "className": "add-button",
             "onClick": [Function],
           },
           "ref": null,
           "rendered": "FAVORITE",
           "type": "button",
         },
+        false,
       ],
       "type": "div",
     },
