@@ -28,7 +28,6 @@ export const Favorites = ({ movies, user, logoutUser, favorites }) => {
         <header className="favorites-header">
           <h1>Favorites</h1>
           <section className="favorites-section">
-            <button className="favorites-signout-button" onClick={logoutUser}>Sign Out</button>
             <Link to="/">Home</Link>
           </section>
         </header>
