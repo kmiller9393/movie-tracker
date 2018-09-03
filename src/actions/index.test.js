@@ -1,17 +1,30 @@
 import * as actions from '../actions';
 
 describe('actions', () => {
-  it('should return a type of TOGGLE_FAVORITE, with an id', () => {
+  it('should return a type of ADD_FAVORITE, with an id', () => {
     const movie = 2;
 
     const expected = {
-      type: 'TOGGLE_FAVORITE',
+      type: 'ADD_FAVORITE',
       movie
     };
 
-    const result = actions.toggleFavorite(movie);
+    const result = actions.addFavorite(movie);
     expect(result).toEqual(expected);
   });
+
+    it('should return a type of DELETE_FAVORITE, with an id', () => {
+    const movie = 2;
+
+    const expected = {
+      type: 'DELETE_FAVORITE',
+      movie
+    };
+
+    const result = actions.deleteFavorite(movie);
+    expect(result).toEqual(expected);
+  });
+
 
   it('should return a type of POPULATE_MOVIES, with a list of movies', () => {
     const movies = [
