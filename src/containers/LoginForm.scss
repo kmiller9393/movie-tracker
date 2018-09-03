@@ -21,11 +21,10 @@ input {
 }
 
 .login-image {
-  width: 250px;
-  min-height: 2em;
   border: none;
   box-shadow: grey;
   padding: 1rem 0 0 0rem;
+  width: 250px;
 }
 
 .login-button {
@@ -36,7 +35,7 @@ input {
 
 .login-section {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding-left: 33.4rem;
 }
 
