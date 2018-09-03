@@ -1,4 +1,4 @@
-export const cleanMurrayData = jest.fn().mockImplementation(() => (
+export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
   [
     {
       title: 'Isle of Dogs',

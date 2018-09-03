@@ -9,9 +9,15 @@ import { Route, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './App.css';
 import Favorites from '../../containers/Favorites';
+import { BrowserRouter } from 'react-router-dom'
+
 
 export class App extends Component {
-  async componentDidMount() {
+  componentDidMount() {
+    this.fetchMurrayData()
+  }
+
+  fetchMurrayData = async () => {
     const murrayMovies = await cleanMurrayData();
     this.props.getMovies(murrayMovies);
   }
