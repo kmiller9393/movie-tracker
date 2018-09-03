@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import './MovieContainer.css';
 import PropTypes from 'prop-types';
 
-const MovieContainer = ({
+export const MovieContainer = ({
   movies,
   user,
   logoutUser,
