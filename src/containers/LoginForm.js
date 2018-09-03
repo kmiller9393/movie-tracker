@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getUserInfo, populateFavorites } from '../actions';
-import { withRouter, Link } from 'react-router-dom';
+import { withRouter, NavLink } from 'react-router-dom';
 import { fetchUserData, getUserFavorites } from '../utils/apiCalls';
 import PropTypes from 'prop-types';
 import './LoginForm.css';
@@ -46,7 +46,9 @@ export class LoginForm extends Component {
             alt="netflix-font"
             border="0"
           />
-          <Link className="login-home-link" to="/">Home</Link>
+          <NavLink className="login-home-link" to="/">
+            Home
+          </NavLink>
         </section>
         <form onSubmit={this.handleSubmit}>
           <input
