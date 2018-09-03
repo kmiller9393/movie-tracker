@@ -1,0 +1,18 @@
+h1 {
+  color: #ededec;
+  display: inline; }
+
+.favorites-section {
+  padding-left: 25rem; }
+
+.favorites-signout-button {
+  background-color: #36494e;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+  width: 125px; }
+
+.favorites-header {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem 0 0 40.5rem; }
