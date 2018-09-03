@@ -4,6 +4,11 @@ exports[`LoginForm should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <LoginForm
+    history={
+        Object {
+            "push": [Function],
+          }
+    }
     userLogin={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -272,6 +277,14 @@ ShallowWrapper {
 >
                 Home
 </NavLink>,
+
+              <Link
+                className="login-home-link"
+                replace={false}
+                to="/"
+>
+                Home
+</Link>,
             ],
             "className": "login-section",
           },
@@ -294,13 +307,18 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-
               "nodeType": "function",
               "props": Object {
                 "activeClassName": "active",
                 "aria-current": "page",
                 "children": "Home",
                 "className": "login-home-link",
+
+              "nodeType": "class",
+              "props": Object {
+                "children": "Home",
+                "className": "login-home-link",
+                "replace": false,
                 "to": "/",
               },
               "ref": null,
