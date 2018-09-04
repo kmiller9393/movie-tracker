@@ -52,6 +52,47 @@ p {
   color: #ededec;
   display: inline;
   font-size: 2rem;
-  padding-right: 3rem;
+  padding-right: 2.5rem;
   width: 250px;
+}
+
+@media screen and (max-width: 950px) {
+  .welcome-text {
+    font-size: 1.4rem;
+  }
+  .signout-header {
+    padding-right: 0;
+  }
+  .home-image {
+    padding-left: 1rem;
+    width: 175px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .welcome-text {
+    font-size: 1rem;
+    padding-right: 0;
+    padding-left: 2rem;
+  }
+  .signout-button {
+    padding-left: 0;
+  }
+  .home-image {
+    padding-left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .signout-header {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 1rem;
+  }
+  .welcome-text {
+    padding-left: 1rem;
+  }
+  .right-links {
+    padding-left: 2.4rem;
+  }
 }
