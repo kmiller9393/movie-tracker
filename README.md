@@ -1,6 +1,6 @@
 # MurrayTracker
 
-#### By Brandon 'Bools' Fiebiger, Kurt ‘Curious Console Log' Miller, and Jesse Mcfadden
+#### By Brandon Fiebiger, Kurt Miller, and Jesse Mcfadden
 
 ### Project
 
