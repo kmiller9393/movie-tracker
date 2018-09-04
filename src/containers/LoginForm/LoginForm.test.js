@@ -1,10 +1,9 @@
 import { LoginForm, mapDispatchToProps } from './LoginForm';
 import React from 'react';
 import createRouterContext from 'react-router-test-context';
-import PropTypes from 'prop-types';
 import { shallow, mount } from 'enzyme';
-import { mockHistory } from '../utils/mockData/mockMurrayData';
-import { fetchUserData } from '../utils/__mocks__/apiCalls';
+import { mockHistory } from '../../utils/mockData/mockMurrayData';
+import { fetchUserData } from '../../utils/__mocks__/apiCalls';
 
 describe('LoginForm', () => {
   let event;

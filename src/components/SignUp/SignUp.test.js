@@ -2,8 +2,8 @@ import React from 'react';
 import createRouterContext from 'react-router-test-context';
 import { SignUp } from './SignUp';
 import { shallow, mount } from 'enzyme';
-import { mockHistory } from '../utils/mockData/mockMurrayData';
-import { setUserData } from '../utils/__mocks__/apiCalls';
+import { mockHistory } from '../../utils/mockData/mockMurrayData';
+import { setUserData } from '../../utils/__mocks__/apiCalls';
 
 describe('SignUp', () => {
   let wrapper;

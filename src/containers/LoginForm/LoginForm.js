@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { getUserInfo, populateFavorites } from '../actions';
+import { getUserInfo, populateFavorites } from '../../actions';
 import { withRouter, NavLink } from 'react-router-dom';
-import { fetchUserData, getUserFavorites } from '../utils/apiCalls';
+import { fetchUserData, getUserFavorites } from '../../utils/apiCalls';
 import PropTypes from 'prop-types';
 import './LoginForm.css';
 

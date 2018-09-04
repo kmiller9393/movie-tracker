@@ -1,26 +1,24 @@
 import React, { Component } from 'react';
-import MovieContainer from '../../containers/MovieContainer';
-import SignUp from '../SignUp';
-import LoginForm from '../../containers/LoginForm';
+import MovieContainer from '../MovieContainer/MovieContainer';
+import SignUp from '../../components/SignUp/SignUp';
+import LoginForm from '../LoginForm/LoginForm';
 import { cleanMurrayData } from '../.././utils/helper';
 import { populateMovies } from '../../actions';
 import { connect } from 'react-redux';
 import { Route, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import Favorites from '../Favorites/Favorites';
 import './App.css';
-import Favorites from '../../containers/Favorites';
-import { BrowserRouter } from 'react-router-dom'
-
 
 export class App extends Component {
   componentDidMount() {
-    this.fetchMurrayData()
+    this.fetchMurrayData();
   }
 
   fetchMurrayData = async () => {
     const murrayMovies = await cleanMurrayData();
     this.props.getMovies(murrayMovies);
-  }
+  };
 
   render() {
     return (

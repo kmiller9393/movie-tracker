@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import { setUserData } from '../utils/apiCalls';
+import { setUserData } from '../../utils/apiCalls';
 import { NavLink } from 'react-router-dom';
 import './SignUp.css';
 

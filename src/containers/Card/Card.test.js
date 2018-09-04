@@ -1,6 +1,5 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import { addFavorite, deleteFavorite } from '../actions';
 import {
   mockHistory,
   mockMurrayData,
@@ -9,11 +8,11 @@ import {
   mockFavorites,
   mockFavoritesArray,
   mockStateResult
-} from '../utils/mockData/mockMurrayData';
+} from '../../utils/mockData/mockMurrayData';
 import {
   addFavoriteToDatabase,
   deleteMovieFromDatabase
-} from '../utils/__mocks__/apiCalls';
+} from '../../utils/__mocks__/apiCalls';
 import { Card, mapStateToProps, mapDispatchToProps } from './Card';
 
 describe('Card', () => {
