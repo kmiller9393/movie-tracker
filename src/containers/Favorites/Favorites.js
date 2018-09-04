@@ -6,10 +6,8 @@ import { logoutUser } from '../../actions';
 import Card from '../Card/Card';
 import './Favorites.css';
 
-export const Favorites = ({
-  movies, user, logoutUser, favorites,
-}) => {
-  const displayFavorites = favorites.map((favorite) => {
+export const Favorites = ({ movies, user, favorites }) => {
+  const displayFavorites = favorites.map(favorite => {
     const foundMovie = movies.find(movie => movie.movie_id === favorite);
     return (
       <Card
@@ -48,16 +46,16 @@ export const Favorites = ({
 export const mapStateToProps = state => ({
   movies: state.movies,
   user: state.userLogin,
-  favorites: state.favorites,
+  favorites: state.favorites
 });
 
 export const mapDispatchToProps = dispatch => ({
-  logoutUser: () => dispatch(logoutUser()),
+  logoutUser: () => dispatch(logoutUser())
 });
 
 export default connect(
   mapStateToProps,
-  mapDispatchToProps,
+  mapDispatchToProps
 )(Favorites);
 
 Favorites.propTypes = {
@@ -65,5 +63,5 @@ Favorites.propTypes = {
   user: PropTypes.object,
   logoutUser: PropTypes.func,
   handleToggle: PropTypes.func,
-  favorites: PropTypes.array,
+  favorites: PropTypes.array
 };

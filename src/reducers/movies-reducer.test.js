@@ -1,7 +1,5 @@
 import { movieReducer } from './movies-reducer';
-
-import * as actions from '../actions';
-import { mockMovie, mockMurrayData } from '../utils/mockData/mockMurrayData';
+import { mockMurrayData } from '../utils/mockData/mockMurrayData';
 
 describe('moviesReducer', () => {
   it('should return initial state by default', () => {

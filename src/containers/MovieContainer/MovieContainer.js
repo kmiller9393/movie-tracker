@@ -6,10 +6,8 @@ import PropTypes from 'prop-types';
 import { logoutUser } from '../../actions';
 import Card from '../Card/Card';
 
-export const MovieContainer = ({
-  movies, user, logoutUser, favorites,
-}) => {
-  const displayMovies = movies.map((movie) => {
+export const MovieContainer = ({ movies, user, logoutUser, favorites }) => {
+  const displayMovies = movies.map(movie => {
     if (movie.image.includes('null')) {
       return;
     }
@@ -64,22 +62,21 @@ export const MovieContainer = ({
 export const mapStateToProps = state => ({
   movies: state.movies,
   user: state.userLogin,
-  favorites: state.favorites,
+  favorites: state.favorites
 });
 
 export const mapDispatchToProps = dispatch => ({
-  logoutUser: () => dispatch(logoutUser()),
+  logoutUser: () => dispatch(logoutUser())
 });
 
 export default connect(
   mapStateToProps,
-  mapDispatchToProps,
+  mapDispatchToProps
 )(MovieContainer);
 
 MovieContainer.propTypes = {
   logoutUser: PropTypes.func,
   movies: PropTypes.array,
-  logoutUser: PropTypes.func,
   handleToggle: PropTypes.func,
-  favorites: PropTypes.array,
+  favorites: PropTypes.array
 };
