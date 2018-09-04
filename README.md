@@ -18,7 +18,7 @@ Upon page load, the user has access to the entire library of Murray films. By cl
 
 ### UI
 
-<img src="assets/UI.gif">
+<img src="movie-tracker/SignInPage.png">
 
 #### Landing Page
 
