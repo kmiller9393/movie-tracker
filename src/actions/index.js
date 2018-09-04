@@ -1,48 +1,34 @@
-export const setFilter = filter => {
-  return {
-    type: 'SET_FILTER',
-    filter
-  };
-};
+export const setFilter = filter => ({
+  type: 'SET_FILTER',
+  filter,
+});
 
-export const populateMovies = movies => {
-  return {
-    type: 'POPULATE_MOVIES',
-    movies
-  };
-};
+export const populateMovies = movies => ({
+  type: 'POPULATE_MOVIES',
+  movies,
+});
 
-export const getUserInfo = (name, id) => {
-  return {
-    type: 'GET_USER_INFO',
-    name,
-    id
-  };
-};
+export const getUserInfo = (name, id) => ({
+  type: 'GET_USER_INFO',
+  name,
+  id,
+});
 
-export const logoutUser = () => {
-  return {
-    type: 'LOGOUT_USER'
-  };
-};
+export const logoutUser = () => ({
+  type: 'LOGOUT_USER',
+});
 
-export const populateFavorites = favorites => {
-  return {
-    type: 'POPULATE_FAVORITES',
-    favorites
-  };
-};
+export const populateFavorites = favorites => ({
+  type: 'POPULATE_FAVORITES',
+  favorites,
+});
 
-export const addFavorite = movie => {
-  return {
-    type: 'ADD_FAVORITE',
-    movie
-  };
-};
+export const addFavorite = movie => ({
+  type: 'ADD_FAVORITE',
+  movie,
+});
 
-export const deleteFavorite = movie => {
-  return {
-    type: 'DELETE_FAVORITE',
-    movie
-  };
-};
+export const deleteFavorite = movie => ({
+  type: 'DELETE_FAVORITE',
+  movie,
+});

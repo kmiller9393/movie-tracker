@@ -4,11 +4,11 @@ export const fetchMurrayMovies = async () => {
   const uncleanMurrayData = [];
   for (let i = 1; i < 5; i++) {
     const response = await fetch(
-      'https://api.themoviedb.org/3/discover/movie?api_key=' +
-        key +
-        '&language=en-US&sort_by=release_date.desc&include_adult=false&include_video=false&page=' +
-        i +
-        '&with_people=1532'
+      `https://api.themoviedb.org/3/discover/movie?api_key=${
+        key
+      }&language=en-US&sort_by=release_date.desc&include_adult=false&include_video=false&page=${
+        i
+      }&with_people=1532`,
     );
     const fetchedMurrayData = await response.json();
     uncleanMurrayData.push(fetchedMurrayData);
@@ -22,8 +22,8 @@ export const fetchUserData = async (email, password) => {
       method: 'POST',
       body: JSON.stringify({ password, email }),
       headers: {
-        'Content-Type': 'application/json'
-      }
+        'Content-Type': 'application/json',
+      },
     });
     const result = await response.json();
     return result;
@@ -38,8 +38,8 @@ export const setUserData = async (name, email, password) => {
       method: 'POST',
       body: JSON.stringify({ name, password, email }),
       headers: {
-        'Content-Type': 'application/json'
-      }
+        'Content-Type': 'application/json',
+      },
     });
     await response.json();
   } catch (error) {
@@ -57,11 +57,11 @@ export const addMovieToDatabase = async (user, movie) => {
       poster_path: movie.image,
       release_date: movie.release,
       vote_average: movie.vote_average,
-      overview: movie.overview
+      overview: movie.overview,
     }),
     headers: {
-      'Content-Type': 'application/json'
-    }
+      'Content-Type': 'application/json',
+    },
   });
 };
 
@@ -73,12 +73,12 @@ export const deleteMovieFromDatabase = async (user, movie) => {
     method: 'DELETE',
     body: JSON.stringify({ user_id: user.id, movie_id: movie.movie_id }),
     headers: {
-      'Content-Type': 'application/json'
-    }
+      'Content-Type': 'application/json',
+    },
   });
 };
 
-export const getUserFavorites = async id => {
+export const getUserFavorites = async (id) => {
   const url = `http://localhost:3000/api/users/${id}/favorites`;
   const response = await fetch(url);
   const result = await response.json();

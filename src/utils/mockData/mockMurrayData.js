@@ -6,7 +6,7 @@ export const mockMurrayData = [
     release: '2018-03-23',
     image: 'https://image.tmdb.org/t/p/w300/rSluCePdXXtNiQeE6Na5yRGamhL.jpg',
     movie_id: 399174,
-    vote_average: 7.8
+    vote_average: 7.8,
   },
   {
     title: "'85: The Greatest Team in Pro Football History",
@@ -15,7 +15,7 @@ export const mockMurrayData = [
     release: '2016-10-01',
     image: 'https://image.tmdb.org/t/p/w300/Ab5Fg3hNTq5ApCzPkmAQWubqg5Z.jpg',
     movie_id: 430364,
-    vote_average: 9
+    vote_average: 9,
   },
   {
     title: 'Ghostbusters',
@@ -24,7 +24,7 @@ export const mockMurrayData = [
     release: '2016-07-14',
     image: 'https://image.tmdb.org/t/p/w300/4qnJ1hsMADxzwnOmnwjZTNp0rKT.jpg',
     movie_id: 43074,
-    vote_average: 5.4
+    vote_average: 5.4,
   },
   {
     title: 'Cold Lairs',
@@ -33,16 +33,16 @@ export const mockMurrayData = [
     release: '2016-04-05',
     image: 'https://image.tmdb.org/t/p/w300/pvmXvKk4lDUAuvCFY0LfxbSMBRe.jpg',
     movie_id: 392034,
-    vote_average: 0
+    vote_average: 0,
   },
   {
     title: 'The Jungle Book',
     overview:
-      "A man-cub named Mowgli fostered by wolves. After a threat from the tiger Shere Khan, Mowgli is forced to flee the jungle, by which he embarks on a journey of self discovery with the help of the panther, Bagheera and the free-spirited bear, Baloo.",
+      'A man-cub named Mowgli fostered by wolves. After a threat from the tiger Shere Khan, Mowgli is forced to flee the jungle, by which he embarks on a journey of self discovery with the help of the panther, Bagheera and the free-spirited bear, Baloo.',
     image: 'https://image.tmdb.org/t/p/w300/vOipe2myi26UDwP978hsYOrnUWC.jpg',
-    release: "2016-04-07",
+    release: '2016-04-07',
     movie_id: 278927,
-    vote_average: 6.8
+    vote_average: 6.8,
   },
   {
     title: 'A Very Murray Christmas',
@@ -51,24 +51,25 @@ export const mockMurrayData = [
     release: '2015-12-04',
     image: 'https://image.tmdb.org/t/p/w300/3CMBgEte4pEapn2deugsfz2hjAL.jpg',
     movie_id: 364067,
-    vote_average: 5.2
+    vote_average: 5.2,
   },
   {
     title: 'Rock the Kasbah',
     overview:
-      "A washed-up music producer finds one last shot at redemption with a golden-voiced young girl in Afghanistan. However, when jealousy gets the better of a disgruntled ex-boyfriend, he decides to oppose the young star with talent of his own.",    release: '2015-10-22',
+      'A washed-up music producer finds one last shot at redemption with a golden-voiced young girl in Afghanistan. However, when jealousy gets the better of a disgruntled ex-boyfriend, he decides to oppose the young star with talent of his own.',
+    release: '2015-10-22',
     image: 'https://image.tmdb.org/t/p/w300/7Ljch9R3uie8lV3z1GUUHZRkvKH.jpg',
     movie_id: 253414,
-    vote_average: 5.3
+    vote_average: 5.3,
   },
   {
     title: 'Thank You, Del: The Story of the Del Close Marathon',
     overview:
-      "Del Close was never a household name, but any comedy enthusiast is aware of his impact. From Bill Murray to Chris Farley to Amy Poehler, many of the most famous comedians consider him their mentor. Fifteen years after Del Close’s death, thousands of Improv students, comedy fans, actors, and successful comedians gather to celebrate the most important person in modern comedy that no one knows.",
+      'Del Close was never a household name, but any comedy enthusiast is aware of his impact. From Bill Murray to Chris Farley to Amy Poehler, many of the most famous comedians consider him their mentor. Fifteen years after Del Close’s death, thousands of Improv students, comedy fans, actors, and successful comedians gather to celebrate the most important person in modern comedy that no one knows.',
     release: '2015-10-13',
     image: 'https://image.tmdb.org/t/p/w300/rnGpvbQ8Xr1v5kvIa52yFQYf9EZ.jpg',
     movie_id: 381062,
-    vote_average: 5
+    vote_average: 5,
   },
   {
     title: 'Aloha',
@@ -77,7 +78,7 @@ export const mockMurrayData = [
     release: '2015-05-27',
     image: 'https://image.tmdb.org/t/p/w300/4Q0rnkCsQ9GhdnR66Bqjvav2Q1x.jpg',
     movie_id: 222936,
-    vote_average: 5.2
+    vote_average: 5.2,
   },
   {
     title: 'Saturday Night Live 40th Anniversary Special',
@@ -86,25 +87,25 @@ export const mockMurrayData = [
     release: '2015-02-15',
     image: 'https://image.tmdb.org/t/p/w300/tdS7BgV7pqJUs0lnO8mxDqu8ZfJ.jpg',
     movie_id: 324601,
-    vote_average: 7.1
+    vote_average: 7.1,
   },
   {
     title: 'Drunk Stoned Brilliant Dead: The Story of the National Lampoon',
     overview:
-      "A look at the history of the American comedy publication and production company, National Lampoon, from its beginning in the 1970s to 2010, featuring rare and never before seen footage, this is the mind boggling story of The National Lampoon from its subversive and electrifying beginnings, to rebirth as an unlikely Hollywood heavyweight, and beyond. A humour empire like no other, the impact of the magazines irreverent, often shocking, sensibility was nothing short of seismic: this is an institution whose (drunk stoned brilliant) alumni left their fingerprints all over popular culture. Both insanely great and breathtakingly innovative, The National Lampoon created the foundation of modern comic sensibility by setting the bar in comedy impossibly high.",
+      'A look at the history of the American comedy publication and production company, National Lampoon, from its beginning in the 1970s to 2010, featuring rare and never before seen footage, this is the mind boggling story of The National Lampoon from its subversive and electrifying beginnings, to rebirth as an unlikely Hollywood heavyweight, and beyond. A humour empire like no other, the impact of the magazines irreverent, often shocking, sensibility was nothing short of seismic: this is an institution whose (drunk stoned brilliant) alumni left their fingerprints all over popular culture. Both insanely great and breathtakingly innovative, The National Lampoon created the foundation of modern comic sensibility by setting the bar in comedy impossibly high.',
     release: '2015-01-25',
     image: 'https://image.tmdb.org/t/p/w300/t7fqemeHtEaxG0Ry0bTox4spBY0.jpg',
     movie_id: 319070,
-    vote_average: 6.6
+    vote_average: 6.6,
   },
   {
     title: 'Dumb and Dumber To',
     overview:
-      "20 years after the dimwits set out on their first adventure, they head out in search of one of their long lost children in the hope of gaining a new kidney.",
+      '20 years after the dimwits set out on their first adventure, they head out in search of one of their long lost children in the hope of gaining a new kidney.',
     release: '2014-11-12',
     image: 'https://image.tmdb.org/t/p/w300/Ekw3ijq9L6RiKvv5m2tPOEklHF.jpg',
     movie_id: 100042,
-    vote_average: 5.4
+    vote_average: 5.4,
   },
   {
     title: 'St. Vincent',
@@ -113,25 +114,25 @@ export const mockMurrayData = [
     release: '2014-10-09',
     image: 'https://image.tmdb.org/t/p/w300/w0hzr4eQBk1X4m63fb7sOSt9Bnn.jpg',
     movie_id: 239563,
-    vote_average: 7.1
+    vote_average: 7.1,
   },
   {
     title: 'The Grand Budapest Hotel',
     overview:
-      "The Grand Budapest Hotel tells of a legendary concierge at a famous European hotel between the wars and his friendship with a young employee who becomes his trusted protégé. The story involves the theft and recovery of a priceless Renaissance painting, the battle for an enormous family fortune and the slow and then sudden upheavals that transformed Europe during the first half of the 20th century.",
+      'The Grand Budapest Hotel tells of a legendary concierge at a famous European hotel between the wars and his friendship with a young employee who becomes his trusted protégé. The story involves the theft and recovery of a priceless Renaissance painting, the battle for an enormous family fortune and the slow and then sudden upheavals that transformed Europe during the first half of the 20th century.',
     release: '2014-02-26',
     image: 'https://image.tmdb.org/t/p/w300/nX5XotM9yprCKarRH4fzOq1VM1J.jpg',
     movie_id: 120467,
-    vote_average: 8
+    vote_average: 8,
   },
   {
     title: 'The Monuments Men',
     overview:
-      "Based on the true story of the greatest treasure hunt in history, The Monuments Men is an action drama focusing on seven over-the-hill, out-of-shape museum directors, artists, architects, curators, and art historians who went to the front lines of WWII to rescue the world’s artistic masterpieces from Nazi thieves and return them to their rightful owners.  With the art hidden behind enemy lines, how could these guys hope to succeed?",
+      'Based on the true story of the greatest treasure hunt in history, The Monuments Men is an action drama focusing on seven over-the-hill, out-of-shape museum directors, artists, architects, curators, and art historians who went to the front lines of WWII to rescue the world’s artistic masterpieces from Nazi thieves and return them to their rightful owners.  With the art hidden behind enemy lines, how could these guys hope to succeed?',
     release: '2014-01-24',
     image: 'https://image.tmdb.org/t/p/w300/lhCUqVEPA3MMxnV8QTeVBTmRrP4.jpg',
     movie_id: 152760,
-    vote_average: 5.9
+    vote_average: 5.9,
   },
   {
     title: 'Hyde Park on Hudson',
@@ -140,52 +141,52 @@ export const mockMurrayData = [
     release: '2012-12-07',
     image: 'https://image.tmdb.org/t/p/w300/3mbfrCzlXlzO5kDTq2Qgj9EefYz.jpg',
     movie_id: 87504,
-    vote_average: 5.3
+    vote_average: 5.3,
   },
   {
     title: 'A Glimpse Inside the Mind of Charles Swan III',
     overview:
-      "Charles Swan III, a successful graphic designer, has it all: fame, money and devilish charm that have provided him with a seemingly perfect life. But when a perplexing beauty named Ivana suddenly ends their relationship, Charles is left heartbroken. With the support of his loyal intimates - Kirby, Saul, and his sister, Izzy – Charles begins a delirious journey of self-reflection to try and come to terms with a life without Ivana. \"A Glimpse Inside the Mind of Charles Swan III\" is an unconventional melodrama told in a bold and playful style.",
+      'Charles Swan III, a successful graphic designer, has it all: fame, money and devilish charm that have provided him with a seemingly perfect life. But when a perplexing beauty named Ivana suddenly ends their relationship, Charles is left heartbroken. With the support of his loyal intimates - Kirby, Saul, and his sister, Izzy – Charles begins a delirious journey of self-reflection to try and come to terms with a life without Ivana. "A Glimpse Inside the Mind of Charles Swan III" is an unconventional melodrama told in a bold and playful style.',
     release: '2012-11-15',
     image: 'https://image.tmdb.org/t/p/w300/6KeYxz1wzjvkvUhkiva9ULzipQY.jpg',
     movie_id: 124461,
-    vote_average: 4.4
+    vote_average: 4.4,
   },
   {
     title: 'Moonrise Kingdom',
     overview:
-      "Set on an island off the coast of New England in the summer of 1965, Moonrise Kingdom tells the story of two twelve-year-olds who fall in love, make a secret pact, and run away together into the wilderness. As various authorities try to hunt them down, a violent storm is brewing off-shore – and the peaceful island community is turned upside down in more ways than anyone can handle.",
+      'Set on an island off the coast of New England in the summer of 1965, Moonrise Kingdom tells the story of two twelve-year-olds who fall in love, make a secret pact, and run away together into the wilderness. As various authorities try to hunt them down, a violent storm is brewing off-shore – and the peaceful island community is turned upside down in more ways than anyone can handle.',
     release: '2012-05-24',
     image: 'https://image.tmdb.org/t/p/w300/ysTohGF7NY9Z6MYz9vLNYiyzh0r.jpg',
     movie_id: 83666,
-    vote_average: 7.7
+    vote_average: 7.7,
   },
   {
     title: 'Final Cut: Ladies and Gentlemen',
     overview:
-      "A film where anything can happen - the hero and the heroine changes their faces, age, look, names, and so on. The only same thing: The love between man and woman... in an archetypical love story cut from 500 classics from all around the world.",
+      'A film where anything can happen - the hero and the heroine changes their faces, age, look, names, and so on. The only same thing: The love between man and woman... in an archetypical love story cut from 500 classics from all around the world.',
     release: '2012-02-04',
     image: 'https://image.tmdb.org/t/p/w300/tXeaMMQ1EAHVDRMrEcNzoO25EwT.jpg',
     movie_id: 126314,
-    vote_average: 7.7
+    vote_average: 7.7,
   },
   {
     title: 'Passion Play',
     overview:
-      "An angel under the thumb of a ruthless gangster is saved by a trumpet player down on his luck.",
+      'An angel under the thumb of a ruthless gangster is saved by a trumpet player down on his luck.',
     release: '2010-09-10',
     image: 'https://image.tmdb.org/t/p/w300/rp5YsVLlJP1ZxsGDkeLC78olyF4.jpg',
     movie_id: 38753,
-    vote_average: 5
+    vote_average: 5,
   },
   {
     title: 'Fantastic Mr. Fox',
     overview:
-      "The Fantastic Mr. Fox bored with his current life, plans a heist against the three local farmers. The farmers, tired of sharing their chickens with the sly fox, seek revenge against him and his family.",
+      'The Fantastic Mr. Fox bored with his current life, plans a heist against the three local farmers. The farmers, tired of sharing their chickens with the sly fox, seek revenge against him and his family.',
     release: '2009-10-23',
     image: 'https://image.tmdb.org/t/p/w300/750pfEttsYAVmynRg2vmt1AXh4q.jpg',
     movie_id: 10315,
-    vote_average: 7.6
+    vote_average: 7.6,
   },
   {
     title: 'Zombieland',
@@ -194,7 +195,7 @@ export const mockMurrayData = [
     release: '2009-10-07',
     image: 'https://image.tmdb.org/t/p/w300/vUzzDpVrab1BOG3ogxhRGfLN94d.jpg',
     movie_id: 19908,
-    vote_average: 7.2
+    vote_average: 7.2,
   },
   {
     title: 'Get Low',
@@ -203,7 +204,7 @@ export const mockMurrayData = [
     release: '2010-01-22',
     image: 'https://image.tmdb.org/t/p/w300/kLw9J6Rp3surSUKZbmJ9KZDwFBT.jpg',
     movie_id: 44718,
-    vote_average: 6.8
+    vote_average: 6.8,
   },
   {
     title: 'The Limits of Control',
@@ -212,7 +213,7 @@ export const mockMurrayData = [
     release: '2009-05-01',
     image: 'https://image.tmdb.org/t/p/w300/jz6zzcdOf09eGQUbTWZjVU99iC5.jpg',
     movie_id: 8284,
-    vote_average: 6.4
+    vote_average: 6.4,
   },
   {
     title: 'City of Ember',
@@ -221,7 +222,7 @@ export const mockMurrayData = [
     release: '2008-10-07',
     image: 'https://image.tmdb.org/t/p/w300/vtlcA292oROPaG74amLsAhtBNbB.jpg',
     movie_id: 13600,
-    vote_average: 6.2
+    vote_average: 6.2,
   },
   {
     title: 'Get Smart',
@@ -230,7 +231,7 @@ export const mockMurrayData = [
     release: '2008-06-19',
     image: 'https://image.tmdb.org/t/p/w300/zS3UhYJvy6oLTBgNckpoyAa0qNs.jpg',
     movie_id: 11665,
-    vote_average: 6
+    vote_average: 6,
   },
   {
     title: 'A Better Man: The Making of Tootsie',
@@ -239,7 +240,7 @@ export const mockMurrayData = [
     release: '2008-02-05',
     image: 'https://image.tmdb.org/t/p/w300null',
     movie_id: 479530,
-    vote_average: 0
+    vote_average: 0,
   },
   {
     title: 'The Darjeeling Limited',
@@ -248,7 +249,7 @@ export const mockMurrayData = [
     release: '2007-09-29',
     image: 'https://image.tmdb.org/t/p/w300/47AGp0EKNMjqBBPaxRYDW0Sc5If.jpg',
     movie_id: 4538,
-    vote_average: 7.2
+    vote_average: 7.2,
   },
   {
     title: 'FCU: Fact Checkers Unit',
@@ -257,7 +258,7 @@ export const mockMurrayData = [
     release: '2007-09-09',
     image: 'https://image.tmdb.org/t/p/w300null',
     movie_id: 485282,
-    vote_average: 5
+    vote_average: 5,
   },
   {
     title: 'Buy the Ticket, Take the Ride',
@@ -266,7 +267,7 @@ export const mockMurrayData = [
     release: '2006-12-12',
     image: 'https://image.tmdb.org/t/p/w300/xbt6aftwE8d9TKhepA2o6a3ZDdG.jpg',
     movie_id: 25740,
-    vote_average: 6.7
+    vote_average: 6.7,
   },
   {
     title: 'Garfield: A Tail of Two Kitties',
@@ -275,7 +276,7 @@ export const mockMurrayData = [
     release: '2006-06-15',
     image: 'https://image.tmdb.org/t/p/w300/aagx3t2Xv7R26hcqzrayTT28Yww.jpg',
     movie_id: 9513,
-    vote_average: 5.3
+    vote_average: 5.3,
   },
   {
     title: 'The Lost City',
@@ -284,52 +285,52 @@ export const mockMurrayData = [
     release: '2005-09-03',
     image: 'https://image.tmdb.org/t/p/w300/v19DsrJb0TJxTCdgaUzzuvOjfeD.jpg',
     movie_id: 9700,
-    vote_average: 6
+    vote_average: 6,
   },
   {
     title: 'Broken Flowers',
     overview:
-      "As the devoutly single Don Johnston is dumped by his latest girlfriend, he receives an anonymous pink letter informing him that he has a son who may be looking for him.",
+      'As the devoutly single Don Johnston is dumped by his latest girlfriend, he receives an anonymous pink letter informing him that he has a son who may be looking for him.',
     release: '2005-05-17',
     image: 'https://image.tmdb.org/t/p/w300/pvtdRUpJE6YjIi8BLEZ7jhEdeN1.jpg',
     movie_id: 308,
-    vote_average: 6.9
+    vote_average: 6.9,
   },
   {
     title: 'This Is an Adventure',
     overview:
-      "During production on the film \"The Life Aquatic with Steve Zissou\", documentary filmmakers followed the cast and crew of a film which depicts other documentary filmmakers who follow animal life. In this film, we get a first hand look at the sets and come very close to many of the cast and crew members at work, especially Bill Murray and Wes Anderson.",
+      'During production on the film "The Life Aquatic with Steve Zissou", documentary filmmakers followed the cast and crew of a film which depicts other documentary filmmakers who follow animal life. In this film, we get a first hand look at the sets and come very close to many of the cast and crew members at work, especially Bill Murray and Wes Anderson.',
     release: '2005-05-10',
     image: 'https://image.tmdb.org/t/p/w300null',
     movie_id: 415950,
-    vote_average: 0
+    vote_average: 0,
   },
   {
     title: "Matthew Gray Gubler's Life Aquatic Intern Journal",
     overview:
-      "Documentary created by Matthew Gray Gubler during, and about, his time on the set of The Life Aquatic with Steve Zissou.  (Released in 2005)",
+      'Documentary created by Matthew Gray Gubler during, and about, his time on the set of The Life Aquatic with Steve Zissou.  (Released in 2005)',
     release: '2005-05-09',
     image: 'https://image.tmdb.org/t/p/w300/v4qJhj3E664f4Livd8I99SvmicG.jpg',
     movie_id: 199353,
-    vote_average: 5.6
+    vote_average: 5.6,
   },
   {
     title: 'The Life Aquatic with Steve Zissou',
     overview:
-      "Wes Anderson’s incisive quirky comedy build up stars complex characters like in ‘The Royal Tenenbaums’ with Bill Murray on in the leading role. An ocean adventure documentary film maker Zissou is put in all imaginable life situations and a tough life crisis as he attempts to make a new film about capturing the creature that caused him pain.",
+      'Wes Anderson’s incisive quirky comedy build up stars complex characters like in ‘The Royal Tenenbaums’ with Bill Murray on in the leading role. An ocean adventure documentary film maker Zissou is put in all imaginable life situations and a tough life crisis as he attempts to make a new film about capturing the creature that caused him pain.',
     release: '2004-12-10',
     image: 'https://image.tmdb.org/t/p/w300/kKwNRePEqTfC6DnNlJzz1yX44iR.jpg',
     movie_id: 421,
-    vote_average: 7.1
+    vote_average: 7.1,
   },
   {
     title: 'Garfield',
     overview:
       "Garfield, the fat, lazy, lasagna lover, has everything a cat could want. But when Jon, in an effort to impress the Liz - the vet and an old high-school crush - adopts a dog named Odie and brings him home, Garfield gets the one thing he doesn't want. Competition.",
     image: 'https://image.tmdb.org/t/p/w300/v6xvth8PjDG350ARG9H2sF7N3SF.jpg',
-    release: "2004-06-10",
+    release: '2004-06-10',
     movie_id: 8920,
-    vote_average: 5.3
+    vote_average: 5.3,
   },
   {
     title: "Lost on Location: Behind the Scenes of 'Lost in Translation'",
@@ -338,7 +339,7 @@ export const mockMurrayData = [
     release: '2004-02-03',
     image: 'https://image.tmdb.org/t/p/w300/lsVQfLaklarG4E3tz5xqlgp7QXY.jpg',
     movie_id: 113149,
-    vote_average: 8
+    vote_average: 8,
   },
   {
     title: 'Coffee and Cigarettes',
@@ -347,7 +348,7 @@ export const mockMurrayData = [
     release: '2003-09-05',
     image: 'https://image.tmdb.org/t/p/w300/myLbZRsgRVyfj1luCvUcgB9cjGs.jpg',
     movie_id: 883,
-    vote_average: 7.1
+    vote_average: 7.1,
   },
   {
     title: 'Lost in Translation',
@@ -356,7 +357,7 @@ export const mockMurrayData = [
     release: '2003-08-31',
     image: 'https://image.tmdb.org/t/p/w300/5T8VvuFTdaawKLJk34i69Utaw7o.jpg',
     movie_id: 153,
-    vote_average: 7.4
+    vote_average: 7.4,
   },
   {
     title: "The Rutles 2: Can't Buy Me Lunch",
@@ -365,7 +366,7 @@ export const mockMurrayData = [
     release: '2002-01-01',
     image: 'https://image.tmdb.org/t/p/w300/maUbhufh8qw44vg2rYnQcozpd2l.jpg',
     movie_id: 32694,
-    vote_average: 7.2
+    vote_average: 7.2,
   },
   {
     title: 'Speaking of Sex',
@@ -374,7 +375,7 @@ export const mockMurrayData = [
     release: '2001-10-18',
     image: 'https://image.tmdb.org/t/p/w300/imCndGIIYvbGkw5PHra3suxITq9.jpg',
     movie_id: 16435,
-    vote_average: 6.3
+    vote_average: 6.3,
   },
   {
     title: 'The Royal Tenenbaums',
@@ -383,7 +384,7 @@ export const mockMurrayData = [
     release: '2001-10-12',
     image: 'https://image.tmdb.org/t/p/w300/5xw30y0pSaMtTcuZW5VaQPiR8qb.jpg',
     movie_id: 9428,
-    vote_average: 7.4
+    vote_average: 7.4,
   },
   {
     title: 'Osmosis Jones',
@@ -392,7 +393,7 @@ export const mockMurrayData = [
     release: '2001-08-07',
     image: 'https://image.tmdb.org/t/p/w300/2NvnoaJflAEcT0zlzbS4hlwrDZX.jpg',
     movie_id: 12610,
-    vote_average: 6.1
+    vote_average: 6.1,
   },
   {
     title: "Charlie's Angels",
@@ -401,7 +402,7 @@ export const mockMurrayData = [
     release: '2000-11-02',
     image: 'https://image.tmdb.org/t/p/w300/eBzf9d09Vgq2HSVC4fIZm1QNQd.jpg',
     movie_id: 4327,
-    vote_average: 5.6
+    vote_average: 5.6,
   },
   {
     title: 'Hamlet',
@@ -410,7 +411,7 @@ export const mockMurrayData = [
     release: '2000-05-12',
     image: 'https://image.tmdb.org/t/p/w300/kc8qcAVglziuisHaCIH4mPGma6e.jpg',
     movie_id: 10688,
-    vote_average: 5.9
+    vote_average: 5.9,
   },
   {
     title: 'Michael Jordan to the Max',
@@ -419,16 +420,16 @@ export const mockMurrayData = [
     release: '2000-05-05',
     image: 'https://image.tmdb.org/t/p/w300/6mpDcmOOjgls5aVSOwp6rNmSTOB.jpg',
     movie_id: 24977,
-    vote_average: 7.5
+    vote_average: 7.5,
   },
   {
     title: 'Cradle Will Rock',
     overview:
-      "A true story of politics and art in the 1930s USA, centered around a leftist musical drama and attempts to stop its production.",
+      'A true story of politics and art in the 1930s USA, centered around a leftist musical drama and attempts to stop its production.',
     release: '1999-12-10',
     image: 'https://image.tmdb.org/t/p/w300/1fTdEqJFZMSTRtZSnT2IL3MibvW.jpg',
     movie_id: 32274,
-    vote_average: 6.8
+    vote_average: 6.8,
   },
   {
     title: 'Caddyshack: The 19th Hole',
@@ -437,7 +438,7 @@ export const mockMurrayData = [
     release: '1999-05-05',
     image: 'https://image.tmdb.org/t/p/w300/lb136Ri2xZIkAxFgdBgbDpru64w.jpg',
     movie_id: 210719,
-    vote_average: 7
+    vote_average: 7,
   },
   {
     title: 'Rushmore',
@@ -446,7 +447,7 @@ export const mockMurrayData = [
     release: '1998-10-09',
     image: 'https://image.tmdb.org/t/p/w300/q3ov1BFTCRWoR9Q6udaRbmgfWwg.jpg',
     movie_id: 11545,
-    vote_average: 7.5
+    vote_average: 7.5,
   },
   {
     title: 'With Friends Like These...',
@@ -455,7 +456,7 @@ export const mockMurrayData = [
     release: '1998-09-10',
     image: 'https://image.tmdb.org/t/p/w300/iaOiRKh9o8hoAEAUWc7Dq71w2cl.jpg',
     movie_id: 126152,
-    vote_average: 0
+    vote_average: 0,
   },
   {
     title: 'Wild Things',
@@ -464,7 +465,7 @@ export const mockMurrayData = [
     release: '1998-03-20',
     image: 'https://image.tmdb.org/t/p/w300/dI9iYo1cL81yzJkBVyNGipjSvy0.jpg',
     movie_id: 617,
-    vote_average: 6.3
+    vote_average: 6.3,
   },
   {
     title: 'The Man Who Knew Too Little',
@@ -473,7 +474,7 @@ export const mockMurrayData = [
     release: '1997-11-14',
     image: 'https://image.tmdb.org/t/p/w300/32UQkAUWy9NpuvJfF82xrMr2A0G.jpg',
     movie_id: 9414,
-    vote_average: 6.4
+    vote_average: 6.4,
   },
   {
     title: 'Space Jam',
@@ -482,7 +483,7 @@ export const mockMurrayData = [
     release: '1996-11-15',
     image: 'https://image.tmdb.org/t/p/w300/xI9AwhOWtsbFlS8tYD2PXa80p7u.jpg',
     movie_id: 2300,
-    vote_average: 6.6
+    vote_average: 6.6,
   },
   {
     title: 'Larger than Life',
@@ -491,16 +492,16 @@ export const mockMurrayData = [
     release: '1996-10-31',
     image: 'https://image.tmdb.org/t/p/w300/hrnStoGvCyJT4vvIWinTlt8fNVG.jpg',
     movie_id: 34170,
-    vote_average: 5.6
+    vote_average: 5.6,
   },
   {
     title: 'Kingpin',
     overview:
-      "After bowler Roy Munson swindles the wrong crowd and is left with a hook for a hand, he settles into impoverished obscurity. That is, until he uncovers the next big thing: an Amish kid named Ishmael. So, the corrupt and the hopelessly naïve hit the circuit intent on settling an old score with Big Ern.",
+      'After bowler Roy Munson swindles the wrong crowd and is left with a hook for a hand, he settles into impoverished obscurity. That is, until he uncovers the next big thing: an Amish kid named Ishmael. So, the corrupt and the hopelessly naïve hit the circuit intent on settling an old score with Big Ern.',
     release: '1996-07-04',
     image: 'https://image.tmdb.org/t/p/w300/l2LObt7s0hakFi9ga6tOKMqKkuo.jpg',
     movie_id: 11543,
-    vote_average: 6.6
+    vote_average: 6.6,
   },
   {
     title: 'Ed Wood',
@@ -509,7 +510,7 @@ export const mockMurrayData = [
     release: '1994-09-27',
     image: 'https://image.tmdb.org/t/p/w300/9qBe2sUDyY2dFH1iHq0SZb1G4QG.jpg',
     movie_id: 522,
-    vote_average: 7.4
+    vote_average: 7.4,
   },
   {
     title: 'Mad Dog and Glory',
@@ -518,7 +519,7 @@ export const mockMurrayData = [
     release: '1993-03-05',
     image: 'https://image.tmdb.org/t/p/w300/xZlVITyuTxI3Olu9h64xYPdpZyP.jpg',
     movie_id: 10433,
-    vote_average: 5.7
+    vote_average: 5.7,
   },
   {
     title: 'Groundhog Day',
@@ -527,7 +528,7 @@ export const mockMurrayData = [
     release: '1993-02-11',
     image: 'https://image.tmdb.org/t/p/w300/vXjVd0Vu0MXRZnga7wEnHIIhO5B.jpg',
     movie_id: 137,
-    vote_average: 7.5
+    vote_average: 7.5,
   },
   {
     title: 'What About Bob?',
@@ -536,25 +537,25 @@ export const mockMurrayData = [
     release: '1991-05-17',
     image: 'https://image.tmdb.org/t/p/w300/fopJnM6MCZilYM6nRpglWdFndt1.jpg',
     movie_id: 10276,
-    vote_average: 6.9
+    vote_average: 6.9,
   },
   {
     title: 'Quick Change',
     overview:
-      "With the aid of his girlfriend, Phyllis Potter, and best friend, Loomis, Grimm enters a Manhattan bank dressed as a clown, creates a hostage situation and executes a flawless robbery. The only thing left for the trio to do is make their getaway out of the city and to the airport. It sounds simple enough, but it seems that fate deserts them immediately after the bank heist. One mishap after another conspires to keep these robbers from reaching freedom.",
+      'With the aid of his girlfriend, Phyllis Potter, and best friend, Loomis, Grimm enters a Manhattan bank dressed as a clown, creates a hostage situation and executes a flawless robbery. The only thing left for the trio to do is make their getaway out of the city and to the airport. It sounds simple enough, but it seems that fate deserts them immediately after the bank heist. One mishap after another conspires to keep these robbers from reaching freedom.',
     release: '1990-07-13',
     image: 'https://image.tmdb.org/t/p/w300/jvaXUsDiX3r2RgVrdNK5SstsEqT.jpg',
     movie_id: 10729,
-    vote_average: 6.5
+    vote_average: 6.5,
   },
   {
     title: 'Ghostbusters II',
     overview:
-      "Five years after they defeated Gozer, the Ghostbusters are out of business. When Dana begins to have ghost problems again, the boys come out of retirement to aid her and hopefully save New York City from a new paranormal threat.",
+      'Five years after they defeated Gozer, the Ghostbusters are out of business. When Dana begins to have ghost problems again, the boys come out of retirement to aid her and hopefully save New York City from a new paranormal threat.',
     release: '1989-06-15',
     image: 'https://image.tmdb.org/t/p/w300/4nN0EYNbOWHJ9UO39maO5Kvcdfa.jpg',
     movie_id: 2978,
-    vote_average: 6.4
+    vote_average: 6.4,
   },
   {
     title: 'Scrooged',
@@ -563,7 +564,7 @@ export const mockMurrayData = [
     release: '1988-11-22',
     image: 'https://image.tmdb.org/t/p/w300/9gUQPVt0QZYKUBrGGtknfrsRQ1c.jpg',
     movie_id: 9647,
-    vote_average: 6.8
+    vote_average: 6.8,
   },
   {
     title: "She's Having a Baby",
@@ -572,7 +573,7 @@ export const mockMurrayData = [
     release: '1988-02-05',
     image: 'https://image.tmdb.org/t/p/w300/5vYlV82YQUSubsuGzubnviuyPW9.jpg',
     movie_id: 12714,
-    vote_average: 5.7
+    vote_average: 5.7,
   },
   {
     title: 'Little Shop of Horrors',
@@ -581,7 +582,7 @@ export const mockMurrayData = [
     release: '1986-12-19',
     image: 'https://image.tmdb.org/t/p/w300/iKkbN17OmFosaW6asCNZTTsyvpu.jpg',
     movie_id: 10776,
-    vote_average: 6.7
+    vote_average: 6.7,
   },
   {
     title: 'Bugs Bunny/Looney Tunes All-Star 50th Anniversary',
@@ -590,7 +591,7 @@ export const mockMurrayData = [
     release: '1986-01-14',
     image: 'https://image.tmdb.org/t/p/w300/7ZiU7O8JwEBxIa9aPYIu7lZxlBd.jpg',
     movie_id: 503354,
-    vote_average: 6
+    vote_average: 6,
   },
   {
     title: "The Razor's Edge",
@@ -599,7 +600,7 @@ export const mockMurrayData = [
     release: '1984-10-19',
     image: 'https://image.tmdb.org/t/p/w300/ai6iFng036xuBGeDVSEOdhkKrZ2.jpg',
     movie_id: 24453,
-    vote_average: 6.5
+    vote_average: 6.5,
   },
   {
     title: 'Nothing Lasts Forever',
@@ -608,33 +609,33 @@ export const mockMurrayData = [
     release: '1984-09-06',
     image: 'https://image.tmdb.org/t/p/w300/kEbEySR5MTpVEU1F69hEidDfCNQ.jpg',
     movie_id: 52826,
-    vote_average: 6.3
+    vote_average: 6.3,
   },
   {
     title: 'Ghostbusters',
     overview:
-      "After losing their academic posts at a prestigious university, a team of parapsychologists goes into business as proton-pack-toting \"ghostbusters\" who exterminate ghouls, hobgoblins and supernatural pests of all stripes. An ad campaign pays off when a knockout cellist hires the squad to purge her swanky digs of demons that appear to be living in her refrigerator.",
+      'After losing their academic posts at a prestigious university, a team of parapsychologists goes into business as proton-pack-toting "ghostbusters" who exterminate ghouls, hobgoblins and supernatural pests of all stripes. An ad campaign pays off when a knockout cellist hires the squad to purge her swanky digs of demons that appear to be living in her refrigerator.',
     release: '1984-06-07',
     image: 'https://image.tmdb.org/t/p/w300/3FS3oBdorgczgfCkFi2u8ZTFfpS.jpg',
     movie_id: 620,
-    vote_average: 7.4
+    vote_average: 7.4,
   },
   {
     title: 'Tootsie',
     overview:
-      "When struggling, out of work actor Michael Dorsey secretly adopts a female alter ego -- Dorothy Michaels -- in order to land a part in a daytime drama, he unwittingly becomes a feminist icon and ends up in a romantic pickle.",
+      'When struggling, out of work actor Michael Dorsey secretly adopts a female alter ego -- Dorothy Michaels -- in order to land a part in a daytime drama, he unwittingly becomes a feminist icon and ends up in a romantic pickle.',
     release: '1982-12-16',
     image: 'https://image.tmdb.org/t/p/w300/ngyCzZwb9y5sMUCig5JQT4Y33Q.jpg',
     movie_id: 9576,
-    vote_average: 7.1
+    vote_average: 7.1,
   },
   {
     title: "The Rodney Dangerfield Show: It's Not Easy Bein' Me",
-    overview: "Rodney Dangerfield special, featuring stand-up and sketches.",
+    overview: 'Rodney Dangerfield special, featuring stand-up and sketches.',
     release: '1982-05-12',
     image: 'https://image.tmdb.org/t/p/w300/2FKmtCyl3Pjqv1sz4RjC6wHYiLu.jpg',
     movie_id: 62552,
-    vote_average: 0
+    vote_average: 0,
   },
   {
     title: "Steve Martin: Steve Martin's Best Show Ever",
@@ -643,16 +644,16 @@ export const mockMurrayData = [
     release: '1981-11-25',
     image: 'https://image.tmdb.org/t/p/w300/g30wZLICGOmpwlka65qAyW4MawW.jpg',
     movie_id: 275521,
-    vote_average: 0
+    vote_average: 0,
   },
   {
     title: 'Stripes',
     overview:
-      "John Winger, an indolent sad sack in his 30s, impulsively joins the U.S. Army after losing his job, his girlfriend and his apartment.",
+      'John Winger, an indolent sad sack in his 30s, impulsively joins the U.S. Army after losing his job, his girlfriend and his apartment.',
     image: 'https://image.tmdb.org/t/p/w300/nqfLX1bJLUlZnfflqpUIWrGQwSv.jpg',
-    release: "1981-06-25",
+    release: '1981-06-25',
     movie_id: 10890,
-    vote_average: 6.6
+    vote_average: 6.6,
   },
   {
     title: 'Loose Shoes',
@@ -661,7 +662,7 @@ export const mockMurrayData = [
     release: '1980-08-01',
     image: 'https://image.tmdb.org/t/p/w300/u111kIZkX7F2JengPcqf8OktWnT.jpg',
     movie_id: 44805,
-    vote_average: 3
+    vote_average: 3,
   },
   {
     title: 'Caddyshack',
@@ -670,7 +671,7 @@ export const mockMurrayData = [
     release: '1980-07-25',
     image: 'https://image.tmdb.org/t/p/w300/iGA1W74JAQpLKjsUQaFG9Ob1PMj.jpg',
     movie_id: 11977,
-    vote_average: 6.7
+    vote_average: 6.7,
   },
   {
     title: 'The Missing Link',
@@ -679,16 +680,16 @@ export const mockMurrayData = [
     release: '1980-05-21',
     image: 'https://image.tmdb.org/t/p/w300/kHzAu0ZLFtiwV0PLV3iEGxtxRIc.jpg',
     movie_id: 48279,
-    vote_average: 5.5
+    vote_average: 5.5,
   },
   {
     title: 'Where the Buffalo Roam',
     overview:
-      "Semi-biographical film based on the experiences of gonzo journalist Hunter S. Thompson.",
+      'Semi-biographical film based on the experiences of gonzo journalist Hunter S. Thompson.',
     release: '1980-04-25',
     image: 'https://image.tmdb.org/t/p/w300/etoQq5a3fDuj2hKMLxUCnKqiIJh.jpg',
     movie_id: 13005,
-    vote_average: 6.3
+    vote_average: 6.3,
   },
   {
     title: "Mr. Mike's Mondo Video",
@@ -697,7 +698,7 @@ export const mockMurrayData = [
     release: '1979-09-20',
     image: 'https://image.tmdb.org/t/p/w300/h9sa8TaVjpNBrGkWK4hoEarPCmr.jpg',
     movie_id: 49036,
-    vote_average: 4.2
+    vote_average: 4.2,
   },
   {
     title: 'Meatballs',
@@ -706,7 +707,7 @@ export const mockMurrayData = [
     release: '1979-06-28',
     image: 'https://image.tmdb.org/t/p/w300/o0NmLgnCVph7I07OP0yKGPFoLrO.jpg',
     movie_id: 14035,
-    vote_average: 6
+    vote_average: 6,
   },
   {
     title: 'Fear and Loathing on the Road to Hollywood',
@@ -715,8 +716,8 @@ export const mockMurrayData = [
     release: '1978-11-02',
     image: 'https://image.tmdb.org/t/p/w300/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg',
     movie_id: 164808,
-    vote_average: 8
-  }
+    vote_average: 8,
+  },
 ];
 
 export const mockMovie = {
@@ -726,14 +727,14 @@ export const mockMovie = {
   release: '1978-11-02',
   image: 'https://image.tmdb.org/t/p/w300/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg',
   movie_id: 164808,
-  vote_average: 8
+  vote_average: 8,
 };
 
 export const mockUser = {
   id: 1,
   name: 'Taylor',
   password: 'password',
-  email: 'tman2272@aol.com'
+  email: 'tman2272@aol.com',
 };
 
 export const mockFavorites = {
@@ -749,7 +750,7 @@ export const mockFavorites = {
       release_date: '2014-01-24',
       vote_average: '5.9',
       overview:
-        'Based on the true story of the greatest treasure hunt in history, The Monuments Men is an action drama focusing on seven over-the-hill, out-of-shape museum directors, artists, architects, curators, and art historians who went to the front lines of WWII to rescue the world’s artistic masterpieces from Nazi thieves and return them to their rightful owners.  With the art hidden behind enemy lines, how could these guys hope to succeed?'
+        'Based on the true story of the greatest treasure hunt in history, The Monuments Men is an action drama focusing on seven over-the-hill, out-of-shape museum directors, artists, architects, curators, and art historians who went to the front lines of WWII to rescue the world’s artistic masterpieces from Nazi thieves and return them to their rightful owners.  With the art hidden behind enemy lines, how could these guys hope to succeed?',
     },
     {
       id: 25,
@@ -761,10 +762,10 @@ export const mockFavorites = {
       release_date: '2014-01-24',
       vote_average: '5.9',
       overview:
-        'Based on the true story of the greatest treasure hunt in history, The Monuments Men is an action drama focusing on seven over-the-hill, out-of-shape museum directors, artists, architects, curators, and art historians who went to the front lines of WWII to rescue the world’s artistic masterpieces from Nazi thieves and return them to their rightful owners.  With the art hidden behind enemy lines, how could these guys hope to succeed?'
-    }
+        'Based on the true story of the greatest treasure hunt in history, The Monuments Men is an action drama focusing on seven over-the-hill, out-of-shape museum directors, artists, architects, curators, and art historians who went to the front lines of WWII to rescue the world’s artistic masterpieces from Nazi thieves and return them to their rightful owners.  With the art hidden behind enemy lines, how could these guys hope to succeed?',
+    },
   ],
-  message: 'Retrieved All favorites'
+  message: 'Retrieved All favorites',
 };
 
 export const mockFavoriteResult = [
@@ -778,7 +779,7 @@ export const mockFavoriteResult = [
     release_date: '2014-01-24',
     title: 'The Monuments Men',
     user_id: 1,
-    vote_average: '5.9'
+    vote_average: '5.9',
   },
   {
     id: 25,
@@ -790,8 +791,8 @@ export const mockFavoriteResult = [
     release_date: '2014-01-24',
     title: 'The Monuments Men',
     user_id: 1,
-    vote_average: '5.9'
-  }
+    vote_average: '5.9',
+  },
 ];
 
 export const mockFavoritesArray = ['Kurt', 'Brandon', 'Jesse'];
@@ -812,7 +813,7 @@ export const mockStateResult = {
           release_date: '2014-01-24',
           title: 'The Monuments Men',
           user_id: 1,
-          vote_average: '5.9'
+          vote_average: '5.9',
         },
         {
           id: 25,
@@ -824,12 +825,12 @@ export const mockStateResult = {
           release_date: '2014-01-24',
           title: 'The Monuments Men',
           user_id: 1,
-          vote_average: '5.9'
-        }
+          vote_average: '5.9',
+        },
       ],
       message: 'Retrieved All favorites',
-      status: 'success'
-    }
+      status: 'success',
+    },
   ],
   movies: [
     {
@@ -839,11 +840,23 @@ export const mockStateResult = {
         "Fear and Loathing on the Road to Hollywood, also known as Fear and Loathing in Gonzovision, is a documentary film producedby BBC in 1978 on the subject of Hunter S. Thompson, directed by Nigel Finch.  The road trip/film pairs Thompson with Finch's fellow Briton the illustrator Ralph Steadman. The party travel to Hollywood via Death Valley and Barstow from Las Vegas, scene of the pair's 1971 collaboration. It contains interviews with Thompson and Steadman, as well as some short excerpts from some of his work.",
       release: '1978-11-02',
       title: 'Fear and Loathing on the Road to Hollywood',
-      vote_average: 8
-    }
+      vote_average: 8,
+    },
   ],
-  user: undefined
+  user: undefined,
 };
 
 
-export const mockFavoriteStateResult = {"favorites": [{"data": [{"id": 13, "movie_id": 152760, "overview": "Based on the true story of the greatest treasure hunt in history, The Monuments Men is an action drama focusing on seven over-the-hill, out-of-shape museum directors, artists, architects, curators, and art historians who went to the front lines of WWII to rescue the world’s artistic masterpieces from Nazi thieves and return them to their rightful owners.  With the art hidden behind enemy lines, how could these guys hope to succeed?", "poster_path": "https://image.tmdb.org/t/p/w300/lhCUqVEPA3MMxnV8QTeVBTmRrP4.jpg", "release_date": "2014-01-24", "title": "The Monuments Men", "user_id": 1, "vote_average": "5.9"}, {"id": 25, "movie_id": 152760, "overview": "Based on the true story of the greatest treasure hunt in history, The Monuments Men is an action drama focusing on seven over-the-hill, out-of-shape museum directors, artists, architects, curators, and art historians who went to the front lines of WWII to rescue the world’s artistic masterpieces from Nazi thieves and return them to their rightful owners.  With the art hidden behind enemy lines, how could these guys hope to succeed?", "poster_path": "https://image.tmdb.org/t/p/w300/lhCUqVEPA3MMxnV8QTeVBTmRrP4.jpg", "release_date": "2014-01-24", "title": "The Monuments Men", "user_id": 1, "vote_average": "5.9"}], "message": "Retrieved All favorites", "status":"success"}], "movies": undefined, "user": undefined}
+export const mockFavoriteStateResult = {
+  favorites: [{
+    data: [{
+      id: 13, movie_id: 152760, overview: 'Based on the true story of the greatest treasure hunt in history, The Monuments Men is an action drama focusing on seven over-the-hill, out-of-shape museum directors, artists, architects, curators, and art historians who went to the front lines of WWII to rescue the world’s artistic masterpieces from Nazi thieves and return them to their rightful owners.  With the art hidden behind enemy lines, how could these guys hope to succeed?', poster_path: 'https://image.tmdb.org/t/p/w300/lhCUqVEPA3MMxnV8QTeVBTmRrP4.jpg', release_date: '2014-01-24', title: 'The Monuments Men', user_id: 1, vote_average: '5.9',
+    }, {
+      id: 25, movie_id: 152760, overview: 'Based on the true story of the greatest treasure hunt in history, The Monuments Men is an action drama focusing on seven over-the-hill, out-of-shape museum directors, artists, architects, curators, and art historians who went to the front lines of WWII to rescue the world’s artistic masterpieces from Nazi thieves and return them to their rightful owners.  With the art hidden behind enemy lines, how could these guys hope to succeed?', poster_path: 'https://image.tmdb.org/t/p/w300/lhCUqVEPA3MMxnV8QTeVBTmRrP4.jpg', release_date: '2014-01-24', title: 'The Monuments Men', user_id: 1, vote_average: '5.9',
+    }],
+    message: 'Retrieved All favorites',
+    status: 'success',
+  }],
+  movies: undefined,
+  user: undefined,
+};

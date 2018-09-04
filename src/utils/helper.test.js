@@ -1,5 +1,6 @@
 import { cleanMurrayData } from './helper';
 import { mockMurrayData } from './mockData/mockMurrayData';
+
 jest.mock('./__mocks__/apiCalls');
 
 describe('cleanMurrayData', () => {

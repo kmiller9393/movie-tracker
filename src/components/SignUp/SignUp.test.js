@@ -1,7 +1,7 @@
 import React from 'react';
 import createRouterContext from 'react-router-test-context';
-import { SignUp } from './SignUp';
 import { shallow, mount } from 'enzyme';
+import { SignUp } from './SignUp';
 import { mockHistory } from '../../utils/mockData/mockMurrayData';
 import { setUserData } from '../../utils/__mocks__/apiCalls';
 
@@ -14,14 +14,12 @@ describe('SignUp', () => {
       preventDefault: jest.fn(),
       target: {
         value: 'hello',
-        name: 'name'
-      }
+        name: 'name',
+      },
     };
     window.fetch = jest
       .fn()
-      .mockImplementation(() =>
-        Promise.resolve({ json: () => Promise.resolve({ status: 200 }) })
-      );
+      .mockImplementation(() => Promise.resolve({ json: () => Promise.resolve({ status: 200 }) }));
   });
 
   describe('handleChange', () => {
