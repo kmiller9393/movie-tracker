@@ -18,16 +18,16 @@ Upon page load, the user has access to the entire library of Murray films. By cl
 
 ### UI
 
-<img src="movie-tracker/SignInPage.png">
+<img src="https://github.com/kmiller9393/movie-tracker/blob/master/UI.gif">
 
 #### Landing Page
 
-<img src="assets/LandingPage.png">
+<img src="https://github.com/kmiller9393/movie-tracker/blob/master/LandingPage.png">
 
 #### Sign In Page
 
-<img src="assets/SignInPage.png">
+<img src="https://github.com/kmiller9393/movie-tracker/blob/master/SignInPage.png">
 
 #### Favorites Page
 
-<img src="assets/FavoritesPage.png">
+<img src="https://github.com/kmiller9393/movie-tracker/blob/master/FavoritesPage.png">
