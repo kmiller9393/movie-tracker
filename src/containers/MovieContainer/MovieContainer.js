@@ -1,17 +1,12 @@
 import React from 'react';
-import Card from '../components/Card';
+import Card from '../Card/Card';
 import { connect } from 'react-redux';
-import { logoutUser } from '../actions';
+import { logoutUser } from '../../actions';
 import { Link } from 'react-router-dom';
 import './MovieContainer.css';
 import PropTypes from 'prop-types';
 
-export const MovieContainer = ({
-  movies,
-  user,
-  logoutUser,
-  favorites
-}) => {
+export const MovieContainer = ({ movies, user, logoutUser, favorites }) => {
   const displayMovies = movies.map(movie => {
     if (movie.image.includes('null')) {
       return;
@@ -37,28 +32,28 @@ export const MovieContainer = ({
             alt="netflix-font"
             border="0"
           />
-          <p className="welcome-text">
-            {`Welcome, ${user.name}`}
-          </p>
+          <p className="welcome-text">{`Welcome, ${user.name}`}</p>
           <section className="right-links">
             <Link to="/favorites">Favorites</Link>
-            <button className="signout-button" onClick={logoutUser}>Sign Out</button>
+            <button className="signout-button" onClick={logoutUser}>
+              Sign Out
+            </button>
           </section>
         </header>
       ) : (
-          <header className="login-header">
-            <img
-              className="home-image"
-              src="https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png"
-              alt="netflix-font"
-              border="0"
-            />
-            <section className="right-links">
-              <a href="http://localhost:3001/login">Login</a>
-              <a href="http://localhost:3001/sign-up">Sign Up</a>
-            </section>
-          </header>
-        )}
+        <header className="login-header">
+          <img
+            className="home-image"
+            src="https://fontmeme.com/permalink/180902/ac7a65b3a8454e0ff8d71d4efa88c41c.png"
+            alt="netflix-font"
+            border="0"
+          />
+          <section className="right-links">
+            <a href="http://localhost:3001/login">Login</a>
+            <a href="http://localhost:3001/sign-up">Sign Up</a>
+          </section>
+        </header>
+      )}
       <ul>{displayMovies}</ul>
     </div>
   );

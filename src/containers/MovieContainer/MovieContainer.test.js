@@ -1,24 +1,31 @@
-import { MovieContainer, mapStateToProps, mapDispatchToProps } from './MovieContainer';
-import { mockMurrayData, mockUser } from '../utils/mockData/mockMurrayData'
+import {
+  MovieContainer,
+  mapStateToProps,
+  mapDispatchToProps
+} from './MovieContainer';
+import { mockMurrayData, mockUser } from '../../utils/mockData/mockMurrayData';
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 
 describe('MovieContainer', () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = shallow(<MovieContainer movies={mockMurrayData} user={mockUser}/>)
-  })
-
+    wrapper = shallow(
+      <MovieContainer movies={mockMurrayData} user={mockUser} />
+    );
+  });
 
   describe('MovieContainer component', () => {});
-    it('should match the snapshot', () => {
-      expect(wrapper).toMatchSnapshot
-    })
+  it('should match the snapshot', () => {
+    expect(wrapper).toMatchSnapshot;
+  });
 
-    it('should match the snapshot if user is not signed in', () => {
-      wrapper = shallow(<MovieContainer movies = {mockMurrayData} favorites={[]} user={{}}/>)
-    expect(wrapper).toMatchSnapshot()
-    })
+  it('should match the snapshot if user is not signed in', () => {
+    wrapper = shallow(
+      <MovieContainer movies={mockMurrayData} favorites={[]} user={{}} />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
 
   describe('mapStateToProps', () => {
     it('should return an object with a movies array', () => {
@@ -51,7 +58,7 @@ describe('MovieContainer', () => {
       const mappedProps = mapDispatchToProps(mockDispatch);
 
       mappedProps.logoutUser();
-      expect(mockDispatch).toHaveBeenCalled()
-    })
-  })
+      expect(mockDispatch).toHaveBeenCalled();
+    });
+  });
 });

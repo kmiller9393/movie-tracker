@@ -1,7 +1,7 @@
 import React from 'react';
-import Card from '../components/Card';
+import Card from '../Card/Card';
 import { connect } from 'react-redux';
-import { logoutUser } from '../actions';
+import { logoutUser } from '../../actions';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import './Favorites.css';
@@ -32,12 +32,12 @@ export const Favorites = ({ movies, user, logoutUser, favorites }) => {
           </section>
         </header>
       ) : (
-          <header>
-            <h1>Favorites</h1>
-            <a href="http://localhost:3001/login">Login</a>
-            <a href="http://localhost:3001/sign-up">Sign Up</a>
-          </header>
-        )}
+        <header>
+          <h1>Favorites</h1>
+          <a href="http://localhost:3001/login">Login</a>
+          <a href="http://localhost:3001/sign-up">Sign Up</a>
+        </header>
+      )}
       <ul>{displayFavorites}</ul>
     </div>
   );
