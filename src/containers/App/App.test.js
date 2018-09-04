@@ -16,7 +16,7 @@ describe.skip('App', () => {
   });
 
   it('should call getMovies from props with the correct params', async () => {
-    const result = await wrapper.instance().fetchMurrayData();
+    await wrapper.instance().fetchMurrayData();
     expect(cleanMurrayData).toHaveBeenCalledWith('');
   });
 

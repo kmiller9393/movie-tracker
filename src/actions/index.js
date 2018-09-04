@@ -1,34 +1,34 @@
 export const setFilter = filter => ({
   type: 'SET_FILTER',
-  filter,
+  filter
 });
 
 export const populateMovies = movies => ({
   type: 'POPULATE_MOVIES',
-  movies,
+  movies
 });
 
 export const getUserInfo = (name, id) => ({
   type: 'GET_USER_INFO',
   name,
-  id,
+  id
 });
 
 export const logoutUser = () => ({
-  type: 'LOGOUT_USER',
+  type: 'LOGOUT_USER'
 });
 
 export const populateFavorites = favorites => ({
   type: 'POPULATE_FAVORITES',
-  favorites,
+  favorites
 });
 
 export const addFavorite = movie => ({
   type: 'ADD_FAVORITE',
-  movie,
+  movie
 });
 
 export const deleteFavorite = movie => ({
   type: 'DELETE_FAVORITE',
-  movie,
+  movie
 });
