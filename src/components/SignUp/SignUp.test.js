@@ -1,6 +1,6 @@
 import React from 'react';
 import createRouterContext from 'react-router-test-context';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import { SignUp } from './SignUp';
 import { mockHistory } from '../../utils/mockData/mockMurrayData';
 import { setUserData } from '../../utils/__mocks__/apiCalls';
@@ -14,12 +14,14 @@ describe('SignUp', () => {
       preventDefault: jest.fn(),
       target: {
         value: 'hello',
-        name: 'name',
-      },
+        name: 'name'
+      }
     };
     window.fetch = jest
       .fn()
-      .mockImplementation(() => Promise.resolve({ json: () => Promise.resolve({ status: 200 }) }));
+      .mockImplementation(() =>
+        Promise.resolve({ json: () => Promise.resolve({ status: 200 }) })
+      );
   });
 
   describe('handleChange', () => {
@@ -39,7 +41,6 @@ describe('SignUp', () => {
       wrapper.state().name = 'dude';
       wrapper.state().email = 'yam@aol.com';
       wrapper.state().password = 'juice';
-      console.log(wrapper.state());
 
       await wrapper.instance().handleSubmit(event);
 

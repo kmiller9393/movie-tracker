@@ -1,9 +1,8 @@
 import React from 'react';
 import createRouterContext from 'react-router-test-context';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import { LoginForm, mapDispatchToProps } from './LoginForm';
 import { mockHistory } from '../../utils/mockData/mockMurrayData';
-import { fetchUserData } from '../../utils/__mocks__/apiCalls';
 
 describe('LoginForm', () => {
   let event;
@@ -14,12 +13,14 @@ describe('LoginForm', () => {
       preventDefault: jest.fn(),
       target: {
         value: 'hello',
-        name: 'name',
-      },
+        name: 'name'
+      }
     };
     window.fetch = jest
       .fn()
-      .mockImplementation(() => Promise.resolve({ json: () => Promise.resolve({ status: 200 }) }));
+      .mockImplementation(() =>
+        Promise.resolve({ json: () => Promise.resolve({ status: 200 }) })
+      );
   });
 
   it('should match the snapshot', () => {
@@ -45,7 +46,7 @@ describe('LoginForm', () => {
           userLogin={jest.fn()}
           getFavorites={jest.fn()}
         />,
-        { context },
+        { context }
       );
 
       wrapper.state().email = 'tman2272@aol.com';

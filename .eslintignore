@@ -1,0 +1,6 @@
+# data files
+/src/utils/__mocks__
+/src/utils/mockData
+/src/utils/variables.js
+/src/registerServiceWorker.js
+/coverage
