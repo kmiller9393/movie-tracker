@@ -10,9 +10,7 @@ describe.skip('App', () => {
     wrapper = await shallow(<App getMovies={jest.fn()} />);
     window.fetch = jest
       .fn()
-      .mockImplementation(() =>
-        Promise.resolve({ json: () => Promise.resolve(fetchMurrayMovies) })
-      );
+      .mockImplementation(() => Promise.resolve({ json: () => Promise.resolve(fetchMurrayMovies) }));
   });
 
   it('should call getMovies from props with the correct params', async () => {

@@ -7,7 +7,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2018-03-23',
       image: 'https://image.tmdb.org/t/p/w500/rSluCePdXXtNiQeE6Na5yRGamhL.jpg',
       id: 399174,
-      vote_average: 7.8
+      vote_average: 7.8,
     },
     {
       title: "'85: The Greatest Team in Pro Football History",
@@ -16,7 +16,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2016-10-01',
       image: 'https://image.tmdb.org/t/p/w500/Ab5Fg3hNTq5ApCzPkmAQWubqg5Z.jpg',
       id: 430364,
-      vote_average: 9
+      vote_average: 9,
     },
     {
       title: 'Ghostbusters',
@@ -25,7 +25,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2016-07-14',
       image: 'https://image.tmdb.org/t/p/w500/4qnJ1hsMADxzwnOmnwjZTNp0rKT.jpg',
       id: 43074,
-      vote_average: 5.4
+      vote_average: 5.4,
     },
     {
       title: 'Cold Lairs',
@@ -34,7 +34,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2016-04-05',
       image: 'https://image.tmdb.org/t/p/w500/pvmXvKk4lDUAuvCFY0LfxbSMBRe.jpg',
       id: 392034,
-      vote_average: 0
+      vote_average: 0,
     },
     {
       title: 'The Jungle Book',
@@ -43,7 +43,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2016-04-07',
       image: 'https://image.tmdb.org/t/p/w500/vOipe2myi26UDwP978hsYOrnUWC.jpg',
       id: 278927,
-      vote_average: 6.8
+      vote_average: 6.8,
     },
     {
       title: 'A Very Murray Christmas',
@@ -52,7 +52,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2015-12-04',
       image: 'https://image.tmdb.org/t/p/w500/3CMBgEte4pEapn2deugsfz2hjAL.jpg',
       id: 364067,
-      vote_average: 5.2
+      vote_average: 5.2,
     },
     {
       title: 'Rock the Kasbah',
@@ -61,7 +61,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2015-10-22',
       image: 'https://image.tmdb.org/t/p/w500/7Ljch9R3uie8lV3z1GUUHZRkvKH.jpg',
       id: 253414,
-      vote_average: 5.3
+      vote_average: 5.3,
     },
     {
       title: 'Thank You, Del: The Story of the Del Close Marathon',
@@ -70,7 +70,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2015-10-13',
       image: 'https://image.tmdb.org/t/p/w500/rnGpvbQ8Xr1v5kvIa52yFQYf9EZ.jpg',
       id: 381062,
-      vote_average: 5
+      vote_average: 5,
     },
     {
       title: 'Aloha',
@@ -79,7 +79,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2015-05-27',
       image: 'https://image.tmdb.org/t/p/w500/4Q0rnkCsQ9GhdnR66Bqjvav2Q1x.jpg',
       id: 222936,
-      vote_average: 5.2
+      vote_average: 5.2,
     },
     {
       title: 'Saturday Night Live 40th Anniversary Special',
@@ -88,7 +88,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2015-02-15',
       image: 'https://image.tmdb.org/t/p/w500/tdS7BgV7pqJUs0lnO8mxDqu8ZfJ.jpg',
       id: 324601,
-      vote_average: 7.1
+      vote_average: 7.1,
     },
     {
       title: 'Drunk Stoned Brilliant Dead: The Story of the National Lampoon',
@@ -97,7 +97,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2015-01-25',
       image: 'https://image.tmdb.org/t/p/w500/t7fqemeHtEaxG0Ry0bTox4spBY0.jpg',
       id: 319070,
-      vote_average: 6.6
+      vote_average: 6.6,
     },
     {
       title: 'Dumb and Dumber To',
@@ -106,7 +106,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2014-11-12',
       image: 'https://image.tmdb.org/t/p/w500/Ekw3ijq9L6RiKvv5m2tPOEklHF.jpg',
       id: 100042,
-      vote_average: 5.4
+      vote_average: 5.4,
     },
     {
       title: 'St. Vincent',
@@ -115,7 +115,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2014-10-09',
       image: 'https://image.tmdb.org/t/p/w500/w0hzr4eQBk1X4m63fb7sOSt9Bnn.jpg',
       id: 239563,
-      vote_average: 7.1
+      vote_average: 7.1,
     },
     {
       title: 'The Grand Budapest Hotel',
@@ -124,7 +124,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2014-02-26',
       image: 'https://image.tmdb.org/t/p/w500/nX5XotM9yprCKarRH4fzOq1VM1J.jpg',
       id: 120467,
-      vote_average: 8
+      vote_average: 8,
     },
     {
       title: 'The Monuments Men',
@@ -133,7 +133,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2014-01-24',
       image: 'https://image.tmdb.org/t/p/w500/lhCUqVEPA3MMxnV8QTeVBTmRrP4.jpg',
       id: 152760,
-      vote_average: 5.9
+      vote_average: 5.9,
     },
     {
       title: 'Hyde Park on Hudson',
@@ -142,7 +142,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2012-12-07',
       image: 'https://image.tmdb.org/t/p/w500/3mbfrCzlXlzO5kDTq2Qgj9EefYz.jpg',
       id: 87504,
-      vote_average: 5.3
+      vote_average: 5.3,
     },
     {
       title: 'A Glimpse Inside the Mind of Charles Swan III',
@@ -151,7 +151,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2012-11-15',
       image: 'https://image.tmdb.org/t/p/w500/6KeYxz1wzjvkvUhkiva9ULzipQY.jpg',
       id: 124461,
-      vote_average: 4.4
+      vote_average: 4.4,
     },
     {
       title: 'Moonrise Kingdom',
@@ -160,7 +160,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2012-05-24',
       image: 'https://image.tmdb.org/t/p/w500/ysTohGF7NY9Z6MYz9vLNYiyzh0r.jpg',
       id: 83666,
-      vote_average: 7.7
+      vote_average: 7.7,
     },
     {
       title: 'Final Cut: Ladies and Gentlemen',
@@ -169,7 +169,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2012-02-04',
       image: 'https://image.tmdb.org/t/p/w500/tXeaMMQ1EAHVDRMrEcNzoO25EwT.jpg',
       id: 126314,
-      vote_average: 7.7
+      vote_average: 7.7,
     },
     {
       title: 'Passion Play',
@@ -178,7 +178,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2010-09-10',
       image: 'https://image.tmdb.org/t/p/w500/rp5YsVLlJP1ZxsGDkeLC78olyF4.jpg',
       id: 38753,
-      vote_average: 5
+      vote_average: 5,
     },
     {
       title: 'Fantastic Mr. Fox',
@@ -187,7 +187,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2009-10-23',
       image: 'https://image.tmdb.org/t/p/w500/750pfEttsYAVmynRg2vmt1AXh4q.jpg',
       id: 10315,
-      vote_average: 7.6
+      vote_average: 7.6,
     },
     {
       title: 'Zombieland',
@@ -196,7 +196,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2009-10-07',
       image: 'https://image.tmdb.org/t/p/w500/vUzzDpVrab1BOG3ogxhRGfLN94d.jpg',
       id: 19908,
-      vote_average: 7.2
+      vote_average: 7.2,
     },
     {
       title: 'Get Low',
@@ -205,7 +205,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2010-01-22',
       image: 'https://image.tmdb.org/t/p/w500/kLw9J6Rp3surSUKZbmJ9KZDwFBT.jpg',
       id: 44718,
-      vote_average: 6.8
+      vote_average: 6.8,
     },
     {
       title: 'The Limits of Control',
@@ -214,7 +214,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2009-05-01',
       image: 'https://image.tmdb.org/t/p/w500/jz6zzcdOf09eGQUbTWZjVU99iC5.jpg',
       id: 8284,
-      vote_average: 6.4
+      vote_average: 6.4,
     },
     {
       title: 'City of Ember',
@@ -223,7 +223,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2008-10-07',
       image: 'https://image.tmdb.org/t/p/w500/vtlcA292oROPaG74amLsAhtBNbB.jpg',
       id: 13600,
-      vote_average: 6.2
+      vote_average: 6.2,
     },
     {
       title: 'Get Smart',
@@ -232,7 +232,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2008-06-19',
       image: 'https://image.tmdb.org/t/p/w500/zS3UhYJvy6oLTBgNckpoyAa0qNs.jpg',
       id: 11665,
-      vote_average: 6
+      vote_average: 6,
     },
     {
       title: 'A Better Man: The Making of Tootsie',
@@ -241,7 +241,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2008-02-05',
       image: 'https://image.tmdb.org/t/p/w500null',
       id: 479530,
-      vote_average: 0
+      vote_average: 0,
     },
     {
       title: 'The Darjeeling Limited',
@@ -250,7 +250,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2007-09-29',
       image: 'https://image.tmdb.org/t/p/w500/47AGp0EKNMjqBBPaxRYDW0Sc5If.jpg',
       id: 4538,
-      vote_average: 7.2
+      vote_average: 7.2,
     },
     {
       title: 'FCU: Fact Checkers Unit',
@@ -259,7 +259,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2007-09-09',
       image: 'https://image.tmdb.org/t/p/w500null',
       id: 485282,
-      vote_average: 5
+      vote_average: 5,
     },
     {
       title: 'Buy the Ticket, Take the Ride',
@@ -268,7 +268,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2006-12-12',
       image: 'https://image.tmdb.org/t/p/w500/xbt6aftwE8d9TKhepA2o6a3ZDdG.jpg',
       id: 25740,
-      vote_average: 6.7
+      vote_average: 6.7,
     },
     {
       title: 'Garfield: A Tail of Two Kitties',
@@ -277,7 +277,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2006-06-15',
       image: 'https://image.tmdb.org/t/p/w500/aagx3t2Xv7R26hcqzrayTT28Yww.jpg',
       id: 9513,
-      vote_average: 5.3
+      vote_average: 5.3,
     },
     {
       title: 'The Lost City',
@@ -286,7 +286,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2005-09-03',
       image: 'https://image.tmdb.org/t/p/w500/v19DsrJb0TJxTCdgaUzzuvOjfeD.jpg',
       id: 9700,
-      vote_average: 6
+      vote_average: 6,
     },
     {
       title: 'Broken Flowers',
@@ -295,7 +295,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2005-05-17',
       image: 'https://image.tmdb.org/t/p/w500/pvtdRUpJE6YjIi8BLEZ7jhEdeN1.jpg',
       id: 308,
-      vote_average: 6.9
+      vote_average: 6.9,
     },
     {
       title: 'This Is an Adventure',
@@ -304,7 +304,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2005-05-10',
       image: 'https://image.tmdb.org/t/p/w500null',
       id: 415950,
-      vote_average: 0
+      vote_average: 0,
     },
     {
       title: "Matthew Gray Gubler's Life Aquatic Intern Journal",
@@ -313,7 +313,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2005-05-09',
       image: 'https://image.tmdb.org/t/p/w500/v4qJhj3E664f4Livd8I99SvmicG.jpg',
       id: 199353,
-      vote_average: 5.6
+      vote_average: 5.6,
     },
     {
       title: 'The Life Aquatic with Steve Zissou',
@@ -322,7 +322,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2004-12-10',
       image: 'https://image.tmdb.org/t/p/w500/kKwNRePEqTfC6DnNlJzz1yX44iR.jpg',
       id: 421,
-      vote_average: 7.1
+      vote_average: 7.1,
     },
     {
       title: 'Garfield',
@@ -331,7 +331,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2004-06-10',
       image: 'https://image.tmdb.org/t/p/w500/v6xvth8PjDG350ARG9H2sF7N3SF.jpg',
       id: 8920,
-      vote_average: 5.3
+      vote_average: 5.3,
     },
     {
       title: "Lost on Location: Behind the Scenes of 'Lost in Translation'",
@@ -340,7 +340,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2004-02-03',
       image: 'https://image.tmdb.org/t/p/w500/lsVQfLaklarG4E3tz5xqlgp7QXY.jpg',
       id: 113149,
-      vote_average: 8
+      vote_average: 8,
     },
     {
       title: 'Coffee and Cigarettes',
@@ -349,7 +349,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2003-09-05',
       image: 'https://image.tmdb.org/t/p/w500/myLbZRsgRVyfj1luCvUcgB9cjGs.jpg',
       id: 883,
-      vote_average: 7.1
+      vote_average: 7.1,
     },
     {
       title: 'Lost in Translation',
@@ -358,7 +358,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2003-08-31',
       image: 'https://image.tmdb.org/t/p/w500/5T8VvuFTdaawKLJk34i69Utaw7o.jpg',
       id: 153,
-      vote_average: 7.4
+      vote_average: 7.4,
     },
     {
       title: "The Rutles 2: Can't Buy Me Lunch",
@@ -367,7 +367,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2002-01-01',
       image: 'https://image.tmdb.org/t/p/w500/maUbhufh8qw44vg2rYnQcozpd2l.jpg',
       id: 32694,
-      vote_average: 7.2
+      vote_average: 7.2,
     },
     {
       title: 'Speaking of Sex',
@@ -376,7 +376,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2001-10-18',
       image: 'https://image.tmdb.org/t/p/w500/imCndGIIYvbGkw5PHra3suxITq9.jpg',
       id: 16435,
-      vote_average: 6.3
+      vote_average: 6.3,
     },
     {
       title: 'The Royal Tenenbaums',
@@ -385,7 +385,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2001-10-12',
       image: 'https://image.tmdb.org/t/p/w500/5xw30y0pSaMtTcuZW5VaQPiR8qb.jpg',
       id: 9428,
-      vote_average: 7.4
+      vote_average: 7.4,
     },
     {
       title: 'Osmosis Jones',
@@ -394,7 +394,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2001-08-07',
       image: 'https://image.tmdb.org/t/p/w500/2NvnoaJflAEcT0zlzbS4hlwrDZX.jpg',
       id: 12610,
-      vote_average: 6.1
+      vote_average: 6.1,
     },
     {
       title: "Charlie's Angels",
@@ -403,7 +403,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2000-11-02',
       image: 'https://image.tmdb.org/t/p/w500/eBzf9d09Vgq2HSVC4fIZm1QNQd.jpg',
       id: 4327,
-      vote_average: 5.6
+      vote_average: 5.6,
     },
     {
       title: 'Hamlet',
@@ -412,7 +412,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2000-05-12',
       image: 'https://image.tmdb.org/t/p/w500/kc8qcAVglziuisHaCIH4mPGma6e.jpg',
       id: 10688,
-      vote_average: 5.9
+      vote_average: 5.9,
     },
     {
       title: 'Michael Jordan to the Max',
@@ -421,7 +421,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '2000-05-05',
       image: 'https://image.tmdb.org/t/p/w500/6mpDcmOOjgls5aVSOwp6rNmSTOB.jpg',
       id: 24977,
-      vote_average: 7.5
+      vote_average: 7.5,
     },
     {
       title: 'Cradle Will Rock',
@@ -430,7 +430,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1999-12-10',
       image: 'https://image.tmdb.org/t/p/w500/1fTdEqJFZMSTRtZSnT2IL3MibvW.jpg',
       id: 32274,
-      vote_average: 6.8
+      vote_average: 6.8,
     },
     {
       title: 'Caddyshack: The 19th Hole',
@@ -439,7 +439,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1999-05-05',
       image: 'https://image.tmdb.org/t/p/w500/lb136Ri2xZIkAxFgdBgbDpru64w.jpg',
       id: 210719,
-      vote_average: 7
+      vote_average: 7,
     },
     {
       title: 'Rushmore',
@@ -448,7 +448,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1998-10-09',
       image: 'https://image.tmdb.org/t/p/w500/q3ov1BFTCRWoR9Q6udaRbmgfWwg.jpg',
       id: 11545,
-      vote_average: 7.5
+      vote_average: 7.5,
     },
     {
       title: 'With Friends Like These...',
@@ -457,7 +457,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1998-09-10',
       image: 'https://image.tmdb.org/t/p/w500/iaOiRKh9o8hoAEAUWc7Dq71w2cl.jpg',
       id: 126152,
-      vote_average: 0
+      vote_average: 0,
     },
     {
       title: 'Wild Things',
@@ -466,7 +466,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1998-03-20',
       image: 'https://image.tmdb.org/t/p/w500/dI9iYo1cL81yzJkBVyNGipjSvy0.jpg',
       id: 617,
-      vote_average: 6.3
+      vote_average: 6.3,
     },
     {
       title: 'The Man Who Knew Too Little',
@@ -475,7 +475,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1997-11-14',
       image: 'https://image.tmdb.org/t/p/w500/32UQkAUWy9NpuvJfF82xrMr2A0G.jpg',
       id: 9414,
-      vote_average: 6.4
+      vote_average: 6.4,
     },
     {
       title: 'Space Jam',
@@ -484,7 +484,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1996-11-15',
       image: 'https://image.tmdb.org/t/p/w500/xI9AwhOWtsbFlS8tYD2PXa80p7u.jpg',
       id: 2300,
-      vote_average: 6.6
+      vote_average: 6.6,
     },
     {
       title: 'Larger than Life',
@@ -493,7 +493,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1996-10-31',
       image: 'https://image.tmdb.org/t/p/w500/hrnStoGvCyJT4vvIWinTlt8fNVG.jpg',
       id: 34170,
-      vote_average: 5.6
+      vote_average: 5.6,
     },
     {
       title: 'Kingpin',
@@ -502,7 +502,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1996-07-04',
       image: 'https://image.tmdb.org/t/p/w500/l2LObt7s0hakFi9ga6tOKMqKkuo.jpg',
       id: 11543,
-      vote_average: 6.6
+      vote_average: 6.6,
     },
     {
       title: 'Ed Wood',
@@ -511,7 +511,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1994-09-27',
       image: 'https://image.tmdb.org/t/p/w500/9qBe2sUDyY2dFH1iHq0SZb1G4QG.jpg',
       id: 522,
-      vote_average: 7.4
+      vote_average: 7.4,
     },
     {
       title: 'Mad Dog and Glory',
@@ -520,7 +520,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1993-03-05',
       image: 'https://image.tmdb.org/t/p/w500/xZlVITyuTxI3Olu9h64xYPdpZyP.jpg',
       id: 10433,
-      vote_average: 5.7
+      vote_average: 5.7,
     },
     {
       title: 'Groundhog Day',
@@ -529,7 +529,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1993-02-11',
       image: 'https://image.tmdb.org/t/p/w500/vXjVd0Vu0MXRZnga7wEnHIIhO5B.jpg',
       id: 137,
-      vote_average: 7.5
+      vote_average: 7.5,
     },
     {
       title: 'What About Bob?',
@@ -538,7 +538,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1991-05-17',
       image: 'https://image.tmdb.org/t/p/w500/fopJnM6MCZilYM6nRpglWdFndt1.jpg',
       id: 10276,
-      vote_average: 6.9
+      vote_average: 6.9,
     },
     {
       title: 'Quick Change',
@@ -547,7 +547,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1990-07-13',
       image: 'https://image.tmdb.org/t/p/w500/jvaXUsDiX3r2RgVrdNK5SstsEqT.jpg',
       id: 10729,
-      vote_average: 6.5
+      vote_average: 6.5,
     },
     {
       title: 'Ghostbusters II',
@@ -556,7 +556,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1989-06-15',
       image: 'https://image.tmdb.org/t/p/w500/4nN0EYNbOWHJ9UO39maO5Kvcdfa.jpg',
       id: 2978,
-      vote_average: 6.4
+      vote_average: 6.4,
     },
     {
       title: 'Scrooged',
@@ -565,7 +565,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1988-11-22',
       image: 'https://image.tmdb.org/t/p/w500/9gUQPVt0QZYKUBrGGtknfrsRQ1c.jpg',
       id: 9647,
-      vote_average: 6.8
+      vote_average: 6.8,
     },
     {
       title: "She's Having a Baby",
@@ -574,7 +574,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1988-02-05',
       image: 'https://image.tmdb.org/t/p/w500/5vYlV82YQUSubsuGzubnviuyPW9.jpg',
       id: 12714,
-      vote_average: 5.7
+      vote_average: 5.7,
     },
     {
       title: 'Little Shop of Horrors',
@@ -583,7 +583,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1986-12-19',
       image: 'https://image.tmdb.org/t/p/w500/iKkbN17OmFosaW6asCNZTTsyvpu.jpg',
       id: 10776,
-      vote_average: 6.7
+      vote_average: 6.7,
     },
     {
       title: 'Bugs Bunny/Looney Tunes All-Star 50th Anniversary',
@@ -592,7 +592,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1986-01-14',
       image: 'https://image.tmdb.org/t/p/w500/7ZiU7O8JwEBxIa9aPYIu7lZxlBd.jpg',
       id: 503354,
-      vote_average: 6
+      vote_average: 6,
     },
     {
       title: "The Razor's Edge",
@@ -601,7 +601,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1984-10-19',
       image: 'https://image.tmdb.org/t/p/w500/ai6iFng036xuBGeDVSEOdhkKrZ2.jpg',
       id: 24453,
-      vote_average: 6.5
+      vote_average: 6.5,
     },
     {
       title: 'Nothing Lasts Forever',
@@ -610,7 +610,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1984-09-06',
       image: 'https://image.tmdb.org/t/p/w500/kEbEySR5MTpVEU1F69hEidDfCNQ.jpg',
       id: 52826,
-      vote_average: 6.3
+      vote_average: 6.3,
     },
     {
       title: 'Ghostbusters',
@@ -619,7 +619,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1984-06-07',
       image: 'https://image.tmdb.org/t/p/w500/3FS3oBdorgczgfCkFi2u8ZTFfpS.jpg',
       id: 620,
-      vote_average: 7.4
+      vote_average: 7.4,
     },
     {
       title: 'Tootsie',
@@ -628,7 +628,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1982-12-16',
       image: 'https://image.tmdb.org/t/p/w500/ngyCzZwb9y5sMUCig5JQT4Y33Q.jpg',
       id: 9576,
-      vote_average: 7.1
+      vote_average: 7.1,
     },
     {
       title: "The Rodney Dangerfield Show: It's Not Easy Bein' Me",
@@ -636,7 +636,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1982-05-12',
       image: 'https://image.tmdb.org/t/p/w500/2FKmtCyl3Pjqv1sz4RjC6wHYiLu.jpg',
       id: 62552,
-      vote_average: 0
+      vote_average: 0,
     },
     {
       title: "Steve Martin: Steve Martin's Best Show Ever",
@@ -645,7 +645,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1981-11-25',
       image: 'https://image.tmdb.org/t/p/w500/g30wZLICGOmpwlka65qAyW4MawW.jpg',
       id: 275521,
-      vote_average: 0
+      vote_average: 0,
     },
     {
       title: 'Stripes',
@@ -654,7 +654,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1981-06-25',
       image: 'https://image.tmdb.org/t/p/w500/nqfLX1bJLUlZnfflqpUIWrGQwSv.jpg',
       id: 10890,
-      vote_average: 6.6
+      vote_average: 6.6,
     },
     {
       title: 'Loose Shoes',
@@ -663,7 +663,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1980-08-01',
       image: 'https://image.tmdb.org/t/p/w500/u111kIZkX7F2JengPcqf8OktWnT.jpg',
       id: 44805,
-      vote_average: 3
+      vote_average: 3,
     },
     {
       title: 'Caddyshack',
@@ -672,7 +672,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1980-07-25',
       image: 'https://image.tmdb.org/t/p/w500/iGA1W74JAQpLKjsUQaFG9Ob1PMj.jpg',
       id: 11977,
-      vote_average: 6.7
+      vote_average: 6.7,
     },
     {
       title: 'The Missing Link',
@@ -681,7 +681,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1980-05-21',
       image: 'https://image.tmdb.org/t/p/w500/kHzAu0ZLFtiwV0PLV3iEGxtxRIc.jpg',
       id: 48279,
-      vote_average: 5.5
+      vote_average: 5.5,
     },
     {
       title: 'Where the Buffalo Roam',
@@ -690,7 +690,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1980-04-25',
       image: 'https://image.tmdb.org/t/p/w500/etoQq5a3fDuj2hKMLxUCnKqiIJh.jpg',
       id: 13005,
-      vote_average: 6.3
+      vote_average: 6.3,
     },
     {
       title: "Mr. Mike's Mondo Video",
@@ -699,7 +699,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1979-09-20',
       image: 'https://image.tmdb.org/t/p/w500/h9sa8TaVjpNBrGkWK4hoEarPCmr.jpg',
       id: 49036,
-      vote_average: 4.2
+      vote_average: 4.2,
     },
     {
       title: 'Meatballs',
@@ -708,7 +708,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1979-06-28',
       image: 'https://image.tmdb.org/t/p/w500/o0NmLgnCVph7I07OP0yKGPFoLrO.jpg',
       id: 14035,
-      vote_average: 6
+      vote_average: 6,
     },
     {
       title: 'Fear and Loathing on the Road to Hollywood',
@@ -717,7 +717,7 @@ export const cleanMurrayData = jest.fn().mockImplementationOnce(() => (
       release: '1978-11-02',
       image: 'https://image.tmdb.org/t/p/w500/4M6Lzl6HXvJAQg3jMTHdQ3EOnzX.jpg',
       id: 164808,
-      vote_average: 8
-    }
+      vote_average: 8,
+    },
   ]
-))
+));

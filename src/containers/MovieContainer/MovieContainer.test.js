@@ -1,17 +1,17 @@
+import React from 'react';
+import { shallow, mount } from 'enzyme';
 import {
   MovieContainer,
   mapStateToProps,
-  mapDispatchToProps
+  mapDispatchToProps,
 } from './MovieContainer';
 import { mockMurrayData, mockUser } from '../../utils/mockData/mockMurrayData';
-import React from 'react';
-import { shallow, mount } from 'enzyme';
 
 describe('MovieContainer', () => {
   let wrapper;
   beforeEach(() => {
     wrapper = shallow(
-      <MovieContainer movies={mockMurrayData} user={mockUser} />
+      <MovieContainer movies={mockMurrayData} user={mockUser} />,
     );
   });
 
@@ -22,7 +22,7 @@ describe('MovieContainer', () => {
 
   it('should match the snapshot if user is not signed in', () => {
     wrapper = shallow(
-      <MovieContainer movies={mockMurrayData} favorites={[]} user={{}} />
+      <MovieContainer movies={mockMurrayData} favorites={[]} user={{}} />,
     );
     expect(wrapper).toMatchSnapshot();
   });
@@ -34,16 +34,16 @@ describe('MovieContainer', () => {
         overview:
           'A celebrated military contractor returns to the site of his greatest career triumphs and re-connects with a long-ago love while unexpectedly falling for the hard-charging Air Force watchdog assigned to him.',
         release: '2015-05-27',
-        image: 'https://image.tmdb.org/t/p/w500/4Q0rnkCsQ9GhdnR66Bqjvav2Q1x.jpg'
+        image: 'https://image.tmdb.org/t/p/w500/4Q0rnkCsQ9GhdnR66Bqjvav2Q1x.jpg',
       };
       const id = 1;
       const mockState = {
         movies: [movies, id],
-        filter: 'SHOW_ALL'
+        filter: 'SHOW_ALL',
       };
 
       const expected = {
-        movies: [movies, id]
+        movies: [movies, id],
       };
 
       const mappedProps = mapStateToProps(mockState);

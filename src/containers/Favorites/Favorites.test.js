@@ -1,11 +1,11 @@
-import { Favorites, mapDispatchToProps, mapStateToProps } from './Favorites';
 import React from 'react';
 import { shallow, mount } from 'enzyme';
+import { Favorites, mapDispatchToProps, mapStateToProps } from './Favorites';
 import {
   mockFavorites,
   mockMurrayData,
   mockUser,
-  mockFavoriteStateResult
+  mockFavoriteStateResult,
 } from '../../utils/mockData/mockMurrayData';
 
 describe('Favorites', () => {
@@ -16,7 +16,7 @@ describe('Favorites', () => {
         favorites={mockFavorites.data}
         movies={mockMurrayData}
         user={mockUser}
-      />
+      />,
     );
   });
 
@@ -49,7 +49,7 @@ describe('Favorites', () => {
       const mockState = {
         movies,
         favorites,
-        user
+        user,
       };
 
       const mappedProps = mapStateToProps(mockState);

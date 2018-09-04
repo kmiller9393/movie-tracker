@@ -7,11 +7,11 @@ import {
   mockUser,
   mockFavorites,
   mockFavoritesArray,
-  mockStateResult
+  mockStateResult,
 } from '../../utils/mockData/mockMurrayData';
 import {
   addFavoriteToDatabase,
-  deleteMovieFromDatabase
+  deleteMovieFromDatabase,
 } from '../../utils/__mocks__/apiCalls';
 import { Card, mapStateToProps, mapDispatchToProps } from './Card';
 
@@ -28,13 +28,11 @@ describe('Card', () => {
         user={user}
         addMovie={jest.fn()}
         deleteMovie={jest.fn()}
-      />
+      />,
     );
     window.fetch = jest
       .fn()
-      .mockImplementation(() =>
-        Promise.resolve({ json: () => Promise.resolve({ status: 200 }) })
-      );
+      .mockImplementation(() => Promise.resolve({ json: () => Promise.resolve({ status: 200 }) }));
   });
 
   it('should match the snapshot', () => {
@@ -64,7 +62,7 @@ describe('Card', () => {
         user={user}
         addMovie={jest.fn()}
         deleteMovie={jest.fn()}
-      />
+      />,
     );
 
     wrapper.find('[className="add-button"]').simulate('click');
@@ -80,7 +78,7 @@ describe('Card', () => {
         user={user}
         addMovie={jest.fn()}
         deleteMovie={jest.fn()}
-      />
+      />,
     );
 
     wrapper.find('[className="delete-button"]').simulate('click');
@@ -96,7 +94,7 @@ describe('Card', () => {
         history={mockHistory}
         user={{ name: undefined }}
         handleToggle={jest.fn()}
-      />
+      />,
     );
 
     const expected = alert('You must log-in to favorite a movie!');
@@ -114,7 +112,7 @@ describe('Card', () => {
       const mockState = {
         movies,
         favorites,
-        user
+        user,
       };
 
       const mappedProps = mapStateToProps(mockState);

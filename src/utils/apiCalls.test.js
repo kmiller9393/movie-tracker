@@ -3,24 +3,22 @@ import {
   addMovieToDatabase,
   getUserFavorites,
   setUserData,
-  fetchUserData
+  fetchUserData,
 } from './apiCalls';
 import {
   mockMurrayData,
   mockMovie,
   mockUser,
   mockFavorites,
-  mockFavoriteResult
+  mockFavoriteResult,
 } from './mockData/mockMurrayData';
 
 describe('apiCalls', () => {
-  let response = { status: 'success', message: '2 row was deleted.' };
+  const response = { status: 'success', message: '2 row was deleted.' };
   beforeEach(() => {
     window.fetch = jest
       .fn()
-      .mockImplementation(() =>
-        Promise.resolve({ json: () => Promise.resolve(response) })
-      );
+      .mockImplementation(() => Promise.resolve({ json: () => Promise.resolve(response) }));
   });
   describe('deleteMovieFromDatabase', () => {
     it('should call fetch with the correct params', () => {
@@ -34,12 +32,12 @@ describe('apiCalls', () => {
           method: 'DELETE',
           body: JSON.stringify({
             user_id: mockUser.id,
-            movie_id: mockMovie.movie_id
+            movie_id: mockMovie.movie_id,
           }),
           headers: {
-            'Content-Type': 'application/json'
-          }
-        }
+            'Content-Type': 'application/json',
+          },
+        },
       ];
       deleteMovieFromDatabase(mockUser, mockMovie);
       expect(window.fetch).toHaveBeenCalledWith(...expected);
@@ -61,12 +59,12 @@ describe('apiCalls', () => {
             poster_path: mockMovie.image,
             release_date: mockMovie.release,
             vote_average: mockMovie.vote_average,
-            overview: mockMovie.overview
+            overview: mockMovie.overview,
           }),
           headers: {
-            'Content-Type': 'application/json'
-          }
-        }
+            'Content-Type': 'application/json',
+          },
+        },
       ];
       addMovieToDatabase(mockUser, mockMovie);
       expect(window.fetch).toHaveBeenCalledWith(...expected);
@@ -75,12 +73,10 @@ describe('apiCalls', () => {
 
   describe('getUserFavorites', () => {
     it('should return users favorites', async () => {
-      const url = `http://localhost:3000/api/users/1/favorites`;
+      const url = 'http://localhost:3000/api/users/1/favorites';
       window.fetch = jest
         .fn()
-        .mockImplementation(() =>
-          Promise.resolve({ json: () => Promise.resolve(mockFavorites) })
-        );
+        .mockImplementation(() => Promise.resolve({ json: () => Promise.resolve(mockFavorites) }));
       const result = await getUserFavorites(url);
       expect(result).toEqual(mockFavoriteResult);
     });
@@ -96,12 +92,12 @@ describe('apiCalls', () => {
           body: JSON.stringify({
             name: 'kurt',
             password: 'jesse',
-            email: 'brandon'
+            email: 'brandon',
           }),
           headers: {
-            'Content-Type': 'application/json'
-          }
-        }
+            'Content-Type': 'application/json',
+          },
+        },
       ];
       setUserData('kurt', 'brandon', 'jesse');
       expect(window.fetch).toHaveBeenCalledWith(...expected);
@@ -111,9 +107,7 @@ describe('apiCalls', () => {
       const expected = new Error('Email Already Exists');
       window.fetch = jest
         .fn()
-        .mockImplementation(() =>
-          Promise.reject(new Error('Email Already Exists'))
-        );
+        .mockImplementation(() => Promise.reject(new Error('Email Already Exists')));
 
       await expect(setUserData(1)).rejects.toEqual(expected);
     });
@@ -127,8 +121,8 @@ describe('apiCalls', () => {
         {
           body: '{"password":"Bools","email":"Brandon"}',
           headers: { 'Content-Type': 'application/json' },
-          method: 'POST'
-        }
+          method: 'POST',
+        },
       ];
       expect(window.fetch).toHaveBeenCalledWith(...expected);
     });
@@ -136,9 +130,7 @@ describe('apiCalls', () => {
       const expected = new Error('Invalid Email or Password');
       window.fetch = jest
         .fn()
-        .mockImplementation(() =>
-          Promise.reject(new Error('Invalid Email or Password'))
-        );
+        .mockImplementation(() => Promise.reject(new Error('Invalid Email or Password')));
 
       await expect(fetchUserData(1)).rejects.toEqual(expected);
     });
