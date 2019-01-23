@@ -25,6 +25,7 @@ export class LoginForm extends Component {
   handleSubmit = async e => {
     e.preventDefault();
     const result = await fetchUserData(this.state.email, this.state.password);
+
     if (result) {
       const { name, id } = result.data;
       this.props.userLogin(name, id);

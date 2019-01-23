@@ -38,6 +38,7 @@ export class Card extends Component {
 
   render() {
     let { image, movie, favorites } = this.props;
+
     return (
       <div className={this.state.toggle ? 'details' : 'Card'}>
         <article onClick={() => this.setState({ toggle: !this.state.toggle })}>
