@@ -1,6 +1,6 @@
 # MurrayTracker
 
-#### By <a href="https://github.com/brandonfiebiger"> Brandon Fiebiger</a>, <a href="https://github.com/kmiller9393">Kurt Miller</a>, and <a href="https://github.com/JesseMcBrennan">Jesse Mcfadden</a>
+#### By [Brandon Fiebiger](https://github.com/brandonfiebiger), [Kurt Miller](https://github.com/kmiller9393) and [Jesse Mcfadden](https://github.com/JesseMcBrennan)
 
 ### Project
 
@@ -8,15 +8,35 @@ MurrayTracker is an application that utilizes The Movie Database API and display
 
 #### Getting Started
 
-1. clone down this repository.
+Make sure you have PostgreSQL installed on your machine. If you don't, download it [here](https://www.postgresql.org/download/).
 
-2. cd into the back-end directory and run npm start.
+##### Clone the server repo:
 
-3. cd into the movie-tracker directory within the root directory.
+`git clone https://github.com/turingschool-examples/movie-tracker`
 
-4. npm install.
+##### Then:
 
-5. npm start.
+`cd movie-tracker`
+
+##### Then run:
+
+`npm install && npm start`
+
+##### To get the front-end up and running clone this repo:
+
+`git clone https://github.com/kmiller9393/movie-tracker-client.git`
+
+##### Then:
+
+`cd movie-tracker-client`
+
+##### Then run:
+
+`npm install`
+
+##### Then start the application:
+
+`npm start`
 
 #### User Interface
 
